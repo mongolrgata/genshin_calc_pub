@@ -5,10 +5,10 @@
     "private": true,
     "scripts": {
         "build": "npm run build:lang && webpack --mode=production",
-        "build:lang": "python3 bin/gen_string_table.py base casino",
+        "build:lang": "python bin/gen_string_table.py base casino",
         "watch": "npm run build:lang && webpack --mode=development --watch",
         "build:draft": "npm run build:draft:lang && webpack --config ./webpack.config.draft.js --mode=production",
-        "build:draft:lang": "python3 bin/gen_string_table.py draft",
+        "build:draft:lang": "python bin/gen_string_table.py draft",
         "watch:draft": "npm run build:draft:lang && webpack --config ./webpack.config.draft.js --mode=development --watch",
         "test": "jest"
     },

@@ -82,7 +82,8 @@ module.exports = (env, argv) => {
                             loader: 'file-loader',
                             options: {
                                 name(resourcePath) {
-                                    return resourcePath.replace(/^.*?\/src\/images\//, '');
+                                    // FIXME завязка под окружение
+                                    return resourcePath.replace(/^.*?\\src\\images\\/, '').replaceAll('\\', '/');
                                 },
                                 outputPath: 'images/',
                                 publicPath: '../images/'

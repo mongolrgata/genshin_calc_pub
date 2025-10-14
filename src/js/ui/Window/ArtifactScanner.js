@@ -36,7 +36,7 @@ export class ArtifactScanner extends Window {
         this.back.addClass('gi-window-artifact-scanner-back');
 
         let html = '<div class="gi-scanner-image-preview" id="img_preview">';
-        html += '<img src="/images/help/scanner_'+ UI.Lang.getLang() +'.png">';
+        html += '<img src="./images/help/scanner_'+ UI.Lang.getLang() +'.png">';
         html += '</div>';
         html += '<div class="gi-scanner-image-controls">';
         html += UI.Lang.get('scanner.paste') +'<br><input type="file" id="file" />';
