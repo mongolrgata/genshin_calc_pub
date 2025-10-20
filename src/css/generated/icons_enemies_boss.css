@@ -18,17 +18,22 @@
 	background-image: url("../../images/sprites/enemy_boss_3c1ef219c665aafcbb0d18127aa46f7f.png");
 	background-size: 300px 300px;
 }
-.sprite.type-boss.enemy-icon-dahaka {background-position: 0% 0%}
-.sprite.type-boss.enemy-icon-dvalin {background-position: 25% 0%}
-.sprite.type-boss.enemy-icon-lasignora {background-position: 50% 0%}
-.sprite.type-boss.enemy-icon-lupiboreas {background-position: 75% 0%}
-.sprite.type-boss.enemy-icon-shougun-mitakenarukami {background-position: 100% 0%}
-.sprite.type-boss.enemy-icon-tartaglia {background-position: 0% 25%}
+.sprite.type-boss.enemy-icon-dahaka {background-position: 0 0
+}
+.sprite.type-boss.enemy-icon-dvalin {background-position: 25% 0
+}
+.sprite.type-boss.enemy-icon-lasignora {background-position: 50% 0
+}
+.sprite.type-boss.enemy-icon-lupiboreas {background-position: 75% 0
+}
+.sprite.type-boss.enemy-icon-shougun-mitakenarukami {background-position: 100% 0
+}
+.sprite.type-boss.enemy-icon-tartaglia {background-position: 0 25%}
 .sprite.type-boss.enemy-icon-nada {background-position: 25% 25%}
 .sprite.type-boss.enemy-icon-apep {background-position: 50% 25%}
 .sprite.type-boss.enemy-icon-ptahur-devourer {background-position: 75% 25%}
 .sprite.type-boss.enemy-icon-nihil {background-position: 100% 25%}
-.sprite.type-boss.enemy-icon-theabyssxiuhcoatl {background-position: 0% 50%}
+.sprite.type-boss.enemy-icon-theabyssxiuhcoatl {background-position: 0 50%}
 .sprite.type-boss.enemy-icon-giantchess {background-position: 25% 50%}
 
 @media

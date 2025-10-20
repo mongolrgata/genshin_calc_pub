@@ -36,7 +36,7 @@ export class ShareTab extends Tab {
     createContent() {
         return (
             <ShareView
-                ref={element => { this.component = element }}
+                ref={element => { this.component = element; }}
                 app={this.app}
                 title={this.title}
             />
@@ -151,7 +151,7 @@ export class ShareView extends React.Component {
 
     handleLoadBuild(build) {
         UI.ConfirmWindow.show('modal.confirm', 'share_view.confirm_load', () => {
-            this.props.app.replaceSet(build)
+            this.props.app.replaceSet(build);
         });
     }
 

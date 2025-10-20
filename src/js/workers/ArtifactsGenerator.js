@@ -29,4 +29,4 @@ self.onmessage = function(input) {
     self.postMessage({
         result: result,
     });
-}
+};

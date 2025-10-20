@@ -25,8 +25,8 @@ export class NonAppModal {
         }
 
         waitForCondition(
-            () => {return this.modal},
-            () => {this.modal.show(...arguments)},
+            () => {return this.modal;},
+            () => {this.modal.show(...arguments);},
         );
     }
 }

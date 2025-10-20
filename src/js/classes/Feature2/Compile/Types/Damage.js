@@ -13,20 +13,20 @@ export class CCritRate extends CSum {
 export class CCritDmg extends CSumPlusOne {}
 
 export class CDamageResult extends CBlock {
-    getType() {return 'damage_result'}
-    isCollapsable() {return false}
+    getType() {return 'damage_result';}
+    isCollapsable() {return false;}
 
 
     compile(opts) {
         return '[' + this.compileChildrens(opts).join(', ') + ']';
     }
 
-    getSignature() { return null }
+    getSignature() { return null; }
 }
 
 export class CHeal extends CMulti {
-    getType() {return 'heal_result'}
-    isCollapsable() {return false}
+    getType() {return 'heal_result';}
+    isCollapsable() {return false;}
 
     /**
      * @returns {CBlock}
@@ -46,8 +46,8 @@ export class CHeal extends CMulti {
 }
 
 export class CShield extends CMulti {
-    getType() {return 'shield_result'}
-    isCollapsable() {return false}
+    getType() {return 'shield_result';}
+    isCollapsable() {return false;}
 
     /**
      * @returns {CBlock}
@@ -67,7 +67,7 @@ export class CShield extends CMulti {
 }
 
 export class CDamage extends CMulti {
-    getType() {return 'damage_result'}
+    getType() {return 'damage_result';}
 
     /**
      * @returns {Array.<CBlock>}
@@ -127,7 +127,7 @@ export class CDamage extends CMulti {
 }
 
 export class CDamageRotation extends CMulti {
-    getType() {return 'damage_rotation_result'}
+    getType() {return 'damage_rotation_result';}
 
     /**
      * @returns {CBlock}
@@ -143,5 +143,5 @@ export class CDamageRotation extends CMulti {
 }
 
 export class CStaticValue extends CHeal {
-    getType() {return 'static_result'}
+    getType() {return 'static_result';}
 }

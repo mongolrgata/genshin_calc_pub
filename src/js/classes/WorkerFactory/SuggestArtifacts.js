@@ -56,7 +56,7 @@ export class WorkerFactorySuggestArtifacts extends WorkerFactory {
                 count: item.count || 0,
                 total: item.total || 0,
                 skipped: item.skipped || 0,
-            })
+            });
         }
 
         if (this.progressCallback) {

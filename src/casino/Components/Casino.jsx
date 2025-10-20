@@ -16,7 +16,7 @@ export class Casino extends React.Component {
         this.allItems = [];
         this.byKey = {};
 
-        let allowed = {}
+        let allowed = {};
         for (let item of this.props.items) {
             allowed[item.id] = true;
             this.allItems.push(item);
@@ -46,7 +46,7 @@ export class Casino extends React.Component {
             {value: 10, text: 10},
         ];
 
-        this.state.number = Math.min(this.props.number, this.filteredItems.length)
+        this.state.number = Math.min(this.props.number, this.filteredItems.length);
     }
 
     loadFromStorage() {
@@ -67,7 +67,7 @@ export class Casino extends React.Component {
     }
 
     saveToStorage() {
-        localStorage.setItem(this.props.storageName, JSON.stringify(this.state.filters))
+        localStorage.setItem(this.props.storageName, JSON.stringify(this.state.filters));
     }
 
     handleNumberChange(item) {
@@ -149,7 +149,7 @@ export class Casino extends React.Component {
                     onChange={(char, selected) => this.handleItemFilter(char, selected)}
                 />
             </div>
-        )
+        );
     }
 }
 

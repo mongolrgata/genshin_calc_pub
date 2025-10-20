@@ -11,7 +11,7 @@ export class Slider extends React.Component {
     }
 
     componentDidUpdate() {
-        this.positionHandler()
+        this.positionHandler();
     }
 
     positionHandler() {
@@ -34,7 +34,7 @@ export class Slider extends React.Component {
 
     handleTouchMove(e) {
         if (e.changedTouches.length) {
-            this.handleEvent(e.changedTouches[0])
+            this.handleEvent(e.changedTouches[0]);
         }
     }
 
@@ -96,14 +96,14 @@ export class Slider extends React.Component {
                     onClick={() => this.valueChanged(minus_value)}
                 />
                 <div
-                    ref={obj => {this.container = obj}}
+                    ref={obj => {this.container = obj;}}
                     className="slider-container"
                     onMouseDown={(e) => this.handleEvent(e)}
                 >
-                    <div ref={obj => {this.progress1 = obj}} className="slider-progress"></div>
-                    <div ref={obj => {this.progress2 = obj}} className="slider-progress gray"></div>
+                    <div ref={obj => {this.progress1 = obj;}} className="slider-progress"></div>
+                    <div ref={obj => {this.progress2 = obj;}} className="slider-progress gray"></div>
                     <div
-                        ref={obj => {this.handler = obj}}
+                        ref={obj => {this.handler = obj;}}
                         onMouseDown={(e) => this.handleMouseDown(e)}
                         className="slider-handler"
                     />
@@ -113,7 +113,7 @@ export class Slider extends React.Component {
                     onClick={() => this.valueChanged(plus_value)}
                 />
             </div>
-        )
+        );
     }
 }
 
@@ -136,8 +136,8 @@ export class DoubleSlider extends React.Component {
         let percent2 = (this.props.value2 - this.props.min) / (this.props.max - this.props.min);
         let position2 = totalWindth * percent2;
 
-        let position_min = Math.min(position1, position2)
-        let position_max = Math.max(position1, position2)
+        let position_min = Math.min(position1, position2);
+        let position_max = Math.max(position1, position2);
 
         this.handler1.style.left = position1 +'px';
         this.handler2.style.left = position2 +'px';
@@ -189,7 +189,7 @@ export class DoubleSlider extends React.Component {
         value2 = Math.max(this.props.min, Math.min(this.props.max, value2));
 
         if (value1 != this.props.value1 || value2 != this.props.value2) {
-            this.props.onChange(value1, value2)
+            this.props.onChange(value1, value2);
         }
     }
 
@@ -203,18 +203,18 @@ export class DoubleSlider extends React.Component {
                     className={'slider slider-min'+ (this.props.min == minValue ? ' disabled' : '')}
                     onClick={() => this.valueChanged(this.props.min, maxValue)}
                 />
-                <div ref={obj => {this.container = obj}} className="slider-container">
-                    <div ref={obj => {this.progress1 = obj}} className="slider-progress left gray"></div>
-                    <div ref={obj => {this.progress2 = obj}} className="slider-progress"></div>
-                    <div ref={obj => {this.progress3 = obj}} className="slider-progress right gray"></div>
-                    <div ref={obj => {this.handler1 = obj}} onMouseDown={(e) => this.handleMouseDown1(e)} className="slider-handler"/>
-                    <div ref={obj => {this.handler2 = obj}} onMouseDown={(e) => this.handleMouseDown2(e)} className="slider-handler"/>
+                <div ref={obj => {this.container = obj;}} className="slider-container">
+                    <div ref={obj => {this.progress1 = obj;}} className="slider-progress left gray"></div>
+                    <div ref={obj => {this.progress2 = obj;}} className="slider-progress"></div>
+                    <div ref={obj => {this.progress3 = obj;}} className="slider-progress right gray"></div>
+                    <div ref={obj => {this.handler1 = obj;}} onMouseDown={(e) => this.handleMouseDown1(e)} className="slider-handler"/>
+                    <div ref={obj => {this.handler2 = obj;}} onMouseDown={(e) => this.handleMouseDown2(e)} className="slider-handler"/>
                 </div>
                 <div
                     className={'slider slider-max'+ (this.props.max == maxValue ? ' disabled' : '')}
                     onClick={() => this.valueChanged(minValue, this.props.max)}
                 />
             </div>
-        )
+        );
     }
 }

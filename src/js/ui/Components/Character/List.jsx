@@ -30,5 +30,5 @@ export function CharacterList(props) {
         <div className="char-list">
             {items}
         </div>
-    )
+    );
 }

@@ -53,6 +53,6 @@ export class RotationBlockModal extends React.PureComponent {
                     <div className="description">{lang.get('rotation_view.block_uptime_descr')}</div>
                 </div>
             </DialogContainer>
-        )
+        );
     }
 }

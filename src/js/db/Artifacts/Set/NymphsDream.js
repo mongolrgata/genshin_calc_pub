@@ -55,4 +55,4 @@ export const NymphsDream = new ArtifactSet({
             ],
         },
     ],
-})
+});

@@ -43,4 +43,4 @@ export const ThunderingFury = new ArtifactSet({
             ],
         },
     ],
-})
+});

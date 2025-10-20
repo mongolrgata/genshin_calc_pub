@@ -47,7 +47,7 @@ function FoodTypesSlot(props) {
                     <span className="empty">{lang.get('food_name.not_selected')}</span>
                 </div>
             </div>
-        )
+        );
     }
 
     let stats = props.food.getStats(props.level);

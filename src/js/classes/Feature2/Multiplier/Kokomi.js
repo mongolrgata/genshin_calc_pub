@@ -17,6 +17,6 @@ export class FeatureMultiplierKokomi extends FeatureMultiplier {
      * @returns {CItem}
      */
     getTreeBonusMultiplier(data) {
-        return makeStatItem('healing', data.stats)
+        return makeStatItem('healing', data.stats);
     }
 }

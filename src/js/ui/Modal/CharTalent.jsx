@@ -55,7 +55,7 @@ export class CharTalentComponent extends React.Component {
 
     loadChar(charId) {
         let prevCharId = this.char ? this.char.getId() : 0;
-        if (prevCharId == charId) { return }
+        if (prevCharId == charId) { return; }
 
         if (charId) {
             this.char = DB.Chars.getById(charId);
@@ -67,7 +67,7 @@ export class CharTalentComponent extends React.Component {
         this.links = [];
 
         if (!this.char) {
-            return
+            return;
         }
 
         for (let category of ['attack', 'skill', 'burst', 'other']) {
@@ -142,8 +142,8 @@ function SkillNameTabs(props) {
 
     for (let item of props.items) {
         let classes = ['gi-talent-title'];
-        if (props.small) { classes.push('small') }
-        if (item.name == props.active) { classes.push('active') }
+        if (props.small) { classes.push('small'); }
+        if (item.name == props.active) { classes.push('active'); }
 
         items.push(
             <div key={item.name} className={classes.join(' ')} onClick={() => props.onTabChange(item.name)}>
@@ -160,8 +160,8 @@ function SkillNameTabs(props) {
 }
 
 function SkillDescription(props) {
-    let active = props.items.filter((i) => {return i.name == props.active})[0];
-    if (!active) { return '' }
+    let active = props.items.filter((i) => {return i.name == props.active;})[0];
+    if (!active) { return ''; }
 
     return (
         <GroupBox addClass="gi-talent-description">
@@ -172,7 +172,7 @@ function SkillDescription(props) {
 }
 
 function TalentTable(props) {
-    if (!props.item.data) { return '' }
+    if (!props.item.data) { return ''; }
 
     let items = props.item.data.items;
     let max = props.item.data.maxLevel || maxLevels[props.item.name];

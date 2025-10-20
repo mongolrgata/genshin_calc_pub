@@ -4,10 +4,10 @@ import { FeatureMultiplierReactionTransformative } from "../Multiplier/Reaction/
 import { FeatureReaction } from "../Reaction";
 
 export class FeatureReactionTransformative extends FeatureReaction {
-    getReactionRate() { return 1 }
-    getReactionPenalty() { return 1 }
+    getReactionRate() { return 1; }
+    getReactionPenalty() { return 1; }
 
-    getScalingStat(data) { return null }
+    getScalingStat(data) { return null; }
 
     getBaseMultiplier(data) {
         return new FeatureMultiplierReaction({

@@ -259,7 +259,7 @@ export class ArtifactScanner extends Window {
                 let values = slotData.values[data.rarity-1] || [];
                 for (let level = 0; level <= 20; ++level) {
                     if (values.getValue(level) == msValue) {
-                        return level
+                        return level;
                     }
                 }
             }
@@ -303,7 +303,7 @@ export class ArtifactScanner extends Window {
         }
 
         if (candidates.length > 0) {
-            candidates = candidates.sort(function(a, b) {return a.distance - b.distance});
+            candidates = candidates.sort(function(a, b) {return a.distance - b.distance;});
             return candidates[0].stat;
         }
 
@@ -329,7 +329,7 @@ export class ArtifactScanner extends Window {
         }
 
         if (candidates.length > 0) {
-            candidates = candidates.sort(function(a, b) {return a.distance - b.distance});
+            candidates = candidates.sort(function(a, b) {return a.distance - b.distance;});
             return candidates[0].slot;
         }
 
@@ -387,7 +387,7 @@ export class ArtifactScanner extends Window {
             };
             img.src = fr.result;
         };
-        fr.readAsDataURL(file)
+        fr.readAsDataURL(file);
     }
 
     clearResult() {
@@ -411,7 +411,7 @@ export class ArtifactScanner extends Window {
 
         this.root.find('.modal-add').on('click', function() {
             if (that.art) {
-                that.art.setGroups(that.getSelectedGroups())
+                that.art.setGroups(that.getSelectedGroups());
                 that.callback(that.art);
                 that.clearResult();
             }
@@ -419,7 +419,7 @@ export class ArtifactScanner extends Window {
 
         this.root.find('.modal-update').on('click', function() {
             if (that.art && that.callback) {
-                that.art.setGroups(that.getSelectedGroups())
+                that.art.setGroups(that.getSelectedGroups());
 
                 let index = that.root.find('[name=storage_index]:checked').val();
                 let exArt = that.app.storage.artifacts.getArtByIndex(index);
@@ -459,12 +459,12 @@ export class ArtifactScanner extends Window {
 
         window.addEventListener("paste", function(event){
             if (that.showed) {
-                var items = event.clipboardData.items;
+                const items = event.clipboardData.items;
 
-                for (var i = 0; i < items.length; i++) {
+                for (let i = 0; i < items.length; i++) {
                     if (items[i].type.indexOf("image") == -1) continue;
 
-                    var blob = items[i].getAsFile();
+                    const blob = items[i].getAsFile();
                     that.acceptImage(blob);
                 }
             }

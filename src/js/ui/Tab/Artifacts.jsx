@@ -37,11 +37,11 @@ export class ArtifactsTab extends Tab {
     createContent() {
         return (
             <ArtifactsView
-                ref={element => { this.component = element }}
+                ref={element => { this.component = element; }}
                 app={this.app}
                 title={this.title}
             />
-        )
+        );
     }
 }
 
@@ -251,7 +251,7 @@ function ArtifactBlock(props) {
                 slot={props.slot}
                 onClick={props.onIconClick}
             />
-        )
+        );
     }
 
     let setData = DB.Artifacts.Sets.get(art.set);

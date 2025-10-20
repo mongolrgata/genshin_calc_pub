@@ -60,8 +60,8 @@ export class Feature2RotationTree {
                 data.settings.reaction = getReactionName(item);
 
                 let activeFeature = getActiveFeature(item.feature, data);
-                if (!activeFeature) { continue }
-                if (!activeFeature.usedInRotation()) { continue }
+                if (!activeFeature) { continue; }
+                if (!activeFeature.usedInRotation()) { continue; }
 
                 if (filter) {
                     let element = activeFeature.getElement(data);

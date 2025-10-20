@@ -34,5 +34,5 @@ export const DefendersWill = new ArtifactSet({
             ],
         },
     ],
-})
+});
 

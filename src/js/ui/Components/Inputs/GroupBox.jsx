@@ -7,7 +7,7 @@ export function GroupBox(props) {
             {props.title ? <div className="title">{props.title}</div> : null}
             {props.children}
         </div>
-    )
+    );
 }
 
 export class GroupBoxCollapse extends React.Component {

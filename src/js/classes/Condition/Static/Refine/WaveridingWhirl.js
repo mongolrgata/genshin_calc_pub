@@ -35,7 +35,7 @@ export class ConditionStaticRefineWaveridingWhirl extends ConditionStaticRefine 
         if (this.params.realStats) {
             for (const tables of this.params.realStats) {
                 let stat = tables.getValue(level);
-                stats.add(stat.getName(), stat.getValue(settings.weapon_refine))
+                stats.add(stat.getName(), stat.getValue(settings.weapon_refine));
             }
         }
 

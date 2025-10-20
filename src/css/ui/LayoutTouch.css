@@ -42,7 +42,7 @@
 
 .narrow .gi-main-container {
     margin: 5px;
-    border-radius: 0px;
+    border-radius: 0;
     width: 100%;
     height: 100%;
     background-color: unset;

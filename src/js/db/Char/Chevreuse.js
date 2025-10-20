@@ -140,7 +140,7 @@ const TalentValues = {
     C2ChainDmg: 120,
     C6PartyHeal: 10,
     C6DmgBonus: 20,
-}
+};
 
 const atkBuffPost = new PostEffectStatsHP({
     percent: new StatTable('atk_percent', [TalentValues.AtkBuffValue / 1000]),

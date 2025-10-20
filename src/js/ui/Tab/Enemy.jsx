@@ -33,11 +33,11 @@ export class EnemyTab extends Tab {
     createContent() {
         return (
             <EnemyView
-                ref={element => { this.component = element }}
+                ref={element => { this.component = element; }}
                 app={this.app}
                 title={this.title}
             />
-        )
+        );
     }
 }
 

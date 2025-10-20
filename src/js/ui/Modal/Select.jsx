@@ -53,7 +53,7 @@ export class ModalSelectBase extends React.Component {
     }
 
     getShowState(data) {
-        return {}
+        return {};
     }
 
     loadItems() {}
@@ -134,5 +134,5 @@ export function SearchInput(props) {
             onChange={(value) => props.onChange(value)}
             onClick={() => props.onChange('')}
         />
-    )
+    );
 }

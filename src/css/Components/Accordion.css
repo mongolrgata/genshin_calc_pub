@@ -29,22 +29,21 @@
 .accordion-item-content {
     background: rgba(30, 30, 30, 0.5);
     box-sizing: border-box;
-    border: 0px none;
+    border: 0 none;
     width: 100%;
-    padding: 0px;
+    padding: 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     display: none;
 }
 
 .accordion-item.active .accordion-item-caption {
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .accordion-item.active .accordion-item-content {
     display: block;
     padding: 5px;
-    border-top: 0px none;
     border: solid 2px #4B505E;
 }

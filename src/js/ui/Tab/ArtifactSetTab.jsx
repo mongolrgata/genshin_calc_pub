@@ -39,12 +39,12 @@ export class ArtifactSetTab extends Tab {
     createContent() {
         return (
             <ArtifactSetView
-                ref={obj => { this.component = obj }}
+                ref={obj => { this.component = obj; }}
                 app={this.app}
                 feature={this.app.getFeature()}
                 displayMode={this.app.getDisplayMode()}
             />
-        )
+        );
     }
 }
 
@@ -263,7 +263,7 @@ function ArtifactSetItem(props) {
                 displayMode={props.displayMode}
             />
         </div>
-    )
+    );
 }
 
 function ArtifactSetDetail(props) {

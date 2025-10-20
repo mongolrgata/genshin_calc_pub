@@ -6,7 +6,7 @@ import { Lang } from "../../src/js/ui/Lang.js";
 global.window = {};
 global.localStorage = {};
 
-require('../../src/js/lang/eng.js')
+require('../../src/js/lang/eng.js');
 
 let lang = new Lang();
 
@@ -40,7 +40,7 @@ function getItems(char) {
 
         for (let item of talent.items) {
             let tables = Array.isArray(item.table) ? item.table : [item.table];
-            let name = item.name || tables[0].getName()
+            let name = item.name || tables[0].getName();
             lang_str.push('feature_'+ talentType + '.'+ name);
         }
     }

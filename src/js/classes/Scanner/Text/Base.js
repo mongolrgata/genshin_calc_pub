@@ -13,7 +13,7 @@ export class ScannerTextBase {
     }
 
     strDiff(str1, str2) {
-        return levenshtein(str1, str2)
+        return levenshtein(str1, str2);
     }
 
     replaceLettersNums(text) {

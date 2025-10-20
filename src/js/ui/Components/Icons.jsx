@@ -35,12 +35,12 @@ export function WeaponIcon(props) {
         >
             <div className={`sprite sprite-weapon-${props.weapon.getType()} sprite-${size} ${props.weapon.getIcon()}`} />
         </div>
-    )
+    );
 }
 
 export function EnemyIcon(props) {
     let size = props.size || 80;
-    let icon = props.enemy ? props.enemy.getIcon() : ''
+    let icon = props.enemy ? props.enemy.getIcon() : '';
 
     return (
         <div
@@ -49,7 +49,7 @@ export function EnemyIcon(props) {
         >
             <div className={`sprite sprite-enemy sprite-${size} ${icon}`} />
         </div>
-    )
+    );
 }
 
 export function ArtifactIcon(props) {
@@ -72,12 +72,12 @@ export function ArtifactSetIcon(props) {
     let size = props.size || 80;
     let artSet = typeof props.set == 'string' ? DB.Artifacts.Sets.get(props.set) : props.set;
 
-    let className = `item-icon icon-${size}`
+    let className = `item-icon icon-${size}`;
 
     if (props.rarity) {
-        className += ` border-rarity-${props.rarity}`
+        className += ` border-rarity-${props.rarity}`;
     } else {
-        className += ' no-border'
+        className += ' no-border';
     }
 
     let slotName = props.slot || 'flower';

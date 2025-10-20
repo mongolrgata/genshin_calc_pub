@@ -46,7 +46,7 @@ export class CompareTab extends Tab {
     createContent() {
         return (
             <CompareView
-                ref={element => { this.component = element }}
+                ref={element => { this.component = element; }}
                 app={this.app}
               />
         );
@@ -262,7 +262,7 @@ export class CompareView extends React.Component {
         }
 
         if (this.state.sortByFeature) {
-            result = result.sort((a, b) => {return b.value - a.value});
+            result = result.sort((a, b) => {return b.value - a.value;});
         }
 
         return result;

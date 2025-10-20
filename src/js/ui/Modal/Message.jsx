@@ -16,7 +16,7 @@ export class MessageModal extends NonAppModal {
             <MessageComponent
                 ref={(obj) => this.modal = obj}
             />
-        )
+        );
     }
 }
 

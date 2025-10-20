@@ -49,4 +49,4 @@ export const FlowerOfParadiseLost = new ArtifactSet({
             ],
         },
     ],
-})
+});

@@ -27,7 +27,7 @@ import { Casino } from './Components/Casino';
 
 document.addEventListener("DOMContentLoaded", function() {
     let root = document.querySelector('#app');
-    ReactDOM.createRoot(root).render(<App />)
+    ReactDOM.createRoot(root).render(<App />);
 });
 
 class App extends React.Component {
@@ -115,7 +115,7 @@ class App extends React.Component {
         this.domainItems = [];
 
         for (let i = 1; i <= 12; ++i) {
-            let num = String(i).padStart(2, '0')
+            let num = String(i).padStart(2, '0');
             this.domainItems.push({
                 id: 'artifact'+ num,
                 padding: 10,
@@ -127,7 +127,7 @@ class App extends React.Component {
 
         for (let type of ['talent', 'resource']) {
             for (let i = 1; i <= 4; ++i) {
-                let num = String(i).padStart(2, '0')
+                let num = String(i).padStart(2, '0');
                 this.domainItems.push({
                     id: type + num,
                     padding: 10,

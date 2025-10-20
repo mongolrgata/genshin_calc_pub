@@ -18,17 +18,22 @@
 	background-image: url("../../images/sprites/enemy_fatui_684cc073a85ad532d544c5ec78acec6e.png");
 	background-size: 300px 300px;
 }
-.sprite.type-fatui.enemy-icon-fatuus-fire-01 {background-position: 0% 0%}
-.sprite.type-fatui.enemy-icon-fatuus-mage-ice-01 {background-position: 25% 0%}
-.sprite.type-fatui.enemy-icon-fatuus-maiden-water {background-position: 50% 0%}
-.sprite.type-fatui.enemy-icon-fatuus-summoner-01 {background-position: 75% 0%}
-.sprite.type-fatui.enemy-icon-skirmisher-male-fat-spraygun-ice-01 {background-position: 100% 0%}
-.sprite.type-fatui.enemy-icon-skirmisher-male-fat-spraygun-water-01 {background-position: 0% 25%}
+.sprite.type-fatui.enemy-icon-fatuus-fire-01 {background-position: 0 0
+}
+.sprite.type-fatui.enemy-icon-fatuus-mage-ice-01 {background-position: 25% 0
+}
+.sprite.type-fatui.enemy-icon-fatuus-maiden-water {background-position: 50% 0
+}
+.sprite.type-fatui.enemy-icon-fatuus-summoner-01 {background-position: 75% 0
+}
+.sprite.type-fatui.enemy-icon-skirmisher-male-fat-spraygun-ice-01 {background-position: 100% 0
+}
+.sprite.type-fatui.enemy-icon-skirmisher-male-fat-spraygun-water-01 {background-position: 0 25%}
 .sprite.type-fatui.enemy-icon-skirmisher-male-standard-rifle-fire-01 {background-position: 25% 25%}
 .sprite.type-fatui.enemy-icon-skirmisher-male-standard-staff-rock-01 {background-position: 50% 25%}
 .sprite.type-fatui.enemy-icon-skirmisher-male-strong-greathammer-electric-01 {background-position: 75% 25%}
 .sprite.type-fatui.enemy-icon-skirmisher-male-strong-gloves-wind-01 {background-position: 100% 25%}
-.sprite.type-fatui.enemy-icon-fatuus-escadron-ice {background-position: 0% 50%}
+.sprite.type-fatui.enemy-icon-fatuus-escadron-ice {background-position: 0 50%}
 .sprite.type-fatui.enemy-icon-fatuus-escadron-wind {background-position: 25% 50%}
 
 @media

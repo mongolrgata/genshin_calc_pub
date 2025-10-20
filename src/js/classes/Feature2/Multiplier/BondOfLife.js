@@ -7,6 +7,6 @@ export class FeatureMultiplierBondOfLife extends FeatureMultiplier {
      * @returns {CItem}
      */
     getTreeBonusMultiplier(data) {
-        return makeStatItem('bond_of_life', data.stats)
+        return makeStatItem('bond_of_life', data.stats);
     }
 }

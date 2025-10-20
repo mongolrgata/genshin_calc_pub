@@ -9,7 +9,7 @@ function getResult(elem) {
         'CritRate%': 'crit_rate_base',
         'CritDMG%': 'crit_dmg_base',
         'Elemental Mastery': 'mastery_base',
-    }
+    };
 
     let str = '';
 
@@ -25,7 +25,7 @@ function getResult(elem) {
         str += "\n";
     }
 
-    console.log(str)
+    console.log(str);
 }
 
 function getData(elem) {
@@ -46,9 +46,9 @@ function getData(elem) {
                 value = value.replace(/\%/, '');
 
                 if (value.match(/^[\d\+]+$/)) {
-                    result[name].push(parseInt(value))
+                    result[name].push(parseInt(value));
                 } else if (value.match(/^[\d\.]+$/)) {
-                    result[name].push(parseFloat(value))
+                    result[name].push(parseFloat(value));
                 }
             }
         }
@@ -148,8 +148,8 @@ function getSkills() {
                 result += "new StatTable('" + title +"', ["+ levels.join(', ') +']),' + "\n";
             }
         });
-        result += "----\n"
-    })
+        result += "----\n";
+    });
     console.log(result);
 }
 

@@ -15,7 +15,7 @@ export function ReactTab(props) {
                 </TabContent>
             </TabRoot>
         </React.StrictMode>
-    )
+    );
 }
 
 function TabRoot(props) {
@@ -32,7 +32,7 @@ function TabHeader(props) {
             {props.backButton ? <div className="gi-tab-button-back" onClick={props.backButtonCallback}></div> : ''}
             {props.title}
         </div>
-    )
+    );
 }
 
 function TabContent(props) {
@@ -40,7 +40,7 @@ function TabContent(props) {
         <div className="tab-content">
             {props.children}
         </div>
-    )
+    );
 }
 
 export function TabDisclaimer(props) {
@@ -48,7 +48,7 @@ export function TabDisclaimer(props) {
         <div className="tab-disclaimer">
             {props.children}
         </div>
-    )
+    );
 }
 
 export class TabLoading extends React.Component {
@@ -80,6 +80,6 @@ export class TabLoading extends React.Component {
             >
                 <div className="text">{this.props.children}</div>
             </div>
-        )
+        );
     }
 }

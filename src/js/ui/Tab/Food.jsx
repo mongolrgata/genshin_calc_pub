@@ -42,13 +42,13 @@ export class FoodTab extends Tab {
     createContent() {
         return (
             <FoodView
-                ref={element => { this.component = element }}
+                ref={element => { this.component = element; }}
                 app={this.app}
                 title={this.title}
                 feature={this.app.getFeature()}
                 displayMode={this.app.getDisplayMode()}
             />
-        )
+        );
     }
 }
 
@@ -167,7 +167,7 @@ export class FoodView extends React.Component {
         }
 
         if (this.baseResult) {
-            this.foodList = this.foodList.sort(function(a, b) {return b.result.average - a.result.average});
+            this.foodList = this.foodList.sort(function(a, b) {return b.result.average - a.result.average;});
         }
     }
 

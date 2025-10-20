@@ -29,11 +29,11 @@ export class RotationTab extends Tab {
     createContent() {
         return (
             <RotationView
-                ref={element => { this.component = element }}
+                ref={element => { this.component = element; }}
                 app={this.app}
                 title={this.title}
             />
-        )
+        );
     }
 }
 

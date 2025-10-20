@@ -195,7 +195,7 @@
     line-height: 20px;
     display: block;
     float: left;
-    padding: 0px 5px;
+    padding: 0 5px;
     width: auto;
     box-sizing: border-box;
     min-width: 20px;
@@ -209,11 +209,11 @@
 }
 
 .input-number-line .button-minus {
-    background-position: 0px 0px;
+    background-position: 0 0;
     margin-right: 3px;
 }
 .input-number-line .button-plus {
-    background-position: -20px 0px;
+    background-position: -20px 0;
     margin-left: 3px;
 }
 

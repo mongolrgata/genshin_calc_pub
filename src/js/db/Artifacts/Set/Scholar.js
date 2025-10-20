@@ -24,5 +24,5 @@ export const Scholar = new ArtifactSet({
             ],
         },
     ],
-})
+});
 

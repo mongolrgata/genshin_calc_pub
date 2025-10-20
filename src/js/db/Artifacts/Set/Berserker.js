@@ -39,4 +39,4 @@ export const Berserker = new ArtifactSet({
             ],
         },
     ],
-})
+});

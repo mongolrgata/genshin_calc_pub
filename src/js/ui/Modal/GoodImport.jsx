@@ -63,7 +63,7 @@ export class GoodImportComponent extends React.Component {
             this.processText(reader.result);
             e.target.value = null;
         };
-        reader.readAsText(file)
+        reader.readAsText(file);
     }
 
     handleChangeText(value) {
@@ -84,9 +84,9 @@ export class GoodImportComponent extends React.Component {
     }
 
     handleGroupName(items) {
-        let result = items.map((i) => {return i.value});
+        let result = items.map((i) => {return i.value;});
         if (result.length == 0) {
-            result = [""]
+            result = [""];
         }
 
         this.setState({groupNames: result});
@@ -108,7 +108,7 @@ export class GoodImportComponent extends React.Component {
     }
 
     handleConfirm() {
-        if (!this.state.canImport) { return }
+        if (!this.state.canImport) { return; }
 
         if (this.state.actionAdd) {
             for (let item of this.items.added) {
@@ -173,7 +173,7 @@ export class GoodImportComponent extends React.Component {
 
         for (let hash of Object.keys(existedHashes)) {
             let artifact = Artifact.deserialize(Serializer.unpack(hash));
-            this.items.missing.push(artifact)
+            this.items.missing.push(artifact);
         }
 
         this.setState({
@@ -222,7 +222,7 @@ export class GoodImportComponent extends React.Component {
                     <div className="resizable">
                         <TextInput
                             value={this.state.goodText}
-                            onChange={(value) => {this.handleChangeText(value)}}
+                            onChange={(value) => {this.handleChangeText(value);}}
                             placeholder={lang.get('good_import.paste_text')}
                         />
                     </div>

@@ -46,7 +46,7 @@ export class ArtifactGenerator {
 
         this.usefulStats = [];
         this.uselessStats = [];
-        this.statRolls = getStatRolls(this.settings.mode)
+        this.statRolls = getStatRolls(this.settings.mode);
 
         for (let stat of DB.Artifacts.Substats.getKeys()) {
             if (usedStats.includes(stat)) {
@@ -66,13 +66,13 @@ export class ArtifactGenerator {
             let setKeys = [];
             for (let set of DB.Artifacts.Sets.getList()) {
                 if (!set.isBeta()) {
-                    setKeys.push(set.key)
+                    setKeys.push(set.key);
                 }
             }
 
             for (let setName of shuffle(setKeys)) {
                 if (sets.includes(setName)) {
-                    continue
+                    continue;
                 }
 
                 let setData = DB.Artifacts.Sets.get(setName);
@@ -197,12 +197,12 @@ export class ArtifactGenerator {
             }
         }
 
-        return result.sort((a, b) => {return b.value - a.value});
+        return result.sort((a, b) => {return b.value - a.value;});
     }
 
     getBestRoll(stats, rolls) {
         let result;
-        let max = 0
+        let max = 0;
 
         for (let roll of rolls) {
             stats.add(roll.stat, roll.value);
@@ -377,7 +377,7 @@ export class StatsObject {
         for (let slot of Object.keys(this.mainStats)) {
             let art = new Artifact(5, 20, slot, setsList.shift(), this.mainStats[slot], []);
             for (let [stat, rolls] of Object.entries(dist.result[slot])) {
-                let value = rolls.reduce((s, i) => {return s + i});
+                let value = rolls.reduce((s, i) => {return s + i;});
 
                 if (isPercent(stat)) {
                     value = Math.round(value * 10000) / 100;
@@ -444,12 +444,12 @@ export class StatDistributor {
 
         let byNumSlots = {};
         for (let stat of Object.keys(this.rolls)) {
-            let avail = Object.values(this.mainStats).reduce((s, i) => {return s + (stat == i ? 0 : 1)}, 0);
+            let avail = Object.values(this.mainStats).reduce((s, i) => {return s + (stat == i ? 0 : 1);}, 0);
             if (!byNumSlots[avail]) byNumSlots[avail] = [];
             byNumSlots[avail].push(stat);
         }
 
-        for (let num of Object.keys(byNumSlots).sort((a, b) => {return a - b})) {
+        for (let num of Object.keys(byNumSlots).sort((a, b) => {return a - b;})) {
             let stats = byNumSlots[num];
 
             while (1) {
@@ -471,7 +471,7 @@ export class StatDistributor {
     }
 
     balanceUpgrades() {
-        let count = Object.values(this.upgradesCount).reduce((s, i) => {return s + i}, 0);
+        let count = Object.values(this.upgradesCount).reduce((s, i) => {return s + i;}, 0);
         if (count <= MAX_UPGRADES_TOTAL) return;
 
         let isMoved = 1;
@@ -543,7 +543,7 @@ export class StatDistributor {
 
     fillUselessStats(uselessStats, rollValues) {
         for (let [slot, mainStat] of Object.entries(this.mainStats)) {
-            let list = shuffle([].concat(uselessStats)).filter((i) => {return i != mainStat});
+            let list = shuffle([].concat(uselessStats)).filter((i) => {return i != mainStat;});
             let used = [];
 
             while (Object.keys(this.result[slot]).length < MAX_STATS_PER_ARTIFACT) {
@@ -607,7 +607,7 @@ export class StatDistributor {
             }
         }
 
-        list = list.sort((a, b) => {return a.used - b.used});
+        list = list.sort((a, b) => {return a.used - b.used;});
         this.putIntoSlot(list[0].slot, stat, rolls);
     }
 
@@ -623,10 +623,10 @@ export class StatDistributor {
             list.push({
                 slot: slot,
                 used: Object.values(this.result[slot]).length,
-            })
+            });
         }
 
-        list = list.sort((a, b) => {return a.used - b.used});
+        list = list.sort((a, b) => {return a.used - b.used;});
 
         this.putIntoSlot(list[0].slot, stat, rolls);
     }
@@ -673,12 +673,12 @@ export function getMainStatCombinations(params) {
     };
 
     if (params.settings.minRecharge > 100) {
-        usedStats.push('recharge')
+        usedStats.push('recharge');
     }
 
     if (usedStats.includes('crit_value')) {
-        usedStats.push('crit_rate')
-        usedStats.push('crit_dmg')
+        usedStats.push('crit_rate');
+        usedStats.push('crit_dmg');
     }
 
     for (let stat of DB.Artifacts.Mainstats.getKeys()) {

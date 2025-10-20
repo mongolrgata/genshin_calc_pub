@@ -30,7 +30,7 @@ export class ConditionLevels extends Condition {
 
                 for (let i = 0; i < pstats.length; ++i) {
                     const stat = pstats[i];
-                    stats.add(stat.getName(), stat.getValue(level))
+                    stats.add(stat.getName(), stat.getValue(level));
                 }
             }
         }

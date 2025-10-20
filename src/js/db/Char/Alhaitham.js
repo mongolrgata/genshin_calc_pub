@@ -185,7 +185,7 @@ const TalentValues = {
     C4DendroDmg: 10,
     C6CritRate: 10,
     C6CritDmg: 70,
-}
+};
 
 export const Alhaitham = new DbObjectChar({
     name: 'alhaitham',

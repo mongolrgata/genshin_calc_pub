@@ -17,7 +17,7 @@ export class CalcObjectWeapon extends CalcObject {
     }
 
     getStats() {
-        var result = super.getStats();
+        const result = super.getStats();
 
         if (this.object && this.object.refineTable) {
             for (let stat of this.object.refineTable) {
@@ -76,7 +76,7 @@ export class CalcObjectWeapon extends CalcObject {
             return null;
         }
 
-        result.push(this.object.getId())
+        result.push(this.object.getId());
         result.push(this.levels.level, this.levels.ascension, this.levels.refine);
 
         let condData = this.serializeConditions(settings);
@@ -107,7 +107,7 @@ export class CalcObjectWeapon extends CalcObject {
         });
 
         let settings = result.deserializeConditions(input);
-        if (!settings) return null
+        if (!settings) return null;
 
         result.setSettings(settings);
 

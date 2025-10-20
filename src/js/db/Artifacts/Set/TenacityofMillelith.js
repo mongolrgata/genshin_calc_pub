@@ -40,4 +40,4 @@ export const TenacityofMillelith = new ArtifactSet({
             ],
         },
     ],
-})
+});

@@ -84,9 +84,9 @@ export class SuggestProgressModal extends React.Component {
             let threadId = threads.length;
 
             if (data.total) {
-                content = <ProgressBar addClass="small" count={data.count} total={data.total} />
+                content = <ProgressBar addClass="small" count={data.count} total={data.total} />;
             } else {
-                content = <div className="loading">{lang.get('artifacts_suggest.thread_loading')}</div>
+                content = <div className="loading">{lang.get('artifacts_suggest.thread_loading')}</div>;
             }
 
             threads.push(<div key={'item'+ threadId} className="thread">{content}</div>);
@@ -147,5 +147,5 @@ function formatSeconds(sec) {
         parts.unshift(0);
     }
 
-    return parts.map((i) => {return String(i).padStart(2, '0')}).join(':');
+    return parts.map((i) => {return String(i).padStart(2, '0');}).join(':');
 }

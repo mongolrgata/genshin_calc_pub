@@ -9,7 +9,7 @@ export class FeatureMultiplierReactionAmplifying extends FeatureMultiplierReacti
     }
 
     getReactionBonuses(data) {
-        let items = this.getStatsReactionBonus(data).map((stat) => { return makeStatItem(stat, data.stats) })
+        let items = this.getStatsReactionBonus(data).map((stat) => { return makeStatItem(stat, data.stats); });
         if (items.length == 0) {
             return new CConst({value: 0});
         }

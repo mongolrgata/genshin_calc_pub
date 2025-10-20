@@ -41,4 +41,4 @@ export const FragmentOfHarmonicWhimsy = new ArtifactSet({
             ],
         },
     ],
-})
+});

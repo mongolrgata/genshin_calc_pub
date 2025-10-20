@@ -99,7 +99,7 @@ export class ArtifactListItem extends React.Component {
             );
         }
 
-        let statOriginal = art.getMainStat()
+        let statOriginal = art.getMainStat();
         let stat = statOriginal.replace('_percent', '');
 
         return (
@@ -181,7 +181,7 @@ function ArtifactListItemButtons(props) {
 
     return (
         <div className="buttons" onClick={(e) => {
-            e.preventDefault()
+            e.preventDefault();
             e.stopPropagation();
         }}>
             {props.onEdit ? <div

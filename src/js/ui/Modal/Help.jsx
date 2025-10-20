@@ -16,7 +16,7 @@ export class HelpModal extends Modal {
                 ref={(obj) => this.modal = obj}
                 app={this.app}
             />
-        )
+        );
     }
 }
 

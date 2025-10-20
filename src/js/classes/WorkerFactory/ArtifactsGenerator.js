@@ -35,12 +35,12 @@ export class WorkerFactoryArtifactsGenerator extends WorkerFactory {
         for (let item of result) {
             let deserialized = [];
             for (let data of item.artifacts) {
-                deserialized.push(Artifact.deserialize(data))
+                deserialized.push(Artifact.deserialize(data));
             }
             item.artifacts = deserialized;
         }
 
-        return result.sort((a, b) => {return b.value - a.value});
+        return result.sort((a, b) => {return b.value - a.value;});
     }
 
     getWorkersPayload(data) {

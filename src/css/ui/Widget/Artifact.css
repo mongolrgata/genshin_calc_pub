@@ -21,7 +21,6 @@
 
 .artifact-list-box-substat {
     width: 50%;
-    overflow: hidden;
     font-size: 12px;
     float: left;
     padding: 1px 4px;
@@ -46,7 +45,7 @@
     width: 60px;
     height: 60px;
     background-size: cover;
-    border-radius: 18px 0px 20px 0;
+    border-radius: 18px 0 20px 0;
     position: relative;
 }
 
@@ -77,7 +76,7 @@
     width: 20px;
     height: 20px;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     left: 2px;
     background-image: url("../../../images/icons/warning.png");
     background-repeat: no-repeat;
@@ -100,6 +99,6 @@
 
 .artifact-list-box-edit {
     background-image: url("../../../images/icons/editart.png");
-    background-position: 0px 0px;
+    background-position: 0 0;
     background-repeat: no-repeat;
 }

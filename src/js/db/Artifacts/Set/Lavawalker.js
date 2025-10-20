@@ -46,4 +46,4 @@ export const Lavawalker = new ArtifactSet({
             ],
         },
     ],
-})
+});

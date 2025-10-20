@@ -46,37 +46,43 @@
 	background-image: url("../../images/sprites/weapon_polearm_1c22ed3e98773481fa2bc886275c456f.png");
 	background-size: 360px 360px;
 }
-.sprite.weapon-icon-polearm-unknown {background-position: 0% 0%}
-.sprite.weapon-icon-polearm-white-tassel {background-position: 20% 0%}
-.sprite.weapon-icon-polearm-halberd {background-position: 40% 0%}
-.sprite.weapon-icon-polearm-black-tassel {background-position: 60% 0%}
-.sprite.weapon-icon-polearm-dragons-bane {background-position: 80% 0%}
-.sprite.weapon-icon-polearm-prototype-starglitter {background-position: 100% 0%}
-.sprite.weapon-icon-polearm-crescent-pike {background-position: 0% 20%}
+.sprite.weapon-icon-polearm-unknown {background-position: 0 0
+}
+.sprite.weapon-icon-polearm-white-tassel {background-position: 20% 0
+}
+.sprite.weapon-icon-polearm-halberd {background-position: 40% 0
+}
+.sprite.weapon-icon-polearm-black-tassel {background-position: 60% 0
+}
+.sprite.weapon-icon-polearm-dragons-bane {background-position: 80% 0
+}
+.sprite.weapon-icon-polearm-prototype-starglitter {background-position: 100% 0
+}
+.sprite.weapon-icon-polearm-crescent-pike {background-position: 0 20%}
 .sprite.weapon-icon-polearm-blackcliff-pole {background-position: 20% 20%}
 .sprite.weapon-icon-polearm-deathmatch {background-position: 40% 20%}
 .sprite.weapon-icon-polearm-lithic-spear {background-position: 60% 20%}
 .sprite.weapon-icon-polearm-favonius-lance {background-position: 80% 20%}
 .sprite.weapon-icon-polearm-royal-spear {background-position: 100% 20%}
-.sprite.weapon-icon-polearm-dragonspine-spear {background-position: 0% 40%}
+.sprite.weapon-icon-polearm-dragonspine-spear {background-position: 0 40%}
 .sprite.weapon-icon-polearm-kitain-cross-spear {background-position: 20% 40%}
 .sprite.weapon-icon-polearm-the-catch {background-position: 40% 40%}
 .sprite.weapon-icon-polearm-wavebreakers-fin {background-position: 60% 40%}
 .sprite.weapon-icon-polearm-moonpiercer {background-position: 80% 40%}
 .sprite.weapon-icon-polearm-missive-windspear {background-position: 100% 40%}
-.sprite.weapon-icon-polearm-ballad-of-the-fjords {background-position: 0% 60%}
+.sprite.weapon-icon-polearm-ballad-of-the-fjords {background-position: 0 60%}
 .sprite.weapon-icon-polearm-rightful-reward {background-position: 20% 60%}
 .sprite.weapon-icon-polearm-dialogues-of-the-desert-sages {background-position: 40% 60%}
 .sprite.weapon-icon-polearm-prospectors-drill {background-position: 60% 60%}
 .sprite.weapon-icon-polearm-mountain-bracing-bolt {background-position: 80% 60%}
 .sprite.weapon-icon-polearm-footprint-of-the-rainbow {background-position: 100% 60%}
-.sprite.weapon-icon-polearm-tamayuratei-no-ohanashi {background-position: 0% 80%}
+.sprite.weapon-icon-polearm-tamayuratei-no-ohanashi {background-position: 0 80%}
 .sprite.weapon-icon-polearm-staff-of-homa {background-position: 20% 80%}
 .sprite.weapon-icon-polearm-skyward-spine {background-position: 40% 80%}
 .sprite.weapon-icon-polearm-vortex-vanquisher {background-position: 60% 80%}
 .sprite.weapon-icon-polearm-primordial-jade-winged-spear {background-position: 80% 80%}
 .sprite.weapon-icon-polearm-calamity-queller {background-position: 100% 80%}
-.sprite.weapon-icon-polearm-engulfing-lightning {background-position: 0% 100%}
+.sprite.weapon-icon-polearm-engulfing-lightning {background-position: 0 100%}
 .sprite.weapon-icon-polearm-staff-of-the-scarlet-sands {background-position: 20% 100%}
 .sprite.weapon-icon-polearm-crimson-moons-semblance {background-position: 40% 100%}
 .sprite.weapon-icon-polearm-lumidouce-elegy {background-position: 60% 100%}

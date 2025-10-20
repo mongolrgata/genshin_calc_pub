@@ -60,8 +60,8 @@ export class ArtifactsSuggestSort {
         let final = [];
         for (let slot of DB.Artifacts.Slots.getKeys()) {
             if (result[slot].length > limit) {
-                result[slot] = result[slot].sort((a, b) => {return b.value - a.value});
-                result[slot].splice(limit)
+                result[slot] = result[slot].sort((a, b) => {return b.value - a.value;});
+                result[slot].splice(limit);
             }
 
             for (let item of result[slot]) {
@@ -85,7 +85,7 @@ function artifactsListBySet(artifacts) {
 
     for (let art of artifacts) {
         let set = art.getSet();
-        if (!result[set]) { result[set] = [] }
+        if (!result[set]) { result[set] = []; }
 
         result[set].push(art);
     }

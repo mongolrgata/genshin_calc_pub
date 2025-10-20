@@ -69,7 +69,7 @@
 
 .gi-result-table-group-caption.sticky {
     position: absolute;
-    top: 0px;
+    top: 0;
     background-color: rgba(23, 17, 16, 0.9);
 }
 

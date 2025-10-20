@@ -40,14 +40,14 @@
 .gi-view-ascension {
     width: 100%;
     height: 15px;
-    margin: 5px 0px;
+    margin: 5px 0;
     display: flex;
 }
 
 .gi-view-ascension-star {
     width: 15px;
     height: 15px;
-    margin: 0px 2px;
+    margin: 0 2px;
     background-size: cover;
     background-image: url("../../../images/icons/ascension_star_gray.png");
 }
@@ -94,7 +94,7 @@
 .gi-view-beta {
     font-size: 13px;
     color: #BEAEA9;
-    padding: 0px 15px;
+    padding: 0 15px;
     box-sizing: border-box;
 }
 

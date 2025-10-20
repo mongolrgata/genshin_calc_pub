@@ -2,7 +2,7 @@ import {StatTable} from '../StatTable.js'
 
 export class StatTableAscension extends StatTable {
 	constructor(stat, values, ascensionValues) {
-		super(stat, values)
+		super(stat, values);
 		this.ascensionValues = ascensionValues;
 	}
 

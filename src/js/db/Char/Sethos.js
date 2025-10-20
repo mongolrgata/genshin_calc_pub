@@ -118,7 +118,7 @@ const TalentValues = {
     C1CritRate: 15,
     C2ElectroDmg: 15,
     C4Mastery: 80,
-}
+};
 
 export const Sethos = new DbObjectChar({
     name: 'sethos',

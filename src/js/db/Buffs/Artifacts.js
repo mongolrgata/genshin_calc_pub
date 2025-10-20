@@ -95,7 +95,7 @@ export const Artifacts = new DbObjectBuff({
                     ]),
                     new ConditionBooleanDropdownValue({name: 'set_other.viridescent_venerer_4', value: elem}),
                 ]),
-            })
+            });
         }),
 
         new ConditionDropdownElement({

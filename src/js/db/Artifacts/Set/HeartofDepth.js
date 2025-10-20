@@ -40,4 +40,4 @@ export const HeartofDepth = new ArtifactSet({
             ],
         },
     ],
-})
+});

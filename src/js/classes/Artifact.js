@@ -25,7 +25,7 @@ export class Artifact {
     }
 
     calcStats() {
-        var result = new Stats();
+        const result = new Stats();
 
         let mainData = DB.Artifacts.Mainstats.get(this.mainStat);
         if (mainData) {
@@ -358,7 +358,7 @@ export class Artifact {
                 if (substat.type == 'percent') {
                     value = parseFloat(value) / 10;
                 } else {
-                    value = parseInt(value)
+                    value = parseInt(value);
                 }
 
                 result.addStat(statKey, value);
@@ -436,7 +436,7 @@ export class Artifact {
 
     static trimGroupNames(values) {
         if (!Array.isArray(values)) {
-            values = [values]
+            values = [values];
         }
 
         let result = [];
@@ -448,8 +448,8 @@ export class Artifact {
 
     static trimGroupName(value) {
         let group = value || '';
-        group = group.replace(/[^\w\u0400-\u04ff\d_\-\s]/g, '')
-        group = group.replace(/\s+/g, ' ')
+        group = group.replace(/[^\w\u0400-\u04ff\d_\-\s]/g, '');
+        group = group.replace(/\s+/g, ' ');
         return group.trim();
     }
 

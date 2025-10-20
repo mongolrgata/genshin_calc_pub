@@ -29,14 +29,14 @@ export class CResult {
 
         let parts = this.compileVariables(opts);
         parts.push(this.tree.compile(opts));
-        console.log(parts.join(';\n'))
+        console.log(parts.join(';\n'));
         return Function('stats', parts.join(';\n'));
     }
 
     compileVariables(opts) {
         this.replaceTotalStats();
 
-        return this.variables.map((i) => {return i.compile(opts)});
+        return this.variables.map((i) => {return i.compile(opts);});
     }
 
     // replaceTotalStats() {

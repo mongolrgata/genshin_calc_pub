@@ -35,7 +35,7 @@ export class ConditionStaticLevel extends ConditionStatic {
 
         if (this.params.stats) {
             for (const stat of this.params.stats) {
-                stats.add(stat.getName(), stat.getValue(level))
+                stats.add(stat.getName(), stat.getValue(level));
             }
         }
 

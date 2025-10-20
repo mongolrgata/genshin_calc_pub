@@ -30,7 +30,7 @@ export class ConditionNumber extends Condition {
         if (this.params.format == 'decimal') {
             value = parseFloat(value).toFixed(1);
         } else {
-            value = parseInt(value)
+            value = parseInt(value);
         }
 
         value = Math.max(min, value);

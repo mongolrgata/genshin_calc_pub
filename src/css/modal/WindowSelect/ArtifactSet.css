@@ -14,8 +14,8 @@
 .gi-window-select-artifact-set .gi-window-select-item-icon {
     width: 40px;
     height: 40px;
-    margin: 0px;
-    border: 0px;
+    margin: 0;
+    border: 0;
 }
 
 .gi-window-select-artifact-set .gi-window-select-item-name {
@@ -30,7 +30,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    padding: 0px 10px;
+    padding: 0 10px;
     box-sizing: border-box;
 }
 

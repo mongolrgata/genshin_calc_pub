@@ -66,7 +66,7 @@ class FeatureListComponent extends React.Component {
         let names = this.state.selectedNames;
 
         if (names.includes(name)) {
-            var index = names.indexOf(name);
+            const index = names.indexOf(name);
             if (index !== -1) {
                 names.splice(index, 1);
             }
@@ -140,7 +140,7 @@ function FeatureList(props) {
 
     let sections = [];
     for (let section of Object.keys(tree)) {
-        let items = []
+        let items = [];
 
         for (let name of Object.keys(tree[section])) {
             let featName = section +'.'+ name;

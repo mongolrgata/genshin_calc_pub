@@ -90,7 +90,7 @@ export class StorageItemRotation extends StorageItem {
 
     reload() {
         super.reload();
-        this.resetCache()
+        this.resetCache();
     }
 
     resetCache() {

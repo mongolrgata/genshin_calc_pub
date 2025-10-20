@@ -39,4 +39,4 @@ export const NoblesseOblige = new ArtifactSet({
             ],
         },
     ],
-})
+});

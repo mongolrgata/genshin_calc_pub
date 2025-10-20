@@ -154,7 +154,7 @@ class ArtifactSetSelectItem extends React.PureComponent {
         const item = this.props.item;
 
         let condData = item.getConditionsByPieces();
-        let piecesInfo = []
+        let piecesInfo = [];
 
         for (let i = 1; i <= condData.length; ++i) {
             let bonuses = condData[i];
@@ -246,6 +246,6 @@ class SetInfoModal extends React.PureComponent {
                     hideNoDescription={true}
                 />
             </DialogContainer>
-        )
+        );
     }
 }

@@ -42,4 +42,4 @@ export const DesertPavilionChronicle = new ArtifactSet({
             ],
         },
     ],
-})
+});

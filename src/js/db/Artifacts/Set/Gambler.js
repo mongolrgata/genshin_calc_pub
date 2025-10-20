@@ -24,5 +24,5 @@ export const Gambler = new ArtifactSet({
             ],
         },
     ],
-})
+});
 

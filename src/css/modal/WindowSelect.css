@@ -21,7 +21,7 @@
 }
 
 .narrow .gi-window-select-filter-separator {
-    width: 0px;
+    width: 0;
 }
 
 .gi-window-select-filter-block {
@@ -111,7 +111,7 @@
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     box-sizing: border-box;
-    border: 0px none;
+    border: 0 none;
 }
 
 .gi-window-select-stat-table {

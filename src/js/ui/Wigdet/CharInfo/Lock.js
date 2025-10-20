@@ -15,7 +15,7 @@ export class CharInfoLock extends CharInfo {
                 let locked = this.opts.locked.includes( Serializer.pack(art) );
 
                 html += '<div class="gi-char-info-artifact border-rarity-'+ art.rarity +'">';
-                html += '<div class="sprite sprite-40 sprite-artifact '+ slot +' '+ artSet.getImage() +'"></div>'
+                html += '<div class="sprite sprite-40 sprite-artifact '+ slot +' '+ artSet.getImage() +'"></div>';
                 if (locked) {
                     html += '<div class="gi-char-info-artifact-locked"></div>';
                 }

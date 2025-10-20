@@ -57,7 +57,7 @@ export class ToggleRoundButton extends React.PureComponent {
                 data-tooltip={this.props.tooltip}
                 onClick={() => this.props.onChange(!this.props.checked)}
             >{this.props.text || ''}</div>
-        )
+        );
     }
 }
 

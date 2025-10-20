@@ -31,7 +31,7 @@ export class FeaturePostEffectValue extends Feature2 {
                 if (!item.getTree) continue;
                 if (item.getPriority() >= priority) continue;
 
-                result.push(treeItem)
+                result.push(treeItem);
             }
         }
 

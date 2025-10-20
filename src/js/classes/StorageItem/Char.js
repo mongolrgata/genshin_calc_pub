@@ -28,7 +28,7 @@ export class StorageItemChar extends StorageItem {
                 if (art) {
                     let hash = art.getHash();
                     if (!result[hash]) {
-                        result[hash] = []
+                        result[hash] = [];
                     }
 
                     let icon = char.getIcon();

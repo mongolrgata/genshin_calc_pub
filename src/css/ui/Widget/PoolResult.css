@@ -1,6 +1,6 @@
 .gi-pool-result {
     width: 100%;
-    padding: 5px 0px;
+    padding: 5px 0;
 }
 
 .gi-pool-result-info {
@@ -22,7 +22,7 @@
 
 .gi-pool-result-button {
     width: 35px;
-    margin: 0px 5px;
+    margin: 0 5px;
     flex-shrink: 0;
 }
 

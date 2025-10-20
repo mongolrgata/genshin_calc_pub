@@ -65,7 +65,7 @@ function ConditionItem(props) {
     }
 
     if (type == 'party_weapon') {
-        return <PartyWeaponItem {...props} />
+        return <PartyWeaponItem {...props} />;
     }
 
     let subcond = true;
@@ -118,7 +118,7 @@ function ConditionItem(props) {
     );
 
     if (!props.noWrap) {
-        result = <GroupBox>{result}</GroupBox>
+        result = <GroupBox>{result}</GroupBox>;
     }
 
     return result;
@@ -359,7 +359,7 @@ function ConditionControl(props) {
             />
         );
     } else if (type == 'static') {
-        return <div className={'static '+ (props.subcond ? 'active' : '')} />
+        return <div className={'static '+ (props.subcond ? 'active' : '')} />;
     }
 
     return (
@@ -398,7 +398,7 @@ function ConditionDescription(props) {
         icon = <DescriptionIcon
             rarity={condIcon.rarity}
             name={condIcon.name}
-        />
+        />;
     }
 
     return (
@@ -445,19 +445,19 @@ class ConditionLoadStat extends React.Component {
 
 function dropwdownValue(item) {
     if (Array.isArray(item)) {
-        return item.map((i) => {return i.value}).join(';');
+        return item.map((i) => {return i.value;}).join(';');
     } else {
         return item.value;
     }
 }
 
 function DescriptionIcon(props) {
-    let className = `item-icon icon-40`
+    let className = `item-icon icon-40`;
 
     if (props.rarity) {
-        className += ` border-rarity-${props.rarity}`
+        className += ` border-rarity-${props.rarity}`;
     } else {
-        className += ' no-border'
+        className += ' no-border';
     }
 
     return (

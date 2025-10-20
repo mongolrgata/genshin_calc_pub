@@ -44,8 +44,8 @@ export class Storage {
             for (const item of artifacts) {
                 let art = Artifact.deserialize( Serializer.unpack(item.data) );
                 if (art) {
-                    art.setLocked(item.locked)
-                    art.setGroups(item.group)
+                    art.setLocked(item.locked);
+                    art.setGroups(item.group);
                     toAdd.push(art);
                 }
             }

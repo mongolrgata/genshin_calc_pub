@@ -53,7 +53,7 @@ export class CalcObject {
     }
 
     getStats() {
-        var result = new Stats();
+        const result = new Stats();
 
         if (this.object && this.object.statTable) {
             for (let i = 0; i < this.object.statTable.length; ++i) {
@@ -67,7 +67,7 @@ export class CalcObject {
         return {
             stats: result,
             settings: {},
-        }
+        };
     }
 
     setSettings(data) {
@@ -182,7 +182,7 @@ export class CalcObject {
     }
 
     serializeCustomBuffs(settings) {
-        return []
+        return [];
     }
 
     deserializeChars(input) {

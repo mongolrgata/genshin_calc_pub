@@ -28,6 +28,6 @@ export class ConditionDropdownElement extends ConditionDropdown {
 
         return {
             [this.getName()]: values.join(';'),
-        }
+        };
     }
 }

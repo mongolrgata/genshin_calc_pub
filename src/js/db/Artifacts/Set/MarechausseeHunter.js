@@ -43,4 +43,4 @@ export const MarechausseeHunter = new ArtifactSet({
             ],
         },
     ],
-})
+});

@@ -12,7 +12,7 @@
     flex-wrap: nowrap;
     flex-direction: row;
     margin-bottom: 15px;
-    padding: 0px;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -20,7 +20,7 @@
     height: 26px;
     background-color: #353D4F;
     border: solid 2px #626770;
-    border-right: 0px none;
+    border-right: 0 none;
     border-radius: 13px 0 0 13px;
     padding-left: 13px;
     padding-right: 10px;
@@ -41,7 +41,7 @@
     background-color: #353D4F;
     border: solid 2px #626770;
     color: #FFF7E9;
-    border-left: 0px none;
+    border-left: 0 none;
     border-radius: 0 13px 13px 0;
     display: block;
     box-sizing: border-box;

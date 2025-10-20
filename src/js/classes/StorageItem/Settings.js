@@ -32,7 +32,7 @@ export class StorageItemSettings extends StorageItem {
     set(name, value) {
         let validItem = this.validateItem(name, value);
         if (validItem) {
-            this.items = Object.assign(this.items, validItem)
+            this.items = Object.assign(this.items, validItem);
             this.save();
         }
     }
@@ -51,7 +51,7 @@ export class StorageItemSettings extends StorageItem {
                 for (let name of Object.keys(json)) {
                     let validItem = this.validateItem(name, json[name]);
                     if (validItem) {
-                        Object.assign(this.items, validItem)
+                        Object.assign(this.items, validItem);
                     }
                 }
             }

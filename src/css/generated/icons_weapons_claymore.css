@@ -49,42 +49,47 @@
 	background-image: url("../../images/sprites/weapon_claymore_6ce26dac2d702eaee7a6bf54860f542b.png");
 	background-size: 300px 660px;
 }
-.sprite.weapon-icon-claymore-unknown {background-position: 0% 0%}
-.sprite.weapon-icon-claymore-ferrous-shadow {background-position: 25% 0%}
-.sprite.weapon-icon-claymore-bloodtainted-greatsword {background-position: 50% 0%}
-.sprite.weapon-icon-claymore-white-iron-greatsword {background-position: 75% 0%}
-.sprite.weapon-icon-claymore-debate-club {background-position: 100% 0%}
-.sprite.weapon-icon-claymore-skyrider-greatsword {background-position: 0% 10%}
+.sprite.weapon-icon-claymore-unknown {background-position: 0 0
+}
+.sprite.weapon-icon-claymore-ferrous-shadow {background-position: 25% 0
+}
+.sprite.weapon-icon-claymore-bloodtainted-greatsword {background-position: 50% 0
+}
+.sprite.weapon-icon-claymore-white-iron-greatsword {background-position: 75% 0
+}
+.sprite.weapon-icon-claymore-debate-club {background-position: 100% 0
+}
+.sprite.weapon-icon-claymore-skyrider-greatsword {background-position: 0 10%}
 .sprite.weapon-icon-claymore-favonius-greatsword {background-position: 25% 10%}
 .sprite.weapon-icon-claymore-the-bell {background-position: 50% 10%}
 .sprite.weapon-icon-claymore-sacrificial-greatsword {background-position: 75% 10%}
 .sprite.weapon-icon-claymore-royal-greatsword {background-position: 100% 10%}
-.sprite.weapon-icon-claymore-rainslasher {background-position: 0% 20%}
+.sprite.weapon-icon-claymore-rainslasher {background-position: 0 20%}
 .sprite.weapon-icon-claymore-prototype-archaic {background-position: 25% 20%}
 .sprite.weapon-icon-claymore-whiteblind {background-position: 50% 20%}
 .sprite.weapon-icon-claymore-blackcliff-slasher {background-position: 75% 20%}
 .sprite.weapon-icon-claymore-serpent-spine {background-position: 100% 20%}
-.sprite.weapon-icon-claymore-lithic-blade {background-position: 0% 30%}
+.sprite.weapon-icon-claymore-lithic-blade {background-position: 0 30%}
 .sprite.weapon-icon-claymore-snow-tombed-starsilver {background-position: 25% 30%}
 .sprite.weapon-icon-claymore-luxurious-sea-lord {background-position: 50% 30%}
 .sprite.weapon-icon-claymore-katsuragikiri-nagamasa {background-position: 75% 30%}
 .sprite.weapon-icon-claymore-makhaira-aquamarine {background-position: 100% 30%}
-.sprite.weapon-icon-claymore-akuoumaru {background-position: 0% 40%}
+.sprite.weapon-icon-claymore-akuoumaru {background-position: 0 40%}
 .sprite.weapon-icon-claymore-forest-regalia {background-position: 25% 40%}
 .sprite.weapon-icon-claymore-mailed-flower {background-position: 50% 40%}
 .sprite.weapon-icon-claymore-talking-stick {background-position: 75% 40%}
 .sprite.weapon-icon-claymore-tidal-shadow {background-position: 100% 40%}
-.sprite.weapon-icon-claymore-ultimate-overlords-mega-magic-sword {background-position: 0% 50%}
+.sprite.weapon-icon-claymore-ultimate-overlords-mega-magic-sword {background-position: 0 50%}
 .sprite.weapon-icon-claymore-portable-power-saw {background-position: 25% 50%}
 .sprite.weapon-icon-claymore-fruitful-hook {background-position: 50% 50%}
 .sprite.weapon-icon-claymore-earth-shaker {background-position: 75% 50%}
 .sprite.weapon-icon-claymore-skyward-pride {background-position: 100% 50%}
-.sprite.weapon-icon-claymore-wolfs-gravestone {background-position: 0% 60%}
+.sprite.weapon-icon-claymore-wolfs-gravestone {background-position: 0 60%}
 .sprite.weapon-icon-claymore-song-of-broken-pines {background-position: 25% 60%}
 .sprite.weapon-icon-claymore-the-unforged {background-position: 50% 60%}
 .sprite.weapon-icon-claymore-redhorn-stonethresher {background-position: 75% 60%}
 .sprite.weapon-icon-claymore-beacon-of-the-reed-sea {background-position: 100% 60%}
-.sprite.weapon-icon-claymore-verdict {background-position: 0% 70%}
+.sprite.weapon-icon-claymore-verdict {background-position: 0 70%}
 .sprite.weapon-icon-claymore-fang-of-the-mountain-king {background-position: 25% 70%}
 .sprite.weapon-icon-claymore-a-thousand-blazing-suns {background-position: 50% 70%}
 .sprite.weapon-icon-claymore-flame-forged-insight {background-position: 75% 70%}

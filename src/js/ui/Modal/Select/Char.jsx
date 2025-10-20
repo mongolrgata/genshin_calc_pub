@@ -138,11 +138,11 @@ export class CharSelectComponent extends ModalSelectBase {
                 continue;
             }
 
-            let element = data.getName()
+            let element = data.getName();
             let classes = ['filter', 'element', 'element-'+ element];
 
             if (this.state.element == element) {
-                classes.push('active')
+                classes.push('active');
             }
 
             buttons.push(
@@ -154,14 +154,14 @@ export class CharSelectComponent extends ModalSelectBase {
             );
         }
 
-        buttons.push(<div key="spacer" className="spacer" />)
+        buttons.push(<div key="spacer" className="spacer" />);
 
         for (let data of DB.Objects.WeaponTypes.getList()) {
-            let weaponType = data.getName()
+            let weaponType = data.getName();
             let classes = ['filter', 'weapon', 'weapon-type-'+ weaponType];
 
             if (this.state.weaponType == weaponType) {
-                classes.push('active')
+                classes.push('active');
             }
 
             buttons.push(

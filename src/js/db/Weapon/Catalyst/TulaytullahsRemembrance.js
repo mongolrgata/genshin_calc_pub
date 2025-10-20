@@ -33,7 +33,7 @@ export const TulaytullahsRemembrance = new DbObjectWeapon({
             dropdownClass: 'stack-percent',
             titleFunc: function(value, stats) {
                 if (value) {
-                    return Stats.format('dmg_normal', stats.get('dmg_normal'))
+                    return Stats.format('dmg_normal', stats.get('dmg_normal'));
                 }
             },
             stats: [

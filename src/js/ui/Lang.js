@@ -27,7 +27,7 @@ export class Lang {
         result = result.replace(/tab\{([\w\-]+):(.*?)\}/g, '<span class="text-name gi-tab-change" data-tab="$1">$2</span>');
 
         result = result.replace(/format\{(\w+)=(\w+)\|([\w\.\%\{\}]+)\}/g, function(all_str, stat, value, str) {
-            let statValue = stats.get(stat)
+            let statValue = stats.get(stat);
             if (statValue == value) {
                 return '<span class="text-value">'+ str +'</span>';
             }
@@ -69,7 +69,7 @@ export class Lang {
         let str = this.current[parts[0]][parts[1]];
 
         if (!str && localStorage.warn_lang) {
-            console.log(id)
+            console.log(id);
         }
         return str || id;
     }

@@ -31,11 +31,11 @@ export class WeaponTab extends Tab {
     createContent() {
         return (
             <WeaponView
-                ref={element => { this.component = element }}
+                ref={element => { this.component = element; }}
                 app={this.app}
                 title={this.title}
             />
-        )
+        );
     }
 }
 
@@ -52,7 +52,7 @@ export class WeaponView extends React.Component {
 
     handleWeaponChange() {
         let char = this.props.app.getChar().object;
-        let weapon = this.getEquippedWeapon()
+        let weapon = this.getEquippedWeapon();
 
         UI.WeaponSelectReact.show({
             changeWeaponType: false,

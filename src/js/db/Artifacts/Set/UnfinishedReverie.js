@@ -43,4 +43,4 @@ export const UnfinishedReverie = new ArtifactSet({
             ],
         },
     ],
-})
+});

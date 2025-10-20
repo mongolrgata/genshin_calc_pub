@@ -10,7 +10,7 @@ let lang = new Lang();
 
 export function WeaponSuggestResult(props) {
     let items = [];
-    let counter = 0
+    let counter = 0;
 
     for (let item of props.items) {
         items.push(
@@ -73,7 +73,7 @@ export class WeaponSuggestItem extends React.Component {
                                 ascension: this.props.ascension,
                                 refine: this.props.refine,
                                 artifacts: this.props.artifacts,
-                            })}}
+                            });}}
                         />
                     </div>
                     {/* <div className="button">

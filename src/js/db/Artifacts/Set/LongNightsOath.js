@@ -42,4 +42,4 @@ export const LongNightsOath = new ArtifactSet({
             ],
         },
     ],
-})
+});

@@ -79,7 +79,7 @@ export class StatDistributorKQM extends StatDistributor {
 
         let byNumSlots = {};
         for (let stat of Object.keys(this.rolls)) {
-            let avail = Object.values(this.mainStats).reduce((s, i) => {return s + (stat == i ? 0 : 1)}, 0);
+            let avail = Object.values(this.mainStats).reduce((s, i) => {return s + (stat == i ? 0 : 1);}, 0);
             if (!byNumSlots[avail]) byNumSlots[avail] = [];
             byNumSlots[avail].push(stat);
         }
@@ -89,7 +89,7 @@ export class StatDistributorKQM extends StatDistributor {
             byCount[stat] = this.rolls[stat].length;
         }
 
-        for (let stat of Object.keys(byCount).sort((a, b) => {return byCount[b] - byCount[a]})) {
+        for (let stat of Object.keys(byCount).sort((a, b) => {return byCount[b] - byCount[a];})) {
             while (this.rolls[stat] && this.rolls[stat].length > 0) {
                 let rolls = this.rolls[stat].splice(0, 1);
                 this.putIntoLowestCount(stat, rolls);

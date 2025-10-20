@@ -25,14 +25,14 @@ export function ArtifactsGeneratorResults(props) {
                 onApply={(data) => props.onApply(data)}
                 onCompare={(data) => props.onCompare(data)}
             />
-        )
+        );
     }
 
     return (
         <div className="artifact-generator-results">
             {items}
         </div>
-    )
+    );
 }
 
 
@@ -52,7 +52,7 @@ class ResultItem extends React.Component {
     render() {
         let rollItems = [];
 
-        let stats = Object.keys(this.props.item.rollsPerStat).sort((a, b) => {return this.props.item.rollsPerStat[b] - this.props.item.rollsPerStat[a]});
+        let stats = Object.keys(this.props.item.rollsPerStat).sort((a, b) => {return this.props.item.rollsPerStat[b] - this.props.item.rollsPerStat[a];});
         for (let stat of stats) {
             rollItems.push(
                 <RollItem
@@ -72,7 +72,7 @@ class ResultItem extends React.Component {
                     <div className="button">
                         <ResultTableButton
                             icon="icon-load"
-                            onClick={() => {this.props.onApply(this.props.item.artifacts)}}
+                            onClick={() => {this.props.onApply(this.props.item.artifacts);}}
                         />
                     </div>
                     <div className="button">

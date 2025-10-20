@@ -27,7 +27,7 @@ export class DbObjectListSerialize extends DbObjectList {
     }
 
     getIds() {
-        return Object.keys(this.ids).map((i) => {return parseInt(i)});
+        return Object.keys(this.ids).map((i) => {return parseInt(i);});
     }
 
     getKeyId(id) {

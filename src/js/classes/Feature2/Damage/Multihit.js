@@ -29,10 +29,10 @@ export class FeatureDamageMultihit extends FeatureDamage {
 
             let items = [
                 new CBaseDamage(
-                    multipliers.map((i) => {return i.getTree(data)})
+                    multipliers.map((i) => {return i.getTree(data);})
                 ),
                 new CMultiplierBonus(
-                    this.getStatsDmgBonus(data).map((stat) => { return makeStatItem(stat, data.stats) })
+                    this.getStatsDmgBonus(data).map((stat) => { return makeStatItem(stat, data.stats); })
                 ),
                 new CMultiplierResistance([this.getResistanceMultiplier(data)]),
                 new CMultiplierDefence([this.getDefenceLevelMultiplier(data)], {

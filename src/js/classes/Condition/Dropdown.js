@@ -50,7 +50,7 @@ export class ConditionDropdown extends Condition {
     getSelectedItems(settings) {
         let values = this.getSelectedValues(settings);
         let items = [];
-        let limit = this.getLimit(settings)
+        let limit = this.getLimit(settings);
 
         for (const item of this.params.values) {
             if (values.includes(''+ item.value)) {

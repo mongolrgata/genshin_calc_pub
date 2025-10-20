@@ -20,7 +20,7 @@ export class ResultTableFeatures extends ResultTable {
             for (const block in blocks) {
                 let data = blocks[block];
                 if (data.hidden) {
-                    continue
+                    continue;
                 }
                 let str = 'feature_'+ section +'.'+ block;
                 let format = data.format || '';

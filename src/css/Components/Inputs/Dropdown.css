@@ -39,7 +39,7 @@
 
 .dropdown-current.opened::before {
     border-bottom: 6px solid #ece5d8;
-    border-top: 0px solid;
+    border-top: 0 solid;
 }
 
 .dropdown-current.opened + .dropdown-options {
@@ -48,7 +48,7 @@
 
 .dropdown-option {
     height: 26px;
-    margin: 0px 3px;
+    margin: 0 3px;
     line-height: 27px;
     position: relative;
     cursor: pointer;
@@ -88,7 +88,7 @@
     z-index: 100;
     display: none;
     user-select: none;
-    padding: 5px 0px;
+    padding: 5px 0;
     overflow-x: none;
     overflow-y: auto;
     color: #ece5d8;
@@ -108,8 +108,8 @@
 
 .dropdown-caption {
     height: 26px;
-    margin: 0px 3px;
-    padding: 0px 10px;
+    margin: 0 3px;
+    padding: 0 10px;
     line-height: 27px;
     color: #D3BC8E;
     text-overflow: ellipsis;

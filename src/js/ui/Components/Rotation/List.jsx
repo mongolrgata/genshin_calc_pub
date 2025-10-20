@@ -26,12 +26,12 @@ export class RotationList extends React.Component {
 
     handleInnerSort(base, items, key) {
         key ||= 'items';
-        base[key] = items.map((i) => {return i.item});
+        base[key] = items.map((i) => {return i.item;});
         this.checkForTriggerUpdate();
     }
 
     checkForTriggerUpdate() {
-        let mapped = this.buffer.map((i) => {return i.item});
+        let mapped = this.buffer.map((i) => {return i.item;});
         let number = this.getNumberTotal(mapped);
 
         // if (number < 0) {
@@ -64,7 +64,7 @@ export class RotationList extends React.Component {
 
             for (let key of ['items', 'conditions', 'features']) {
                 if (item.hasOwnProperty(key)) {
-                    cnt += this.getNumberTotal(item[key])
+                    cnt += this.getNumberTotal(item[key]);
                 }
             }
         }
@@ -296,7 +296,7 @@ function RotationLineValues(props) {
             <div className="flex-spacer"></div>
             {items}
         </div>
-    )
+    );
 }
 
 function RotationListFeatureInvalid(props) {
@@ -365,7 +365,7 @@ function RotationListCondition(props) {
             } else if (i.title) {
                 value = i.title;
             }
-            values.push(value)
+            values.push(value);
         }
 
         if (values.length) {
@@ -433,7 +433,7 @@ function RotationRepeat(props) {
                     <ReactSortable
                         group="rotation"
                         list={props.list}
-                        setList={(v) => {props.onSort(props.item, v)}}
+                        setList={(v) => {props.onSort(props.item, v);}}
                         className="rotation-items-list inner"
                         handle=".rotation-block"
                         swapThreshold={0.5}
@@ -490,7 +490,7 @@ function RotationBuffUptime(props) {
                     <ReactSortable
                         group="rotation"
                         list={props.conditions}
-                        setList={(v) => {props.onSort(props.item, v, 'conditions')}}
+                        setList={(v) => {props.onSort(props.item, v, 'conditions');}}
                         className="rotation-items-list inner"
                         handle=".rotation-block"
                         swapThreshold={0.5}
@@ -511,7 +511,7 @@ function RotationBuffUptime(props) {
                     <ReactSortable
                         group="rotation"
                         list={props.features}
-                        setList={(v) => {props.onSort(props.item, v, 'features')}}
+                        setList={(v) => {props.onSort(props.item, v, 'features');}}
                         className="rotation-items-list inner"
                         handle=".handler"
                     >

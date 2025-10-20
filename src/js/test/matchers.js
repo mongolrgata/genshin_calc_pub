@@ -19,7 +19,7 @@ export function toBeFeatureValue(received, expected)  {
     let mismatch = 'Values match';
 
     for (const key of ['normal', 'crit', 'average']) {
-        let value = Math.round(received[key])
+        let value = Math.round(received[key]);
         pass &&= value == expected[key];
 
         if (!pass) {

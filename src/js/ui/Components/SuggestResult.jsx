@@ -43,7 +43,7 @@ export function SuggestResult(props) {
                 savedHashes={props.savedHashes}
                 onLock={props.onLock}
             />
-        )
+        );
     }
 
     return (
@@ -149,7 +149,7 @@ function SuggestSetIcon(props) {
             <ArtifactSetIcon set={props.name} size={60}/>
             <div className="number">x{props.count}</div>
         </div>
-    )
+    );
 }
 
 function SuggesterFeatures(props) {
@@ -283,7 +283,7 @@ function formatFeatureDiff(current, max, opts) {
         result = <span className={'remark '+ diffClass}>{diff}</span>;
     } else {
         let percent = Stats.format('text_percent', current / max * 100, {decimal_digits: 1, no_decimal_zero: 1});
-        result = <span className="remark">{percent}</span>
+        result = <span className="remark">{percent}</span>;
     }
 
     return result;

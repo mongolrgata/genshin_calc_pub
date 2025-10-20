@@ -136,6 +136,6 @@ export class RotationFeatureModal extends React.PureComponent {
                     />
                 </ControlsBar>
             </DialogContainer>
-        )
+        );
     }
 }

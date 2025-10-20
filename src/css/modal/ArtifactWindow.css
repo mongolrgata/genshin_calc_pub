@@ -247,8 +247,6 @@
     max-height: 26px;
     flex-shrink: 0;
     background-color: #ECE5D8;
-    background-size: 80%;
-    background-position: center;
     border-radius: 50%;
     background-repeat: no-repeat;
     margin: 3px;
@@ -300,7 +298,7 @@
     margin-right: 5px;
     box-sizing: border-box;
     border-radius: 5px;
-    padding: 0px 3px;
+    padding: 0 3px;
 
 }
 

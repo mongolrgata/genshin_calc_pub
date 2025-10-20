@@ -26,13 +26,13 @@ export class Tab {
         this.initialized = 1;
 
         let root = document.querySelector('.gi-'+ this.id +'-container');
-        let container = ReactDOM.createRoot(root)
+        let container = ReactDOM.createRoot(root);
         let component = this.createContent();
         container.render(component);
         setTimeout(() => this.refresh(), 1);
     }
 
     bindEvents() {
-        this.root.on('tab_active', () => {this.refresh()});
+        this.root.on('tab_active', () => {this.refresh();});
     }
 }

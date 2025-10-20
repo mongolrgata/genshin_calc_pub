@@ -25,4 +25,4 @@ export const TravelingDoctor = new ArtifactSet({
             ],
         },
     ],
-})
+});

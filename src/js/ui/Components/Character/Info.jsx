@@ -39,7 +39,7 @@ export class CharInfo extends React.Component {
         let artifactList = [];
 
         if (weapon) {
-            items.push(<WeaponIcon key='weapon' weapon={weapon} size="40" addClass="char-info-item-icon" />)
+            items.push(<WeaponIcon key='weapon' weapon={weapon} size="40" addClass="char-info-item-icon" />);
         }
 
         for (let slot of Object.keys(artifacts)) {
@@ -191,7 +191,7 @@ function BuildDetails(props) {
     }
 
     if (elementalBonues.length > 0) {
-        elementalBonues = elementalBonues.sort((a, b) => {return b.value - a.value});
+        elementalBonues = elementalBonues.sort((a, b) => {return b.value - a.value;});
 
         let stat = elementalBonues[0].name;
         items.push(

@@ -22,4 +22,4 @@ export const WeaponTypes = new DbObjectList({
         name: 'catalyst',
         icon: 'weapon-type-catalyst',
     }),
-})
+});

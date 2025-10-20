@@ -74,9 +74,9 @@ export class FeatureHeal extends Feature2 {
         let multipliers = this.getMultipliers(data);
 
         let base = [
-            new CBaseDamage(multipliers.map((i) => {return i.getTree(data)})),
+            new CBaseDamage(multipliers.map((i) => {return i.getTree(data);})),
             new CMultiplierBonus(
-                this.getStatsHealBonus(data).map((stat) => { return makeStatItem(stat, data.stats) })
+                this.getStatsHealBonus(data).map((stat) => { return makeStatItem(stat, data.stats); })
             ),
         ];
 

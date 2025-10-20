@@ -66,7 +66,7 @@ export class ConditionPartyWeapon extends Condition {
                 return true;
             }
         }
-        return false
+        return false;
     }
 
     getLevel(settings, number) {

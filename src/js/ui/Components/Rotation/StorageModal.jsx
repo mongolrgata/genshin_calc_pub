@@ -80,7 +80,7 @@ export class RotationStorageModal extends React.Component {
                 if (char) {
                     charId = char.getId();
                 }
-                this.props.onEditIcon(hash, charId)
+                this.props.onEditIcon(hash, charId);
             },
         });
     }
@@ -139,7 +139,7 @@ export class RotationStorageModal extends React.Component {
                     </FullHeightScrollable>
                 </FullHeight>
             </DialogContainer>
-        )
+        );
     }
 }
 
@@ -158,7 +158,7 @@ export class RotationList extends React.PureComponent {
 
             let charTitle = '';
             if (char) {
-                charTitle = lang.get(char.getName())
+                charTitle = lang.get(char.getName());
             }
 
             let title = item.title || charTitle;

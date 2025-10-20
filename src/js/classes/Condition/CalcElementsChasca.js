@@ -19,7 +19,7 @@ export class ConditionCalcElementsChasca extends Condition {
         let stats = new Stats();
 
         if (stacks > 0) {
-            stats.add(this.params.bonuses.getName(), this.params.bonuses.getValue(stacks))
+            stats.add(this.params.bonuses.getName(), this.params.bonuses.getValue(stacks));
         }
 
         return {

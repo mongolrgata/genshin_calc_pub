@@ -13,7 +13,7 @@ export class FeatureDamageCharged extends FeatureDamage {
      * @returns {Array.<string>}
      */
     getStatsDmgBonus(data) {
-        let result = super.getStatsDmgBonus(data)
+        let result = super.getStatsDmgBonus(data);
         result.push('dmg_charged_enemy');
         return result;
     }

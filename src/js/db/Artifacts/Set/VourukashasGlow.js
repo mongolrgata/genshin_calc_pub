@@ -50,4 +50,4 @@ export const VourukashasGlow = new ArtifactSet({
             ],
         },
     ],
-})
+});

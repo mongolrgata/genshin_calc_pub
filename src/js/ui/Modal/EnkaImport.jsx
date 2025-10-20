@@ -82,7 +82,7 @@ export class EnkaImportComponent extends React.Component {
                 closeCallback={() => this.handleClose()}
             >
                 <EnkaApp
-                    ref={obj => { this.component = obj }}
+                    ref={obj => { this.component = obj; }}
                     addToCompare={(set) => this.addToCompare(set)}
                     applyCalcSet={(set) => this.applyCalcSet(set)}
                     saveCalcSet={(set) => this.saveCalcSet(set)}

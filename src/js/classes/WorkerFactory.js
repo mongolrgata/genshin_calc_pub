@@ -73,7 +73,7 @@ export class WorkerFactory {
 
     acceptProgress(index, data) {
         if (data.inc) {
-            this.workers[index].progress.completed += data.inc
+            this.workers[index].progress.completed += data.inc;
         } else if (data.completed) {
             this.workers[index].progress = {
                 completed: data.completed,
@@ -137,7 +137,7 @@ export class WorkerFactory {
                 worker = this.createWorker();
             }
 
-            let index = this.workers.length
+            let index = this.workers.length;
             this.workers.push({
                 isCompleted: false,
                 isError: false,
@@ -147,8 +147,8 @@ export class WorkerFactory {
                 payload: payload,
             });
 
-            worker.onmessage = (data) => {this.onMessage(index, data.data)};
-            worker.onerror   = (data) => {this.onError(index, data.data)};
+            worker.onmessage = (data) => {this.onMessage(index, data.data);};
+            worker.onerror   = (data) => {this.onError(index, data.data);};
         }
 
         if (this.startCallback) {

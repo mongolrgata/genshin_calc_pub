@@ -17,6 +17,6 @@ export class DbObjectRotation {
     }
 
     listNames() {
-        return Object.keys(this.byName)
+        return Object.keys(this.byName);
     }
 }

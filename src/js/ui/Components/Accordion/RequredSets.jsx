@@ -17,7 +17,7 @@ export class AccordionRequredSets extends React.Component {
         this.strings = {
             reset: this.lang.get('artifacts_ui.pick_reset'),
             no_set: this.lang.get('artifacts_ui.set_not_selected')
-        }
+        };
     }
 
     handleSetSelect(slot) {
@@ -58,7 +58,7 @@ export class AccordionRequredSets extends React.Component {
 
         this.allSettings = Condition.allConditionsOn(conditions);
 
-        return conditions.filter((i) => {return i.isSerializable()});
+        return conditions.filter((i) => {return i.isSerializable();});
     }
 
     render() {
@@ -93,14 +93,14 @@ export class AccordionRequredSets extends React.Component {
         return (
             <GroupBox title={this.props.title}>
                 <div className="accordion-artifact-reqsets">
-                    <ArtifactSetIcon set={this.props.set1} size="60" onClick={() => {this.handleSetSelect('set1')}} />
+                    <ArtifactSetIcon set={this.props.set1} size="60" onClick={() => {this.handleSetSelect('set1');}} />
                     <div>
                         <div className="title">{set1label}</div>
                         <div className="pieces">{set1pieces}</div>
                     </div>
                 </div>
                 <div className="accordion-artifact-reqsets">
-                    <ArtifactSetIcon set={this.props.set2} size="60" onClick={() => {this.handleSetSelect('set2')}} />
+                    <ArtifactSetIcon set={this.props.set2} size="60" onClick={() => {this.handleSetSelect('set2');}} />
                     <div>
                         <div className="title">{set2label}</div>
                         <div className="pieces">{set2pieces}</div>

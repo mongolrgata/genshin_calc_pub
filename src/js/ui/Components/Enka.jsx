@@ -131,7 +131,7 @@ export class EnkaApp extends React.Component {
                         <TextInput
                             value={this.state.uid}
                             addClass="enka-uid resizable"
-                            onChange={(value) => {this.handleChangeUid(value)}}
+                            onChange={(value) => {this.handleChangeUid(value);}}
                             onEnter={() => this.handleLoadUid()}
                         />
                         <TitledButton

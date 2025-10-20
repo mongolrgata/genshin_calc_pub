@@ -4,7 +4,7 @@ import { PostEffectStatsHP } from "./HP";
 
 export class PostEffectStatsBondOfLife extends PostEffectStatsHP {
     getBolValue(data) {
-        return (data.settings[this.params.bolSettingName] || 0) / 100
+        return (data.settings[this.params.bolSettingName] || 0) / 100;
     }
 
     getBaseValueTree(data, opts) {

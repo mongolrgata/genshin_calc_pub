@@ -21,7 +21,7 @@ export class ConditionMillenialMovement extends Condition {
             return result;
         }
 
-        let keys = Object.keys(maxLevels)
+        let keys = Object.keys(maxLevels);
 
         for (let i = 0; i < keys.length; ++i) {
             let key   = keys[i];

@@ -53,7 +53,7 @@ export class DbObjectEnemy {
     }
 
     getFeatures() {
-        return []
+        return [];
     }
 
     getMultipliers() {

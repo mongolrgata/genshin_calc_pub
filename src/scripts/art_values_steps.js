@@ -58,6 +58,6 @@ function getSteps(values, upgrades, type) {
         }
     }
 
-    return Object.keys(result).sort(function(a, b) {return a - b});
+    return Object.keys(result).sort(function(a, b) {return a - b;});
 }
 

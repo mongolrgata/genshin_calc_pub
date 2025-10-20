@@ -227,7 +227,7 @@ export class CalcObjectBuffs extends CalcObject {
         let partySize = 1;
 
         for (let i = 1; i <= 3; ++i) {
-            let charId = this.partyCharIds[i-1]
+            let charId = this.partyCharIds[i-1];
             const char = DB.Chars.getById(charId);
 
             if (char) {

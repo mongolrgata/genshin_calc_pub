@@ -10,10 +10,14 @@
 	background-image: url("../../images/sprites/enemy_legend_aa7f967012869111f437d9a74e987abe.png");
 	background-size: 300px 300px;
 }
-.sprite.type-legend.enemy-icon-liam {background-position: 0% 0%}
-.sprite.type-legend.enemy-icon-rockyavildsen {background-position: 25% 0%}
-.sprite.type-legend.enemy-icon-tortoise-electric {background-position: 50% 0%}
-.sprite.type-legend.enemy-icon-he-never-dies-icon {background-position: 75% 0%}
+.sprite.type-legend.enemy-icon-liam {background-position: 0 0
+}
+.sprite.type-legend.enemy-icon-rockyavildsen {background-position: 25% 0
+}
+.sprite.type-legend.enemy-icon-tortoise-electric {background-position: 50% 0
+}
+.sprite.type-legend.enemy-icon-he-never-dies-icon {background-position: 75% 0
+}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),

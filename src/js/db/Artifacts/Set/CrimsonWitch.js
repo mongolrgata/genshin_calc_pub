@@ -54,4 +54,4 @@ export const CrimsonWitch = new ArtifactSet({
             ],
         },
     ],
-})
+});

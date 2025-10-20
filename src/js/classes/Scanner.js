@@ -32,7 +32,7 @@ export class Scanner {
         if (data) {
             this.result.numStats = data.numStats;
 
-            this.recognize(data.bounds)
+            this.recognize(data.bounds);
         } else {
             if (this.resultCallback) {
                 this.resultCallback();
@@ -62,7 +62,7 @@ export class Scanner {
         for (const key of Object.keys(bounds)) {
             let coords = bounds[key].coords;
 
-            var p = this.ctx.getImageData(coords[0], coords[1], coords[2] - coords[0]+1, coords[3] - coords[1]+1);
+            let p = this.ctx.getImageData(coords[0], coords[1], coords[2] - coords[0]+1, coords[3] - coords[1]+1);
             let c = this.imageDataToBlob(p, bounds[key].filterFunc);
 
             if (this.debug == 2) {
@@ -225,8 +225,8 @@ export class Scanner {
 
             for (let x = 0; x < width; ++x) {
                 for (let y = 0; y < 3; ++y) {
-                    var p1 = this.ctx.getImageData(bound[0] + x, bound[1] + top + y,    1, 1).data;
-                    var p2 = this.ctx.getImageData(bound[0] + x, bound[1] + bottom - y, 1, 1).data;
+                    let p1 = this.ctx.getImageData(bound[0] + x, bound[1] + top + y,    1, 1).data;
+                    let p2 = this.ctx.getImageData(bound[0] + x, bound[1] + bottom - y, 1, 1).data;
 
                     if (isStatEmptyPixel(p1[0], p1[1], p1[2]) && isStatEmptyPixel(p2[0], p2[1], p2[2])) {
                     } else {
@@ -237,8 +237,8 @@ export class Scanner {
 
             for (let x = 0; x < 3; ++x) {
                 for (let y = 0; y < height; ++y) {
-                    var p1 = this.ctx.getImageData(bound[0] + x,         bound[1] + top + y, 1, 1).data;
-                    var p2 = this.ctx.getImageData(bound[0] + width - x, bound[1] + top + y, 1, 1).data;
+                    let p1 = this.ctx.getImageData(bound[0] + x,         bound[1] + top + y, 1, 1).data;
+                    let p2 = this.ctx.getImageData(bound[0] + width - x, bound[1] + top + y, 1, 1).data;
 
                     if (isStatEmptyPixel(p1[0], p1[1], p1[2]) && isStatEmptyPixel(p2[0], p2[1], p2[2])) {
                     } else {
@@ -300,9 +300,9 @@ export class Scanner {
                 for (let x = 0; x < w; ++x) {
                     let colOffset = lineOffset + x*4;
 
-                    var r = imageData.data[colOffset];
-                    var g = imageData.data[colOffset+1];
-                    var b = imageData.data[colOffset+2];
+                    let r = imageData.data[colOffset];
+                    let g = imageData.data[colOffset+1];
+                    let b = imageData.data[colOffset+2];
 
                     if (colorFunc(r, g, b)) {
                         imageData.data[colOffset] = imageData.data[colOffset+1] = imageData.data[colOffset+2] = 255;
@@ -320,7 +320,7 @@ export class Scanner {
         let ctx = canvas.getContext("2d");
         ctx.putImageData(imageData, 0, 0);
 
-        var image = new Image();
+        const image = new Image();
         image.src = canvas.toDataURL();
         return image;
     }

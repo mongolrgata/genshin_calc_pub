@@ -32,22 +32,22 @@ export class Sync extends React.Component {
 
     setStatus(status) {
         waitForCondition(
-            () => {return this.block},
-            () => {this.block.setState({status: status})},
+            () => {return this.block;},
+            () => {this.block.setState({status: status});},
         );
     }
 
     enable() {
         waitForCondition(
-            () => {return this.block},
-            () => {this.block.setState({isVisible: true})},
+            () => {return this.block;},
+            () => {this.block.setState({isVisible: true});},
         );
     }
 
     disable() {
         waitForCondition(
-            () => {return this.block},
-            () => {this.block.setState({isVisible: false})},
+            () => {return this.block;},
+            () => {this.block.setState({isVisible: false});},
         );
     }
 }
@@ -63,7 +63,7 @@ class SyncComponent extends React.Component {
     }
 
     render() {
-        if (!this.state.isVisible) { return "" }
+        if (!this.state.isVisible) { return ""; }
 
         return (
             <>

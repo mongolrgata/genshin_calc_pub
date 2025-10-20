@@ -49,12 +49,12 @@ export class Dropdown extends React.Component {
     selectItem(item) {
         if (this.props.isMultiple) {
             let alreadySelected = false;
-            let selected = []
+            let selected = [];
             for (let selectedItem of this.selectedItems) {
                 if (selectedItem.value == item.value) {
                     alreadySelected = true;
                 } else {
-                    selected.push(selectedItem)
+                    selected.push(selectedItem);
                 }
             }
 
@@ -102,7 +102,7 @@ export class Dropdown extends React.Component {
                 this.optionsRef.classList.remove('up');
             }
 
-            setTimeout(() => {this.shrinkOptionsHeight()}, 1)
+            setTimeout(() => {this.shrinkOptionsHeight();}, 1);
         }
     }
 
@@ -111,7 +111,7 @@ export class Dropdown extends React.Component {
     }
 
     render() {
-        var options = [];
+        const options = [];
         let selectedValues = Array.isArray(this.props.selected) ? this.props.selected : [this.props.selected];
         this.selectedItems = [];
 
@@ -119,7 +119,7 @@ export class Dropdown extends React.Component {
             selectedValues = [this.props.items[0].value];
         }
 
-        for (var item of this.props.items) {
+        for (let item of this.props.items) {
             let selected = inSelected(item.value, selectedValues);
             if (selected) {
                 this.selectedItems.push(item);
@@ -142,13 +142,13 @@ export class Dropdown extends React.Component {
 
             if (this.props.textIcon) {
                 ++iconIndex;
-                icons.push(<div key={'icon-'+ iconIndex} className={'dropdown-icon icon-'+ this.props.textIcon} />)
+                icons.push(<div key={'icon-'+ iconIndex} className={'dropdown-icon icon-'+ this.props.textIcon} />);
             }
 
             if (selectedItem.textIcons) {
                 for (let icon of selectedItem.textIcons) {
                     ++iconIndex;
-                    icons.push(<div key={'icon-'+ iconIndex} className={'dropdown-icon icon-'+ icon} />)
+                    icons.push(<div key={'icon-'+ iconIndex} className={'dropdown-icon icon-'+ icon} />);
                 }
             }
 
@@ -165,9 +165,9 @@ export class Dropdown extends React.Component {
                 <div className={'dropdown-current' + (this.state.opened ? ' opened' : '')} onClick={(e) => this.toggleOpened(e)}>
                     {currentItems}
                 </div>
-                <div ref={obj => {this.optionsRef = obj}} className="dropdown-options">
+                <div ref={obj => {this.optionsRef = obj;}} className="dropdown-options">
                     <SimpleBar
-                        ref={(obj) => {this.bar = obj}}
+                        ref={(obj) => {this.bar = obj;}}
                         style={{ maxHeight: this.state.maxHeight ? this.state.maxHeight : this.props.height || 350 }}
                         autoHide={true}
                     >
@@ -175,7 +175,7 @@ export class Dropdown extends React.Component {
                     </SimpleBar>
                 </div>
             </DropdownWrapper>
-        )
+        );
     }
 }
 
@@ -184,7 +184,7 @@ function DropdownWrapper(props) {
         <div className={'dropdown-wrapper '+ (props.addClass || '')}>
             {props.children}
         </div>
-    )
+    );
 }
 
 function DropdownOption(props) {
@@ -216,14 +216,14 @@ function DropdownOption(props) {
     if (props.item.textIcons) {
         for (let icon of props.item.textIcons) {
             ++iconIndex;
-            icons.push(<div key={'icon-'+ iconIndex} className={'dropdown-icon icon-'+ icon} />)
+            icons.push(<div key={'icon-'+ iconIndex} className={'dropdown-icon icon-'+ icon} />);
         }
     }
 
     if (props.item.optionIcons) {
         for (let icon of props.item.optionIcons) {
             ++iconIndex;
-            icons.push(<div key={'icon-'+ iconIndex} className={'dropdown-icon icon-'+ icon} />)
+            icons.push(<div key={'icon-'+ iconIndex} className={'dropdown-icon icon-'+ icon} />);
         }
     }
 

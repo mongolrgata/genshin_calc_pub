@@ -1,6 +1,6 @@
 .gi-accordion-block {
     width: 100%;
-    padding: 0px 5px;
+    padding: 0 5px;
     box-sizing: border-box;
     margin-bottom: 15px;
     margin-top: 5px;
@@ -19,9 +19,9 @@
 }
 .gi-accordion-block-content {
     background: rgba(30, 30, 30, 0.5);
-    border: 0px none;
+    border: 0 none;
     width: 100%;
-    padding: 0px;
+    padding: 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     /* overflow: hidden; */
@@ -29,12 +29,12 @@
 }
 
 .gi-accordion-block.active .gi-accordion-block-caption {
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .gi-accordion-block.active .gi-accordion-block-content {
     border: solid 2px #4B505E;
-    border-top: 0px none;
+    border-top: 0 none;
     padding: 5px;
 }

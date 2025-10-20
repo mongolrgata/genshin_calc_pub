@@ -7,8 +7,8 @@
 
 .progress-bar .bar {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     height: 24px;
     background-color: #2B2D33;
     border-radius: 5px;
@@ -34,7 +34,7 @@
 }
 
 .progress-bar .line .value {
-    flex: 1 1 0px;
+    flex: 1 1 0;
 }
 
 .progress-bar .line .value.left {

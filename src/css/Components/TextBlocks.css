@@ -2,7 +2,7 @@
     border: solid 2px #ff5d4e;
     width: 100%;
     padding: 5px;
-    margin: 5px 0px;
+    margin: 5px 0;
     box-sizing: border-box;
     border-radius: 20px;
     background: rgba(30, 30, 30, 0.5);
@@ -21,7 +21,7 @@
     border: solid 2px #626770;
     width: 100%;
     padding: 5px;
-    margin: 5px 0px;
+    margin: 5px 0;
     box-sizing: border-box;
     border-radius: 20px;
     background: rgba(30, 30, 30, 0.5);
@@ -33,5 +33,5 @@
 }
 
 .beta-warning > span {
-    margin: 0px 2px;
+    margin: 0 2px;
 }

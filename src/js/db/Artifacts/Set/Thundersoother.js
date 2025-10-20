@@ -46,4 +46,4 @@ export const Thundersoother = new ArtifactSet({
             ],
         },
     ],
-})
+});

@@ -31,7 +31,7 @@ export class BuildData {
      * @returns {Array.<PostEffect>}
      */
     getActivePostEffects() {
-        return this.postEffects.filter((i) => {return i.isActive(this.settings)});
+        return this.postEffects.filter((i) => {return i.isActive(this.settings);});
     }
 
     /**
@@ -76,7 +76,7 @@ export class BuildData {
         let byPriority = {};
 
         for (let item of items) {
-            let priority = item.getPriority()
+            let priority = item.getPriority();
             if (opts.maxPriority && priority > opts.maxPriority) {
                 continue;
             }
@@ -102,7 +102,7 @@ export class BuildData {
         for (let items of itemsAll) {
             let priorityItems = [];
             for (let post of items) {
-                priorityItems = priorityItems.concat(post.getTree(this))
+                priorityItems = priorityItems.concat(post.getTree(this));
             }
             result.push(priorityItems);
         }
@@ -115,7 +115,7 @@ export class BuildData {
     }
 
     clone() {
-        let data = new BuildData(this.settings, this.stats)
+        let data = new BuildData(this.settings, this.stats);
         data.postEffects = [].concat(this.postEffects);
         data.multipliers = [].concat(this.multipliers);
         return data;

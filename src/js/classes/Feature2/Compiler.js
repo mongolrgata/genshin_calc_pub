@@ -96,7 +96,7 @@ export class FeatureCompiler {
 
         for (let priority of Object.keys(byPriority).sort().reverse()) {
             for (let post of byPriority[priority]) {
-                let origStat = baseStatName(post.stat)
+                let origStat = baseStatName(post.stat);
                 if (!post.stat || (!usedStats.includes(post.stat) && !usedStats.includes(origStat))) continue;
 
                 filtered.push(post);
@@ -222,7 +222,7 @@ export class FeatureCompiler {
                         }
                     }
                 },
-                (item) => {return item.getType() == 'isolated'},
+                (item) => {return item.getType() == 'isolated';},
             );
 
             let duplicates = [];
@@ -259,7 +259,7 @@ export class FeatureCompiler {
                 if (sig) {
                     if (nonChild.includes(sig)) {
                         if (!replaced[sig]) {
-                            let varItem = new CVar([item])
+                            let varItem = new CVar([item]);
                             replaced[sig] = varItem;
                             variables[varItem.name] = varItem;
                         }
@@ -285,11 +285,11 @@ function insertVariables(items, variables) {
             let usedVars = {};
             item.walk((item) => {
                 if (item.isVariableGet() && !item.isVariableSet()) {
-                    usedVars[item.name] = 1
+                    usedVars[item.name] = 1;
                 }
             });
 
-            for (var name of Object.keys(usedVars)) {
+            for (let name of Object.keys(usedVars)) {
                 if (variables[name]) {
                     newItems.push(variables[name]);
                     delete variables[name];
@@ -330,7 +330,7 @@ export function getAssignedStats() {
 function postPyPriority(postItems) {
     let byPriority = {};
     for (let item of postItems) {
-        let priority = item.priority
+        let priority = item.priority;
 
         if (!byPriority[priority]) {
             byPriority[priority] = [];

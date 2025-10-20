@@ -1,6 +1,6 @@
 export class LocalStorage {
     constructor() {
-        this.data = {}
+        this.data = {};
     }
 
     getItem(key) {

@@ -25,9 +25,9 @@ export class RollsInfo extends React.Component {
         let usefulSubstats = feature.getUsedStats(buildData);
 
         if (!usefulSubstats.includes('recharge')) {
-            usefulSubstats.push('recharge')
+            usefulSubstats.push('recharge');
         }
-        usefulSubstats = usefulSubstats.filter((v) => {return v == 'atk' || v == 'def' || v == 'hp' ? false : true});
+        usefulSubstats = usefulSubstats.filter((v) => {return v == 'atk' || v == 'def' || v == 'hp' ? false : true;});
 
         let rolls = {};
         let rollsSum = {};
@@ -51,7 +51,7 @@ export class RollsInfo extends React.Component {
                 }
 
                 let data = substatCheck(item.stat, art.getRarity(), item.value);
-                let statData = DB.Artifacts.Substats.get(item.stat)
+                let statData = DB.Artifacts.Substats.get(item.stat);
 
                 if (data && data.steps) {
                     rolls[item.stat] += data.steps.length;
@@ -78,7 +78,7 @@ export class RollsInfo extends React.Component {
             });
         }
 
-        return result.sort(function(a,b) {return b.count - a.count});
+        return result.sort(function(a,b) {return b.count - a.count;});
     }
 
     render() {

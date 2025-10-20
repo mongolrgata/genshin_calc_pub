@@ -40,12 +40,12 @@ export function FeatureTableValues(props) {
                 displayMode={props.displayMode}
                 format={format}
             />
-        )
+        );
     }
 
     return (
         <>{items}</>
-    )
+    );
 }
 
 export function FeatureTableValue(props) {

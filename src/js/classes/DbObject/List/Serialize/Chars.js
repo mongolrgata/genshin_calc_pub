@@ -7,7 +7,7 @@ export class DbObjectListSerializeChars extends DbObjectListSerialize {
         for (const key of this.getKeys()) {
             let item = this.get(key);
             if (item.gameId.includes(id)) {
-                foundChars.push(item)
+                foundChars.push(item);
             }
         }
 
@@ -20,7 +20,5 @@ export class DbObjectListSerializeChars extends DbObjectListSerialize {
                 return char;
             }
         }
-
-        return;
     }
 }

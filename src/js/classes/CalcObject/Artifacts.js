@@ -35,7 +35,7 @@ export class CalcObjectArtifacts extends CalcObject {
         let setCounter = {};
 
         for (let slot of slots) {
-            let art = this.artifacts[slot]
+            let art = this.artifacts[slot];
             if (art) {
                 setCounter[art.set] = 1 + (setCounter[art.set] || 0);
             }
@@ -45,7 +45,7 @@ export class CalcObjectArtifacts extends CalcObject {
             settings[Artifact.settingName(setName)] = setCounter[setName];
         }
 
-        return settings
+        return settings;
     }
 
     getFeatures() {
@@ -289,7 +289,7 @@ export class CalcObjectArtifacts extends CalcObject {
         }
 
         let settings = result.deserializeConditions(input);
-        if (!settings) return null
+        if (!settings) return null;
 
         result.setSettings(settings);
 

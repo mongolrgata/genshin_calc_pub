@@ -31,5 +31,5 @@ export const TinyMiracle = new ArtifactSet({
         },
         // Incoming elemental DMG increases corresponding Elemental RES by 30% for 10s. Can only occur once every 10s.
     ],
-})
+});
 

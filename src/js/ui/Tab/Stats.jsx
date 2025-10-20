@@ -109,7 +109,7 @@ export class StatsTab extends Tab {
     createContent() {
         return (
             <StatsView
-                ref={element => { this.component = element }}
+                ref={element => { this.component = element; }}
                 app={this.app}
                 title={lang.get('tab_header.stat_view')}
             />
@@ -178,9 +178,9 @@ class StatsView extends React.Component {
             if (optional) {
                 item.total = Stats.format(stat, total, {signed: 1, zero: 1});
             } else {
-                item.base  = Stats.format(stat, base,  {zero: 1})
-                item.bonus = Stats.format(stat, bonus, {signed: 1, zero: 1})
-                item.total = Stats.format(stat, total, {zero: 1})
+                item.base  = Stats.format(stat, base,  {zero: 1});
+                item.bonus = Stats.format(stat, bonus, {signed: 1, zero: 1});
+                item.total = Stats.format(stat, total, {zero: 1});
             }
 
             rows.push(item);
@@ -242,7 +242,7 @@ class StatsView extends React.Component {
             let optional = stat.search('!') >= 0 ? true : false;
             stat = stat.replace(/^\!/, '');
 
-            let value = stats.get(stat)
+            let value = stats.get(stat);
             let title = lang.getStat('stat.'+ stat);
             if (optional) {
                 title = '• '+ title;
@@ -286,7 +286,7 @@ class StatsView extends React.Component {
             } else if (feature.getMasteryMultiplier) {
                 base = calcTreeValue(feature.getMasteryMultiplier(data), data) * 100 || 0;
             } else {
-                console.log(feature)
+                console.log(feature);
             }
 
             if (feature.getReactionBonuses) {
@@ -436,7 +436,7 @@ function StatsTableBlock(props) {
         }
 
         if (item.optional) {
-            classes.push('optional')
+            classes.push('optional');
         }
 
         items.push(
@@ -459,7 +459,7 @@ function StatsTableBlock(props) {
 
 
 function calcTreeValue(tree, data) {
-    if (!tree.walk) {return 0}
+    if (!tree.walk) {return 0;}
 
     let compiler = new FeatureCompiler(tree);
     let opts = {dontProcessTree: true, dontProcessStaticValues: true};

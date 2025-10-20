@@ -42,4 +42,4 @@ export const ShimenawasReminiscence = new ArtifactSet({
             ],
         },
     ],
-})
+});

@@ -74,7 +74,7 @@ class Modal extends React.Component {
 
         this.el.style.left = left +'px';
         this.el.style.width = width ? width +'px' : null;
-        this.el.classList.toggle('max-height', useMaxHeight)
+        this.el.classList.toggle('max-height', useMaxHeight);
     }
 
     componentDidMount() {
@@ -88,7 +88,7 @@ class Modal extends React.Component {
 
     componentDidUpdate() {
         this.resizeModal();
-        setTimeout(() => {this.resizeModal()}, 1);
+        setTimeout(() => {this.resizeModal();}, 1);
     }
 
     shouldComponentUpdate(nextProps, nextState) {

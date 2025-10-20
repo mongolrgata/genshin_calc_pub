@@ -2,7 +2,7 @@ import { CItem } from "../Types";
 import { CMulti, CSum, CSumPlusOne } from "./Block";
 
 export class CConst extends CItem {
-    getType() {return 'item_const'}
+    getType() {return 'item_const';}
 
     getSignature() {
         return '(const:' + this.value + ')';
@@ -10,7 +10,7 @@ export class CConst extends CItem {
 }
 
 export class CStat extends CItem {
-    getType() {return 'item_stat'}
+    getType() {return 'item_stat';}
 
     compile(opts) {
         return 'stats.' + this.stat;
@@ -34,7 +34,7 @@ export class CStat extends CItem {
 }
 
 export class CStatTotal extends CStat {
-    getType() {return 'item_stat_total'}
+    getType() {return 'item_stat_total';}
 
     getUsedStats() {
         return [this.stat, this.stat + '_base', this.stat + '_percent'];
@@ -85,8 +85,8 @@ export class CVarValue extends CItem {
         super(params);
     }
 
-    getType() {return 'variable_get'}
-    isVariableGet() {return true}
+    getType() {return 'variable_get';}
+    isVariableGet() {return true;}
 
     compile(opts) {
         return this.name;

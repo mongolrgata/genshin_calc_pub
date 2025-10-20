@@ -1,7 +1,7 @@
 import { FeatureReactionTransformative } from "../Transformative";
 
 export class FeatureReactionSwirl extends FeatureReactionTransformative {
-    getReactionRate() { return 0.6 }
+    getReactionRate() { return 0.6; }
 
     /**
      * @returns {Array.<string>}

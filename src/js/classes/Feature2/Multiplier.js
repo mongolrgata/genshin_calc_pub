@@ -229,7 +229,7 @@ export class FeatureMultiplier {
             items.push(this.getStackMultiplier(data));
         }
 
-        let result = new CMulti(items)
+        let result = new CMulti(items);
         if (this.capValue) {
             result = new CValueCap([result], {
                 value: new CConst({value: this.capValue.getValue(this.getLevel(data))}),

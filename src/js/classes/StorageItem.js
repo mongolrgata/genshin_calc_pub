@@ -187,7 +187,7 @@ export class StorageItem {
 
             this.save();
         } catch {
-            this.items = oldItems
+            this.items = oldItems;
         }
     }
 }

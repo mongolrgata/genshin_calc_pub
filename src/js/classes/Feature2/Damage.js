@@ -179,7 +179,7 @@ export class FeatureDamage extends Feature2 {
                     new CSubtract([
                         new CConst({value: 1}),
                         new CSum([
-                            ...this.getStatsDefIgnore(data).map((stat) => { return makeStatItem(stat, data.stats) })
+                            ...this.getStatsDefIgnore(data).map((stat) => { return makeStatItem(stat, data.stats); })
                         ]),
                     ]),
                 ]),
@@ -272,10 +272,10 @@ export class FeatureDamage extends Feature2 {
 
         let items = [
             new CBaseDamage(
-                multipliers.map((i) => {return i.getTree(data)})
+                multipliers.map((i) => {return i.getTree(data);})
             ),
             new CMultiplierBonus(
-                this.getStatsDmgBonus(data).map((stat) => { return makeStatItem(stat, data.stats) })
+                this.getStatsDmgBonus(data).map((stat) => { return makeStatItem(stat, data.stats); })
             ),
             new CMultiplierResistance([this.getResistanceMultiplier(data)]),
             new CMultiplierDefence([this.getDefenceLevelMultiplier(data)], {

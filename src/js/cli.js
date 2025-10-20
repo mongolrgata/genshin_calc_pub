@@ -33,7 +33,7 @@ import { DB } from "./db/DB";
 global.DB = DB;
 
 function log(object) {
-    console.dir(object, {depth: null, breakLength: 180, compact: 1})
+    console.dir(object, {depth: null, breakLength: 180, compact: 1});
 }
 
 // const build_hash = 'bBbDmggfkkbcEfDmgfafbBefubbekGpdtjEbeEbbmfuccejCohBleCgkKebBefudhekHmhxjCkcBhbBefuepebRgjCwcBbkFcbBefufjeiEtkHmhBqdvaDmcbbqecrdBocbjcffbBFfckdefBgbbBMmhcababFcbcdaaa';
@@ -228,7 +228,7 @@ log(suggester.prepare());
 // log(suggester.feature.compiled.tree);
 
 let results = suggester.getResult((current, total) => {
-    log(current + ' / ' + total)
+    log(current + ' / ' + total);
 });
 // console.dir(results, {depth: 4})
 
@@ -236,7 +236,7 @@ for (let item of results) {
     let b = build.clone();
     b.replaceArtifacts(item.artifacts);
     let f = b.getFeatureResultByName(featureName);
-    console.log(item.value, f.average, Math.abs(item.value - f.average) < 1 ? 'ok' : 'fail')
+    console.log(item.value, f.average, Math.abs(item.value - f.average) < 1 ? 'ok' : 'fail');
 }
 
 // let params = {

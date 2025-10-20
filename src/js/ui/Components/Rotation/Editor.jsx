@@ -202,7 +202,7 @@ export class RotationEditor extends React.Component {
 
     handleEditRotationIcon(hash, charId) {
         this.props.storage.updateIconByHash(hash, charId);
-        this.refreshModal()
+        this.refreshModal();
     }
 
     dataRotationItems() {

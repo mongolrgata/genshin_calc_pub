@@ -67,7 +67,7 @@ export class FullHeightScrollable extends React.Component {
             let items = [];
             let progress = this.props.loadingProgress;
             if (progress && progress.total) {
-                items.push(progress)
+                items.push(progress);
             }
 
             if (this.props.loadingSubProgress) {
@@ -75,12 +75,12 @@ export class FullHeightScrollable extends React.Component {
             }
 
             for (let i = 0; i < items.length; ++i) {
-                let item = items[i]
+                let item = items[i];
                 progressMessages.push(
                     <div key={'item'+ i} className="loading-progress">
                         {Stats.format('text', item.completed) || 0}/{Stats.format('text', item.total)} ({item.total ? Math.round(100 * item.completed / item.total) : 0}%)
                     </div>
-                )
+                );
             }
         }
 
@@ -106,10 +106,10 @@ export class FullHeightFloatTitle extends React.Component {
     constructor(props) {
         super(props);
 
-        this.visibleItems = []
+        this.visibleItems = [];
         this.state = {
             visibleTitle: '',
-        }
+        };
     }
 
     handleChangeVisibility(index, value) {

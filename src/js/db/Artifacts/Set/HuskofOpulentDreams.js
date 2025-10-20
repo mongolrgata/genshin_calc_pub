@@ -57,4 +57,4 @@ export const HuskofOpulentDreams = new ArtifactSet({
             ],
         },
     ],
-})
+});

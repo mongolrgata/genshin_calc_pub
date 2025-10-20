@@ -38,9 +38,9 @@ export class FeatureShield extends Feature2 {
         let multipliers = this.getMultipliers(data);
 
         let items = [
-            new CBaseDamage(multipliers.map((i) => {return i.getTree(data)})),
+            new CBaseDamage(multipliers.map((i) => {return i.getTree(data);})),
             new CMultiplierBonus(
-                this.getStatsShieldBonus(data).map((stat) => { return makeStatItem(stat, data.stats) })
+                this.getStatsShieldBonus(data).map((stat) => { return makeStatItem(stat, data.stats); })
             ),
         ];
 

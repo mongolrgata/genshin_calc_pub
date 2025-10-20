@@ -115,7 +115,7 @@ class PartyLoadComponent extends ModalSelectBase {
 
         this.items = this.items.sort((a, b) => {
             return (b.values[sortingStat] || 0) - (a.values[sortingStat] || 0)
-                || a.title.localeCompare(b.title)
+                || a.title.localeCompare(b.title);
         });
     }
 

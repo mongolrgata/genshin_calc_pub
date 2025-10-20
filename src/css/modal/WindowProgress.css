@@ -13,8 +13,8 @@
 .gi-modal-progress-bar {
     width: 50px;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     height: 24px;
     background-color: #2B2D33;
     border-radius: 5px;

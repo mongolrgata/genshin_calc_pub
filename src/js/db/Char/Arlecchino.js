@@ -138,7 +138,7 @@ const TalentValues = {
     C6BurstDamage: 700,
     C6CritRate: 10,
     C6CritDamage: 70,
-}
+};
 
 export const Arlecchino = new DbObjectChar({
     name: 'arlecchino',

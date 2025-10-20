@@ -45,11 +45,11 @@ export class WeaponSuggestTab extends Tab {
     createContent() {
         return (
             <WeaponSuggestView
-                ref={element => { this.component = element }}
+                ref={element => { this.component = element; }}
                 app={this.app}
                 title={this.title}
             />
-        )
+        );
     }
 }
 
@@ -162,7 +162,7 @@ export class WeaponSuggestView extends React.Component {
     }
 
     dataWeaponList() {
-        return []
+        return [];
     }
 
     loadWeaponSettings() {
@@ -186,7 +186,7 @@ export class WeaponSuggestView extends React.Component {
                 artifactMode: this.state.artifactMode,
                 settings: this.state.generatorSettings,
             },
-            (data) => {this.handleGeneratorSettingsChange(data)}
+            (data) => {this.handleGeneratorSettingsChange(data);}
         );
     }
 
@@ -200,7 +200,7 @@ export class WeaponSuggestView extends React.Component {
                 showBeta: showBeta,
                 settings: this.state.weaponList[weaponType],
             },
-            (data) => {this.handleListChange(data)}
+            (data) => {this.handleListChange(data);}
         );
     }
 
@@ -416,7 +416,7 @@ export class WeaponSuggestView extends React.Component {
         let stateResult = this.state.result;
         stateResult.push(result);
 
-        stateResult = stateResult.sort((a, b) => {return b.result.average - a.result.average});
+        stateResult = stateResult.sort((a, b) => {return b.result.average - a.result.average;});
 
         if (this.state.isLoading) {
             this.setState({
@@ -502,7 +502,7 @@ export class WeaponSuggestView extends React.Component {
             artifacts: results[0].artifacts,
         });
 
-        stateResult = stateResult.sort((a, b) => {return b.value - a.value});
+        stateResult = stateResult.sort((a, b) => {return b.value - a.value;});
 
         this.setState({
             result: stateResult,

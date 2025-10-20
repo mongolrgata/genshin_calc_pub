@@ -5,16 +5,14 @@ import { CConst } from "./Feature2/Compile/Types/Item";
 import { FeatureCompiler } from "./Feature2/Compiler";
 import { FeatureResult } from "./FeatureResult";
 
-if (process.env.NODE_ENV !== 'production') {
-    var FIELD_NAMES = [
-        'name', 'category', 'element', 'damageType', 'multipliers', 'condition', 'tags',
-        'cannotReact', 'format', 'digits', 'postEffect', 'items', 'isChild', 'hits',
-        'allowInfusion', 'icon', 'stat', 'penalty',
-        'damageBonuses', 'critRateBonuses', 'critDamageBonuses',
-        'subtractBoL', 'partyHeal', 'noSelfHeal',
-        'rotationHitCount', 'rotationHitDescription',
-    ];
-}
+const FIELD_NAMES = process.env.NODE_ENV !== 'production' ? [
+    'name', 'category', 'element', 'damageType', 'multipliers', 'condition', 'tags',
+    'cannotReact', 'format', 'digits', 'postEffect', 'items', 'isChild', 'hits',
+    'allowInfusion', 'icon', 'stat', 'penalty',
+    'damageBonuses', 'critRateBonuses', 'critDamageBonuses',
+    'subtractBoL', 'partyHeal', 'noSelfHeal',
+    'rotationHitCount', 'rotationHitDescription',
+] : [];
 
 export class Feature2 {
     constructor(params) {
@@ -95,7 +93,7 @@ export class Feature2 {
     }
 
     isActive(data) {
-        if (!this.condition) { return true }
+        if (!this.condition) { return true; }
         return this.condition.isActive(data.settings);
     }
 
@@ -103,9 +101,7 @@ export class Feature2 {
         this.compiled = this.getCompiled(data);
     }
 
-    getDisplaySettings(data) {
-        return;
-    }
+    getDisplaySettings(data) {}
 
     /**
      * @param {BuildData} data
@@ -132,7 +128,7 @@ export class Feature2 {
     }
 
     getCritRateBlock(data) {
-        let items = this.getStatsCritRate(data).map((stat) => { return makeStatItem(stat, data.stats) });
+        let items = this.getStatsCritRate(data).map((stat) => { return makeStatItem(stat, data.stats); });
         if (items.length == 0) {
             items = [new CConst({value: 0})];
         }
@@ -140,7 +136,7 @@ export class Feature2 {
     }
 
     getCritDmgBlock(data) {
-        let items = this.getStatsCritDamage(data).map((stat) => { return makeStatItem(stat, data.stats) });
+        let items = this.getStatsCritDamage(data).map((stat) => { return makeStatItem(stat, data.stats); });
         if (items.length == 0) {
             items = [new CConst({value: 0})];
         }
@@ -297,7 +293,7 @@ export class Feature2 {
                     title = featureData.title;
                 }
 
-                title = UI.Lang.get(title)
+                title = UI.Lang.get(title);
                 if (featureData.isChild) {
                     title = '• '+ title;
                 }

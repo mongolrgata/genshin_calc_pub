@@ -42,14 +42,14 @@ export class Accordion extends React.Component {
                 >
                     {item.props.children}
                 </AccordionItemContainer>
-            )
+            );
         }
 
         return (
             <>
                 {items}
             </>
-        )
+        );
     }
 }
 

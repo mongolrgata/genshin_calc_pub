@@ -59,7 +59,7 @@ export class DbObjectTalents {
             result.push(table);
 
             if (data.onlyFirst) {
-                add = new StatTable('', [0])
+                add = new StatTable('', [0]);
             }
         }
 
@@ -75,7 +75,7 @@ export class DbObjectTalents {
 
         for (const t of tables) {
             result.push(
-                new StatTable(data.name, t.getValues().map(function(val) {return val * multi}))
+                new StatTable(data.name, t.getValues().map(function(val) {return val * multi;}))
             );
         }
 
@@ -91,7 +91,7 @@ export class DbObjectTalents {
 
         for (const t of tables) {
             result.push(
-                new StatTable(data.name, t.getValues().map(function(val) {return multi/val}))
+                new StatTable(data.name, t.getValues().map(function(val) {return multi/val;}))
             );
         }
 

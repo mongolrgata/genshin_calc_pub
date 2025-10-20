@@ -79,7 +79,7 @@ function getRolls(current, value, rolls, max, percent) {
 }
 
 function getDiff(rolls, value, percent) {
-    let total = rolls.reduce(function(total, val) {return total+val}, 0)
+    let total = rolls.reduce(function(total, val) {return total+val;}, 0);
     let diff  = Stats.roundStatValue('', value, percent) - Stats.roundStatValue('', total, percent);
 
     if (Math.abs(diff) < 0.001) {

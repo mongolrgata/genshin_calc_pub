@@ -58,7 +58,7 @@ export class Backup {
                 let set = storage.char.decodeItem(item.data);
 
                 if (set) {
-                    data.chars.push(item)
+                    data.chars.push(item);
                 }
             }
         }
@@ -81,7 +81,7 @@ export class Backup {
                 let set = storage.rotation.decodeItem(item.data);
 
                 if (set) {
-                    data.rotations.push(item)
+                    data.rotations.push(item);
                 }
             }
         }
@@ -106,7 +106,7 @@ export class Backup {
 
         if (data.version == 1) {
             result.version = 1;
-            result.lastModified = parseInt(data.lastModified)
+            result.lastModified = parseInt(data.lastModified);
 
             if (data.chars && Array.isArray(data.chars)) {
                 let chars = [];

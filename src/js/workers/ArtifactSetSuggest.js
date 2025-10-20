@@ -79,10 +79,10 @@ self.onmessage = function(input) {
         }
     }
 
-    results = results.sort(function(a,b) {return b.feature.average - a.feature.average});
+    results = results.sort(function(a,b) {return b.feature.average - a.feature.average;});
 
     self.postMessage({result: results});
-}
+};
 
 function getSets(original, featureName, maxPieces, showBeta) {
     let sets = [];

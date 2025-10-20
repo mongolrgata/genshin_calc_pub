@@ -12,7 +12,7 @@ export class ConditionStaticNavia extends ConditionStatic {
         let shrapnel1 = Math.min(3, settings.navia_shrapnel_charge);
         let shrapnel2 = 0;
         if (settings.navia_shrapnel_charge && settings.navia_shrapnel_charge >= 3) {
-            shrapnel2 = Math.min(3, settings.navia_shrapnel_charge - 3)
+            shrapnel2 = Math.min(3, settings.navia_shrapnel_charge - 3);
         }
 
         if (shrapnel1) {

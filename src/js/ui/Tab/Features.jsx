@@ -45,7 +45,7 @@ export class FeaturesTab extends Tab {
     createContent() {
         return (
             <FeaturesView
-                ref={element => { this.component = element }}
+                ref={element => { this.component = element; }}
                 app={this.app}
                 feature={this.app.getFeature()}
                 title={lang.get('tab_header.features')}
@@ -71,7 +71,7 @@ class FeaturesView extends React.Component {
 
     getFeaturesDetailsDropdown() {
         return Feature2.buildDropdown(this.props.app.currentSet(), {
-            checkCallback: (f) => {return f.hasDetails()},
+            checkCallback: (f) => {return f.hasDetails();},
         });
     }
 
@@ -235,7 +235,7 @@ class FeaturesView extends React.Component {
 
         let item;
         if (feature) {
-            item = <FeatureViewTree build={build} feature={feature} reaction={this.state.reaction} />
+            item = <FeatureViewTree build={build} feature={feature} reaction={this.state.reaction} />;
         }
 
         return (

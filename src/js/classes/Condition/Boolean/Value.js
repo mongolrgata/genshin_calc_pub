@@ -61,7 +61,7 @@ export class ConditionBooleanValue extends ConditionBoolean {
 
         if (this.params.stats) {
             for (const stat of this.params.stats) {
-                stats.add(stat.getName(), stat.getValue( this.getLevel(settings) ))
+                stats.add(stat.getName(), stat.getValue( this.getLevel(settings) ));
             }
         }
 

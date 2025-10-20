@@ -75,7 +75,7 @@ export class StatsInfo extends React.Component {
             return null;
         }
 
-        stats.add('crit_value_percent', stats.get('crit_value'))
+        stats.add('crit_value_percent', stats.get('crit_value'));
 
         for (let stat of statsList2) {
             let value = stats.get(stat) + stats.get(stat +'_party');

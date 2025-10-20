@@ -16,9 +16,9 @@ export function formatNumber(value, opts) {
         result = result.toFixed(digits);
     } else {
         if (result > 10000000) {
-            result = (result / 1000000).toFixed(2) +'m'
+            result = (result / 1000000).toFixed(2) +'m';
         } else if (result > 1000000) {
-            result = (result / 1000000).toFixed(3) +'m'
+            result = (result / 1000000).toFixed(3) +'m';
         } else {
             result = Math.round(result);
         }

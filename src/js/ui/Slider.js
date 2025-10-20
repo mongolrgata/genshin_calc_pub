@@ -1,7 +1,7 @@
 import $ from "jquery";
 import "../../css/ui/Slider.css"
 
-var methods = {
+const methods = {
     init: function(options) {
         let that = this;
         let defaults = {
@@ -43,13 +43,13 @@ var methods = {
                 let val = parseFloat(that.val());
                 let opts = that.data('opts');
                 that.val(val + parseFloat(opts.step)).trigger('input');
-            })
+            });
 
             wrapper.find('.gi-slider-minus').on('click', function() {
                 let val = parseFloat(that.val());
                 let opts = that.data('opts');
                 that.val(val - parseFloat(opts.step)).trigger('input');
-            })
+            });
         }
 
         this.on('input', function() {

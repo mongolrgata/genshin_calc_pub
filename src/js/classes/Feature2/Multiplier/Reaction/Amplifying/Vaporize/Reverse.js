@@ -6,6 +6,6 @@ export class FeatureMultiplierReactionVaporizeReverse extends FeatureMultiplierR
     getAmplyfyingMultiplier(data) {
         return new CMultiplierAmplifying([
             new CConst({value: 1.5, percent: 1, comment: 'reaction_vape_reverse'}),
-        ])
+        ]);
     }
 }

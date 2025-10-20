@@ -105,6 +105,6 @@ export class WeaponSuggestSettingsModal extends React.PureComponent {
                     />
                 </ControlsBar>
             </DialogContainer>
-        )
+        );
     }
 }

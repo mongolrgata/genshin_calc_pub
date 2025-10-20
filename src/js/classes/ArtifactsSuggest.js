@@ -243,7 +243,7 @@ export class ArtifactsSuggest {
 
         let setMaxPieces = {};
         for (let setName of Object.keys(setPieces)) {
-            setMaxPieces[setName] = Object.keys(setPieces[setName]).length
+            setMaxPieces[setName] = Object.keys(setPieces[setName]).length;
         }
 
 
@@ -277,7 +277,7 @@ export class ArtifactsSuggest {
 
             for (let pieces = 1; pieces < bonuses.length; ++pieces) {
                 if (pieces > maxPieces) {
-                    break
+                    break;
                 }
 
                 buildData.addSettings({[Artifact.settingName(setId)]: pieces});
@@ -309,7 +309,7 @@ export class ArtifactsSuggest {
 
                 // change variation if new togglable condition or post effect appears
                 let curActivePostEffects = buildData.getActivePostEffects().length;
-                let curSerializableConditions = conditions.filter((i) => {return i.isSerializable()}).length
+                let curSerializableConditions = conditions.filter((i) => {return i.isSerializable();}).length;
                 if (curActivePostEffects > prevActivePostEffects) {
                     prevActivePostEffects = curActivePostEffects;
                     featureVariation = artPiecesName + pieces;
@@ -448,7 +448,7 @@ export class ArtifactsSuggest {
                 if (!sdata) continue;
 
                 if (sdata.variation) {
-                    variation.push(sdata.variation)
+                    variation.push(sdata.variation);
                 }
 
                 if (sdata.concatFunc) {
@@ -646,9 +646,9 @@ function makeStatCheckParts(settings) {
         }
 
         if (op == 'max') {
-            parts.push('if ('+ statStr +' > '+ value +') {return false}')
+            parts.push('if ('+ statStr +' > '+ value +') {return false}');
         } else if (op == 'min') {
-            parts.push('if ('+ statStr +' < '+ value +') {return false}')
+            parts.push('if ('+ statStr +' < '+ value +') {return false}');
         }
     }
     return [parts, usedStats];

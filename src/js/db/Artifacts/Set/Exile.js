@@ -24,4 +24,4 @@ export const Exile = new ArtifactSet({
             ],
         },
     ],
-})
+});

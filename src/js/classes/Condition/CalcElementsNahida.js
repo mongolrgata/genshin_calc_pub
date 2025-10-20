@@ -27,7 +27,7 @@ export class ConditionCalcElementsNahida extends Condition {
     }
 
     getAllConditionsOn(settings) {
-        return this.getData(settings || {}).settings
+        return this.getData(settings || {}).settings;
     }
 
     getStats(settings) {

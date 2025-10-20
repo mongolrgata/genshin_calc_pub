@@ -8,14 +8,14 @@ test('Duplicate ids for Rotations', () => {
 });
 
 function getDuplicatedIds(obj) {
-    let used_ids = {}
+    let used_ids = {};
 
     for (let name of obj.listNames()) {
-        let id = obj.getByName(name)
+        let id = obj.getByName(name);
         if (!used_ids[id]) {
-            used_ids[id] = []
+            used_ids[id] = [];
         }
-        used_ids[id].push(name)
+        used_ids[id].push(name);
     }
 
     let result = [];
@@ -26,5 +26,5 @@ function getDuplicatedIds(obj) {
         }
     }
 
-    return result
+    return result;
 }

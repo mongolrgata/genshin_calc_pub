@@ -42,9 +42,9 @@ export class ScannerImagePalette {
         if (color) {
             result = function(r, g, b) {
                 return Math.abs(r - color[0]) < diff && Math.abs(g - color[1]) < diff && Math.abs(b - color[2]) < diff;
-            }
+            };
         } else {
-            result = function() {return 0};
+            result = function() {return 0;};
         }
 
         return result;
@@ -86,7 +86,7 @@ export class ScannerImagePalette {
             if (res) return 1;
 
             return 0;
-        }
+        };
     }
 
     getMatcherTextMainStat() {
@@ -95,7 +95,7 @@ export class ScannerImagePalette {
         return function isTextMainStat(r, g, b) {
             // return Math.abs(r-190) > 20 && Math.abs(g-174) > 20 && Math.abs(b-169) > 20;
             return r < c[0] || g < c[1] || b < c[2];
-        }
+        };
     }
 
     isCraftedColor(data) {

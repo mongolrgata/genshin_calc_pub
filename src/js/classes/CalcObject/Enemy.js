@@ -6,7 +6,7 @@ export class CalcObjectEnemy extends CalcObject {
         super();
         this.levels = {
             level : 1,
-        },
+        };
         this.resistances = {
             phys: 0,
             anemo: 0,
@@ -31,7 +31,7 @@ export class CalcObjectEnemy extends CalcObject {
 
     getResistances() {
         if (this.object) {
-            return this.object.getResistances()
+            return this.object.getResistances();
         }
 
         return this.resistances;
@@ -41,7 +41,7 @@ export class CalcObjectEnemy extends CalcObject {
         return {
             stats: new Stats(),
             settings: {},
-        }
+        };
     }
 
     getSettings() {
@@ -83,11 +83,11 @@ export class CalcObjectEnemy extends CalcObject {
         result.push(this.levels.level);
 
         if (this.object) {
-            result.push(2) // 2 - mob DB
+            result.push(2); // 2 - mob DB
 
             result.push(this.object.getId());
         } else {
-            result.push(1) // 1 -raw resists
+            result.push(1); // 1 -raw resists
 
             result.push(this.resistances.anemo+100);
             result.push(this.resistances.cryo+100);
@@ -132,7 +132,7 @@ export class CalcObjectEnemy extends CalcObject {
         }
 
         let settings = result.deserializeConditions(input);
-        if (!settings) return null
+        if (!settings) return null;
 
         result.setSettings(settings);
 

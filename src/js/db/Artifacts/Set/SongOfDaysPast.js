@@ -66,4 +66,4 @@ export const SongOfDaysPast = new ArtifactSet({
             ],
         },
     ],
-})
+});

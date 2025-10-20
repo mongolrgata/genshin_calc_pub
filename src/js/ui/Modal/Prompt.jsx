@@ -17,7 +17,7 @@ export class PromptModal extends NonAppModal {
             <PromptComponent
                 ref={(obj) => this.modal = obj}
             />
-        )
+        );
     }
 }
 
@@ -66,7 +66,7 @@ export class PromptComponent extends React.Component {
                     <TextInput
                         barClass="resizable"
                         value={this.state.value}
-                        onChange={(value) => {this.setState({value: value})}}
+                        onChange={(value) => {this.setState({value: value});}}
                         onEnter={() => this.handleConfirm()}
                     />
                 </ControlsBar>

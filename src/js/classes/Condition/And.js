@@ -2,7 +2,7 @@ import { Condition } from "../Condition";
 
 export class ConditionAnd extends Condition {
     constructor(items) {
-        super({})
+        super({});
         this.items = items;
     }
 

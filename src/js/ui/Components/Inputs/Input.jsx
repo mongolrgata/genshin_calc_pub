@@ -238,7 +238,7 @@ export function Checkbox(props) {
             <div className="checkbox-switcher"></div>
             <div className="checkbox-label">{props.title}</div>
         </div>
-    )
+    );
 }
 
 export function CheckboxList(props) {

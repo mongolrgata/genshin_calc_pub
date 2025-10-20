@@ -59,13 +59,13 @@ export class BestArtifactTab extends Tab {
     createContent() {
         return (
             <BestArtifact
-                ref={BestArtifact => { this.component = BestArtifact }}
+                ref={BestArtifact => { this.component = BestArtifact; }}
                 app={this.app}
                 feature={this.app.getFeature()}
                 displayMode={this.app.getDisplayMode()}
                 onFeatureChanged={(feature) => this.app.setFeature(feature)}
             />
-        )
+        );
     }
 }
 
@@ -186,12 +186,12 @@ class BestArtifact extends React.Component {
         let groups = [];
         for (let groupName of Object.keys(this.state.settings.groups)) {
             if (this.state.settings.groups[groupName]) {
-                groups.push(groupName)
+                groups.push(groupName);
             }
         }
 
         let slots = this.state.settings.slots;
-        let mainStats = this.state.settings.filter.main_stats
+        let mainStats = this.state.settings.filter.main_stats;
         let minLevel = this.state.settings.filter.min_level;
         let maxLevel = this.state.settings.filter.max_level;
         let hasSlots = {};
@@ -246,7 +246,7 @@ class BestArtifact extends React.Component {
     }
 
     modifySettings(key, data) {
-        let settings = this.state.settings
+        let settings = this.state.settings;
         settings[key] = data;
         this.setState({settings: settings});
     }
@@ -406,7 +406,7 @@ class BestArtifact extends React.Component {
                 for (let slot of Object.keys(arts)) {
                     let buildArt = arts[slot];
                     if (!buildArt) {
-                        continue
+                        continue;
                     }
 
                     if (hash == buildArt.getHash()) {
@@ -415,7 +415,7 @@ class BestArtifact extends React.Component {
                 }
             }
 
-            this.setState({view: this.state.view})
+            this.setState({view: this.state.view});
         }
     }
 
@@ -474,7 +474,7 @@ class BestArtifact extends React.Component {
             for (let i in conds) {
                 for (let cond of conds[i]) {
                     if (cond && cond.isSerializable()) {
-                        activeConds.push(cond)
+                        activeConds.push(cond);
                     }
                 }
             }

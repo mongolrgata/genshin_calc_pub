@@ -20,7 +20,7 @@ export class ModalSelectWeapon extends Modal {
                 addClass="weapon-select-modal"
                 title={lang.get('modal_window.select_weapon')}
             />
-        )
+        );
     }
 }
 
@@ -77,7 +77,7 @@ class WeaponSelectComponent extends ModalSelectBase {
 
         this.items = this.items.sort((a, b) => {
             return b.stats.get(sortingStat) - a.stats.get(sortingStat)
-                || a.title.localeCompare(b.title)
+                || a.title.localeCompare(b.title);
         });
     }
 

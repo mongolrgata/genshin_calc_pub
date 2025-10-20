@@ -15,8 +15,8 @@ export class ConditionStaticRefineDreamsSame extends ConditionStaticRefine {
         if (stacksCnt > 0) {
             if (this.params.stats) {
                 for (const stat of this.params.stats) {
-                    stats.add('text_' + stat.getName(), stat.getValue(settings.weapon_refine))
-                    stats.add(stat.getName(), stacksCnt * stat.getValue(settings.weapon_refine))
+                    stats.add('text_' + stat.getName(), stat.getValue(settings.weapon_refine));
+                    stats.add(stat.getName(), stacksCnt * stat.getValue(settings.weapon_refine));
                 }
             }
         }

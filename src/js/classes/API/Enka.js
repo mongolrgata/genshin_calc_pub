@@ -18,9 +18,9 @@ export class EnkaApi {
         let url = API_URL.replace('<uid>', prepareUid(uid));
         url = url.replace('<hash>', hash || '');
 
-        xhr.open('GET', url)
+        xhr.open('GET', url);
         xhr.onload = () => callback(this.processData(xhr.response));
-        xhr.onerror = () => callback()
+        xhr.onerror = () => callback();
         xhr.send();
     }
 
@@ -93,10 +93,8 @@ function getPlayer(data) {
             ar: player.level,
             avatar: DB.Chars.getByGameId(avatarId),
             chars: chars,
-        }
+        };
     } catch(e) {}
-
-    return;
 }
 
 function getChars(data) {
@@ -140,7 +138,7 @@ function processChar(data) {
             constellation: Math.min(6, Math.max(0, data.talentIdList ? data.talentIdList.length : 0)),
         });
 
-        let skillLevels = {}
+        let skillLevels = {};
         for (let skill of ['attack', 'skill', 'burst']) {
             let id = char.talents.getCategory(skill).gameId;
             skillLevels[skill] = data.skillLevelMap[id] || 1;
@@ -151,7 +149,7 @@ function processChar(data) {
         let weaponData;
         for (let item of data.equipList) {
             if (item.weapon) {
-                weaponData = item
+                weaponData = item;
             }
         }
 
@@ -180,9 +178,8 @@ function processChar(data) {
 
         return set;
     } catch(e) {
-        console.log(e)
+        console.log(e);
     }
-    return;
 }
 
 function listArtifacts(data) {
@@ -227,5 +224,5 @@ function shuffleArray(array) {
         array[i] = array[j];
         array[j] = temp;
     }
-    return array
+    return array;
 }

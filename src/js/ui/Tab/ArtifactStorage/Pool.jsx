@@ -68,7 +68,7 @@ export class ArtifactStoragePool extends React.Component {
             if (!setData[set]) {
                 setData[set] = 1;
             } else {
-                ++setData[set]
+                ++setData[set];
             }
         }
 
@@ -105,7 +105,7 @@ export class ArtifactStoragePool extends React.Component {
         for (let stat of stats) {
             result.push(
                 {value: stat, text: lang.getStat('pool_stat.'+ stat)},
-            )
+            );
         }
 
         return result;

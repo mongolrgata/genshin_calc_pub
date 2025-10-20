@@ -100,7 +100,7 @@ export class Feature {
 
     getDefMultiplier(allStats, settings) {
         return Math.max(0, (1 - this.getDefReduce(allStats, settings)))
-             * Math.max(0, (1 - this.getDefIgnore(allStats, settings)))
+             * Math.max(0, (1 - this.getDefIgnore(allStats, settings)));
     }
 
     levelMultiplier(allStats, settings) {
@@ -395,7 +395,7 @@ export class Feature {
                     title = featureData.title;
                 }
 
-                title = UI.Lang.get(title)
+                title = UI.Lang.get(title);
                 if (featureData.isChild) {
                     title = '• '+ title;
                 }
@@ -415,7 +415,7 @@ export class Feature {
 
 function calcRoyalCritRate(base, bonus) {
     if (base >= 1) {
-        return 1
+        return 1;
     }
 
     let s1 = Math.min(base + bonus, 1);
@@ -434,5 +434,5 @@ function calcRoyalCritRate(base, bonus) {
         - base * s1 * s2 * s3 * s5 + s1 * s2 * s3 * s5 - s2 * s3 * s5 + s3 * s5 - 5 * s5 - 1
     );
 
-    return Math.max(0, Math.min(1, chance))
+    return Math.max(0, Math.min(1, chance));
 }

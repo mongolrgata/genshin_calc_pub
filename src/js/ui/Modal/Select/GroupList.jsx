@@ -72,7 +72,7 @@ class GroupListComponent extends React.Component {
         let names = this.state.selectedNames;
 
         if (names.includes(name)) {
-            var index = names.indexOf(name);
+            const index = names.indexOf(name);
             if (index !== -1) {
                 names.splice(index, 1);
             }

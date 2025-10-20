@@ -1,9 +1,9 @@
-const DRIVE_CLIENT_ID = '23514418281-hnsnrvdaiu6loi8rob1ttuned773n7iq.apps.googleusercontent.com' // prod
+const DRIVE_CLIENT_ID = '23514418281-hnsnrvdaiu6loi8rob1ttuned773n7iq.apps.googleusercontent.com'; // prod
 // const DRIVE_CLIENT_ID = '212641732900-mhmqk2643a60b0t2qmpadmu0ermht4cq.apps.googleusercontent.com' // dev
-const DRIVE_API_KEY = 'AIzaSyBiK_Y9LXJMzYxGt_p2qJ2dnMGtxOXHoU8' // prod
+const DRIVE_API_KEY = 'AIzaSyBiK_Y9LXJMzYxGt_p2qJ2dnMGtxOXHoU8'; // prod
 // const DRIVE_API_KEY = 'AIzaSyCKO7h7FTs4TWfNU41T2YZQEezoumA6D7c' // dev
-const DRIVE_SCOPE = 'https://www.googleapis.com/auth/drive.appdata'
-const DRIVE_DISCOVERY = 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest'
+const DRIVE_SCOPE = 'https://www.googleapis.com/auth/drive.appdata';
+const DRIVE_DISCOVERY = 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest';
 
 export class GoogleDrive {
     init(loginCallback, manual, token) {
@@ -57,7 +57,7 @@ export class GoogleDrive {
             gapi.client.setToken(response);
             gapi.client.load(DRIVE_DISCOVERY).then(() => {
                 if (this.isLogged()) {
-                    callback()
+                    callback();
                 }
             });
         }
@@ -65,31 +65,31 @@ export class GoogleDrive {
 
     isLogged() {
         if (this.hasAccess()) {
-            return true
+            return true;
         }
         return false;
     }
 
     hasAccess() {
-        return google.accounts.oauth2.hasGrantedAnyScope(this.response, DRIVE_SCOPE)
+        return google.accounts.oauth2.hasGrantedAnyScope(this.response, DRIVE_SCOPE);
     }
 
     requestLogin(manual, hint) {
         this.response = null;
         if (manual) {
-            this.client.requestAccessToken({prompt: 'select_account'})
+            this.client.requestAccessToken({prompt: 'select_account'});
         } else {
             this.client.requestAccessToken({
                 prompt: '',
                 hint: hint,
-            })
+            });
         }
     }
 
     revoke() {
         if (this.response) {
             this.response = undefined;
-            google.accounts.oauth2.revoke(this.response.access_token)
+            google.accounts.oauth2.revoke(this.response.access_token);
         }
     }
 
@@ -102,9 +102,9 @@ export class GoogleDrive {
 
         for (let file of response.result.files) {
             if (file.name == fileName && !fileId) {
-                fileId = file.id
+                fileId = file.id;
             } else {
-                this.delete(file.id)
+                this.delete(file.id);
             }
         }
 
@@ -127,7 +127,7 @@ export class GoogleDrive {
         let file = await gapi.client.drive.files.get({
             fileId: fileId,
             alt: 'media'
-        })
+        });
 
         return file.body;
     }
@@ -148,7 +148,7 @@ export class GoogleDrive {
     }
 
     isGapiLoaded() {
-        return gapi && gapi.auth2
+        return gapi && gapi.auth2;
     }
 
     logout() {

@@ -36,5 +36,5 @@ export const ResolutionofSojourner = new ArtifactSet({
             ],
         },
     ],
-})
+});
 

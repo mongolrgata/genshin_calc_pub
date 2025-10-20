@@ -67,7 +67,7 @@ export class PostEffectStats extends PostEffect {
 
             let base = this.getBaseValueTree(data, opts);
             if (this.params.maxBase) {
-                base = new CValueCap([base], {value: new CConst({value: this.params.maxBase})})
+                base = new CValueCap([base], {value: new CConst({value: this.params.maxBase})});
             } else if (this.params.exceed) {
                 base = new CValueAboveZero([
                     new CSubtract([base, new CConst({value: this.params.exceed})]),

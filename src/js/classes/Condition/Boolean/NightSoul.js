@@ -9,7 +9,7 @@ export class ConditionBooleanNightSoul extends ConditionBoolean {
         }
 
         if (settings.char_origin == 'natlan' || settings.char_id == 100) {
-            return true
+            return true;
         }
 
         return false;

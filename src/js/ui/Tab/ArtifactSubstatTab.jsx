@@ -36,12 +36,12 @@ export class ArtifactSubstatTab extends Tab {
     createContent() {
         return (
             <ArtifactSubstatView
-                ref={obj => { this.component = obj }}
+                ref={obj => { this.component = obj; }}
                 app={this.app}
                 feature={this.app.getFeature()}
                 displayMode={this.app.getDisplayMode()}
             />
-        )
+        );
     }
 }
 
@@ -98,7 +98,7 @@ class ArtifactSubstatView extends React.Component {
             }
         }
 
-        results = results.sort(function(a,b) {return b.feature.average - a.feature.average});
+        results = results.sort(function(a,b) {return b.feature.average - a.feature.average;});
 
         return results;
     }
@@ -182,7 +182,7 @@ function ArtifactSubstatItem(props) {
                 displayMode={props.displayMode}
             />
         </div>
-    )
+    );
 }
 
 function valuesAreEqual(value1, value2) {

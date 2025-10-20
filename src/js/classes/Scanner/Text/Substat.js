@@ -29,7 +29,7 @@ export class ScannerTextSubstat extends ScannerTextBase {
             value = parts[1];
         } else {
             value = text.replace(/[^0-9\.,]+/g, '');
-            name  = text.replace(/\s*(\+)?\s*\d+((,|\.)\d+)?/ig, '');
+            name  = text.replace(/\s*(\+)?\s*\d+(([,.])\d+)?/ig, '');
         }
 
         value = value.replace(',', '.');

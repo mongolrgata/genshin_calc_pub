@@ -65,4 +65,4 @@ export const BlizzardStrayer = new ArtifactSet({
             ],
         }
     ],
-})
+});

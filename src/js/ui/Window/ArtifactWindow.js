@@ -61,7 +61,7 @@ export class ArtifactWindow extends Window{
 
         html += '<div class="gi-artifact-window-group-wrapper"><div class="gi-artifact-window-group"></div>';
         html += '<div class="gi-artifact-window-group-add">';
-        html += `<div class="gi-artifact-window-group-add-button" data-tooltip="${UI.Lang.get('artifact_group.add')}"></div>`
+        html += `<div class="gi-artifact-window-group-add-button" data-tooltip="${UI.Lang.get('artifact_group.add')}"></div>`;
         html += '</div></div>';
 
         html += '</div>';
@@ -100,10 +100,10 @@ export class ArtifactWindow extends Window{
             }
             html += '</div>';
 
-            html += '<div class="gi-modal-substat-value-wrapper">'
+            html += '<div class="gi-modal-substat-value-wrapper">';
             html += '<div class="gi-modal-substat-value"><input type="text" value="" class="gi-inputs-number-input">';
             html += '<div class="gi-modal-substat-value-slider"><input class="gi-artifact-substat-slider" type="range"></div></div>';
-            html += '<div class="gi-modal-substat-value-rolls"></div>'
+            html += '<div class="gi-modal-substat-value-rolls"></div>';
 
             html += '</div></div>';
         }
@@ -244,7 +244,7 @@ export class ArtifactWindow extends Window{
             this.root.find('.gi-modal-substat-line.slot-'+ slot +' .gi-modal-substat-item[data-stat="'+ stat +'"]').addClass('active');
             this.root.find('.gi-modal-substat-line.slot-'+ slot +' .gi-inputs-number-input').data('stat', stat);
 
-            this.refreshSubstats(slot)
+            this.refreshSubstats(slot);
         }
 
         this.refreshError();
@@ -264,8 +264,8 @@ export class ArtifactWindow extends Window{
                 const rarityInfo = DB.Artifacts.Rarity[this.rarity-1];
 
                 let step = db.type == 'percent' ? 0.1 : 1;
-                let rolls = db.rolls[this.rarity-1]
-                let min = Stats.roundStatValue(stat, rolls[0])
+                let rolls = db.rolls[this.rarity-1];
+                let min = Stats.roundStatValue(stat, rolls[0]);
                 let max = Stats.roundStatValue(stat, rolls[rolls.length - 1] * rarityInfo.maxUpgrades);
 
                 this.root.find('.gi-modal-substat-line.slot-'+ slot +' .gi-artifact-substat-slider').giSlider('range', min, max, step);
@@ -376,7 +376,7 @@ export class ArtifactWindow extends Window{
         let errors = [];
 
         for (const name of art.getErrors()) {
-            errors.push( UI.Lang.get('artifact_error.'+ name) )
+            errors.push( UI.Lang.get('artifact_error.'+ name) );
         }
 
         let html = errors.join('; ');
@@ -579,7 +579,7 @@ export class ArtifactWindow extends Window{
     }
 
     show(callback, artifact, slot, opts) {
-        opts = Object.assign({}, opts)
+        opts = Object.assign({}, opts);
         this.init();
         this.callback = callback;
 
@@ -632,7 +632,7 @@ export class ArtifactWindow extends Window{
         if (Array.isArray(opts.groups)) {
             this.groupsList = opts.groups;
             this.root.find('.gi-artifact-window-group-wrapper').show();
-            this.refreshGroups()
+            this.refreshGroups();
         } else {
             this.groupsList = [];
             this.root.find('.gi-artifact-window-group-wrapper').hide();

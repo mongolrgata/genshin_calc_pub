@@ -139,9 +139,9 @@ const condNotStance = new ConditionNot([
     new ConditionBoolean({name: 'ayato_takimeguri_kanka'}),
 ]);
 const maxStacksFunc = function(settings) {
-    if (settings.char_constellation >= 2) {return 5}
+    if (settings.char_constellation >= 2) {return 5;}
     return 4;
-}
+};
 
 export const Ayato = new DbObjectChar({
     name: 'kamisato_ayato',

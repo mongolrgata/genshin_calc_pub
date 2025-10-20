@@ -84,7 +84,7 @@ export class Stats {
         for (let stat of Object.keys(this)) {
             code.push(`stats.${stat} = ${this[stat]}`);
         }
-        return Function('stats', code.join(';'))
+        return Function('stats', code.join(';'));
     }
 
     getConcatFunc(setStats) {
@@ -99,7 +99,7 @@ export class Stats {
             }
         }
 
-        return Function('stats', code.join(';'))
+        return Function('stats', code.join(';'));
     }
 
     truncate(stats) {
@@ -151,7 +151,7 @@ export class Stats {
             }
 
             let base = this.get(stat +'_base');
-            let bonus = (base * this.get(stat +'_percent') / 100) + this.get(stat)
+            let bonus = (base * this.get(stat +'_percent') / 100) + this.get(stat);
             let total = base + bonus;
 
             result.add(stat +'_base', base);
@@ -165,7 +165,7 @@ export class Stats {
             }
 
             let base = this.get(stat +'_base');
-            let bonus = this.get(stat)
+            let bonus = this.get(stat);
             let total = base + bonus;
 
             result.add(stat +'_base', base);
@@ -180,7 +180,7 @@ export class Stats {
                 }
 
                 let base = this.get(type + stat +'_base');
-                let bonus = this.get(type + stat)
+                let bonus = this.get(type + stat);
                 let total = base + bonus;
 
                 result.add(type + stat +'_base', base);
@@ -210,7 +210,7 @@ export class Stats {
                 byPriority[priority].push(item);
             }
 
-            for (let priority of Object.keys(byPriority).sort((a, b) => {return a - b})) {
+            for (let priority of Object.keys(byPriority).sort((a, b) => {return a - b;})) {
                 let postStats = new Stats();
 
                 for (const item of byPriority[priority]) {
@@ -275,9 +275,9 @@ export class Stats {
 
             if (opts.minimize) {
                 if (result > 10000000) {
-                    result = (result / 1000000).toFixed(2) +'m'
+                    result = (result / 1000000).toFixed(2) +'m';
                 } else if (result > 1000000) {
-                    result = (result / 1000000).toFixed(3) +'m'
+                    result = (result / 1000000).toFixed(3) +'m';
                 }
             }
         }

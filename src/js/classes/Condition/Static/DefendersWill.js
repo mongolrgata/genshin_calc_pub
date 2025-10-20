@@ -18,7 +18,7 @@ export class ConditionDefendersWill extends ConditionStatic {
     }
 
     getStats(settings) {
-        settings ||= {}
+        settings ||= {};
 
         let stats = new Stats({
             text_percent: 30,
@@ -30,14 +30,14 @@ export class ConditionDefendersWill extends ConditionStatic {
             if (!element) continue;
 
             if (!elements[element]) {
-                elements[element] = 0
+                elements[element] = 0;
             }
-            ++elements[element]
+            ++elements[element];
         }
 
         for (let element of Object.keys(elements)) {
             if (elements[element] == 1) {
-                stats.add('res_'+ element, 30)
+                stats.add('res_'+ element, 30);
             }
         }
 

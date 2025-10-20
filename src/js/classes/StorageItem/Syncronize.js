@@ -16,9 +16,9 @@ export class Syncronize {
 
     init() {
         for (let name of Object.keys(this.scripts)) {
-            var newScript = document.createElement("script");
-            newScript.onload = () => {this.scriptLoaded(name)};
-            newScript.onerror = () => {this.scriptError(name)};
+            const newScript = document.createElement("script");
+            newScript.onload = () => {this.scriptLoaded(name);};
+            newScript.onerror = () => {this.scriptError(name);};
             document.head.appendChild(newScript);
             newScript.src = name;
         }
@@ -53,14 +53,14 @@ export class Syncronize {
     apiLoaded() {
         this.setStatus('disabled');
         if (this.isEnabled()) {
-            UI.Sync.enable()
+            UI.Sync.enable();
             this.driveInitApp();
         }
     }
 
     driveInitApp(manual) {
         this.setStatus(manual ? 'auth' : 'init');
-        this.api.init(() => {this.apiIsLoaded()}, manual, manual ? '' : this.getSavedToken());
+        this.api.init(() => {this.apiIsLoaded();}, manual, manual ? '' : this.getSavedToken());
     }
 
     getSavedToken() {
@@ -118,7 +118,7 @@ export class Syncronize {
 
         try {
             let fileId = await this.backupFileId();
-            let data = await this.api.download(fileId)
+            let data = await this.api.download(fileId);
             let remoteData = Backup.fromString(data);
 
             let lastModified = this.app.getSetting('storage_last_modified') || 0;
@@ -205,6 +205,6 @@ export class Syncronize {
             clearTimeout(this.syncTimeout);
         }
 
-        this.syncTimeout = setTimeout(() => { this.storageSyncUpload() }, PENDING_DELAY_SEC);
+        this.syncTimeout = setTimeout(() => { this.storageSyncUpload(); }, PENDING_DELAY_SEC);
     }
 }

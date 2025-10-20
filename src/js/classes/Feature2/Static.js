@@ -21,7 +21,7 @@ export class FeatureStatic extends Feature2 {
 
         return new CStaticValue([
             new CBaseDamage(
-                multipliers.map((i) => {return i.getTree(data)})
+                multipliers.map((i) => {return i.getTree(data);})
             ),
         ]);
     }

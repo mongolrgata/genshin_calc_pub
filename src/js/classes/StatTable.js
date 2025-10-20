@@ -30,6 +30,6 @@ export class StatTable {
             new_values.push(val * multi);
         }
 
-        return new StatTable(this.stat, new_values)
+        return new StatTable(this.stat, new_values);
     }
 }

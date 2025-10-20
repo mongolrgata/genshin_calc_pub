@@ -26,7 +26,7 @@ export class Roll extends React.Component {
         let targetTop = this.itemOffsets[this.props.selected.id];
         let value = targetTop - offset;
         if (value < 0) {
-            value += this.totalOffset
+            value += this.totalOffset;
         }
 
         this.container.scrollTop = value;

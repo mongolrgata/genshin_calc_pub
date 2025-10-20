@@ -14,7 +14,6 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     text-align: center;
-    margin-bottom: 10px;
     border-radius: 20px;
     border: solid 2px #626770;
     box-sizing: border-box;
@@ -69,7 +68,7 @@
 }
 
 .gi-talent-description .simplebar-track.simplebar-vertical {
-    margin: 15px 0px;
+    margin: 15px 0;
 }
 
 .simplebar-content .gi-talent-table-line:last-child {

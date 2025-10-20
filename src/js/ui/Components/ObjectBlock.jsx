@@ -288,11 +288,11 @@ class ObjectAscended extends React.Component {
 
 class ObjectName extends React.Component {
     componentDidUpdate() {
-        this.checkLength()
+        this.checkLength();
     }
 
     componentDidMount() {
-        this.checkLength()
+        this.checkLength();
     }
 
     checkLength() {
@@ -396,7 +396,7 @@ function getLevelIndex(level, ascension) {
 
         if (level > item.maxLevel) continue;
         if (level < item.level) break;
-        index = i
+        index = i;
 
         if (level == item.level && item.ascension == ascension) break;
     }

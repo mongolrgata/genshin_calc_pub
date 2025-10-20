@@ -209,7 +209,7 @@ export class Rotation {
 
             if (selected) {
                 result.typeId = 6;
-                result.object = 'buffs',
+                result.object = 'buffs';
                 result.icon   = selected.getIcon();
                 conditions    = [selected];
                 validConditions = conditions;
@@ -342,7 +342,7 @@ function deserializeItems(input, counter, version) {
         if (type == ITEM_TYPE_FEATURE) {
             item.type = 'feature';
 
-            let featId = input.shift()
+            let featId = input.shift();
             item.feature = DB.Features.Rotation.getById(featId);
 
             if (!item.feature) return null;

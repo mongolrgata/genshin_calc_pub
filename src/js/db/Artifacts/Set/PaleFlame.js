@@ -53,4 +53,4 @@ export const PaleFlame = new ArtifactSet({
             ],
         },
     ],
-})
+});

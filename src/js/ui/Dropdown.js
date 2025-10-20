@@ -3,7 +3,7 @@ import SimpleBar from 'simplebar';
 
 import "../../css/ui/Dropdown.css"
 
-var methods = {
+const methods = {
     init: function() {
         return this.each(function() {
             let $this = $(this);
@@ -90,7 +90,7 @@ var methods = {
                 } else {
                     $this.trigger('change');
                 }
-            })
+            });
 
             wrapper.find('.gi-dropdown-option').on('click', function() {
                 let optionValue = $(this).data('value');
@@ -98,16 +98,16 @@ var methods = {
                 if (isMultiple) {
                     let currentValues = [];
                     $this.find('option:selected').each(function() {
-                        currentValues.push($(this).attr('value'))
+                        currentValues.push($(this).attr('value'));
                     });
 
-                    let index = currentValues.indexOf(optionValue)
+                    let index = currentValues.indexOf(optionValue);
                     if (index >= 0) {
                         $(this).removeClass('selected');
                         currentValues.splice(index, 1);
                     } else {
                         $(this).addClass('selected');
-                        currentValues.push(optionValue)
+                        currentValues.push(optionValue);
                     }
 
                     $this.find('option').removeAttr('selected');
@@ -170,7 +170,7 @@ function isDropUp($this) {
 
     let wrapper = $this.closest('.gi-dropdown-wrapper');
     let options = wrapper.find('.gi-dropdown-options');
-    let height = UI.Layout.windowHeight()
+    let height = UI.Layout.windowHeight();
 
     if (height - options.offset().top > options.height() + 30) {
         return false;
@@ -178,7 +178,7 @@ function isDropUp($this) {
         return true;
     }
 
-    return false
+    return false;
 }
 
 $.fn.giDropdown = function(method) {

@@ -23,22 +23,27 @@
 	background-image: url("../../images/sprites/enemy_hilichurls_7f29730dca997bb9e46b03379d4d1b6c.png");
 	background-size: 300px 300px;
 }
-.sprite.type-hilichurls.enemy-icon-brute-electric-01 {background-position: 0% 0%}
-.sprite.type-hilichurls.enemy-icon-brute-ice-01 {background-position: 25% 0%}
-.sprite.type-hilichurls.enemy-icon-brute-none-01 {background-position: 50% 0%}
-.sprite.type-hilichurls.enemy-icon-brute-rock-none {background-position: 75% 0%}
-.sprite.type-hilichurls.enemy-icon-hili-electric-range {background-position: 100% 0%}
-.sprite.type-hilichurls.enemy-icon-hili-fire-range {background-position: 0% 25%}
+.sprite.type-hilichurls.enemy-icon-brute-electric-01 {background-position: 0 0
+}
+.sprite.type-hilichurls.enemy-icon-brute-ice-01 {background-position: 25% 0
+}
+.sprite.type-hilichurls.enemy-icon-brute-none-01 {background-position: 50% 0
+}
+.sprite.type-hilichurls.enemy-icon-brute-rock-none {background-position: 75% 0
+}
+.sprite.type-hilichurls.enemy-icon-hili-electric-range {background-position: 100% 0
+}
+.sprite.type-hilichurls.enemy-icon-hili-fire-range {background-position: 0 25%}
 .sprite.type-hilichurls.enemy-icon-hili-ice-range {background-position: 25% 25%}
 .sprite.type-hilichurls.enemy-icon-hili-none-01 {background-position: 50% 25%}
 .sprite.type-hilichurls.enemy-icon-hili-wei {background-position: 75% 25%}
 .sprite.type-hilichurls.enemy-icon-shaman-electric-01 {background-position: 100% 25%}
-.sprite.type-hilichurls.enemy-icon-shaman-grass-01 {background-position: 0% 50%}
+.sprite.type-hilichurls.enemy-icon-shaman-grass-01 {background-position: 0 50%}
 .sprite.type-hilichurls.enemy-icon-shaman-ice-01 {background-position: 25% 50%}
 .sprite.type-hilichurls.enemy-icon-shaman-rock-01 {background-position: 50% 50%}
 .sprite.type-hilichurls.enemy-icon-shaman-water-01 {background-position: 75% 50%}
 .sprite.type-hilichurls.enemy-icon-shaman-wind-01 {background-position: 100% 50%}
-.sprite.type-hilichurls.enemy-icon-hilistray-wind {background-position: 0% 75%}
+.sprite.type-hilichurls.enemy-icon-hilistray-wind {background-position: 0 75%}
 .sprite.type-hilichurls.enemy-icon-hilistray-water {background-position: 25% 75%}
 
 @media

@@ -18,20 +18,20 @@ export class ArtifactTooltip extends Modal {
                 ref={(obj) => this.modal = obj}
                 app={this.app}
             />
-        )
+        );
     }
 
     hide() {
         waitForCondition(
-            () => {return this.modal},
-            () => {this.modal.hide()},
+            () => {return this.modal;},
+            () => {this.modal.hide();},
         );
     }
 
     updatePosition() {
         waitForCondition(
-            () => {return this.modal},
-            () => {this.modal.updatePosition()},
+            () => {return this.modal;},
+            () => {this.modal.updatePosition();},
         );
     }
 }
@@ -48,7 +48,7 @@ class ArtifactTooltipWindow extends React.PureComponent {
 
     show(artifact, feature, artSettings) {
         if (this.hideTimeout) {
-            clearTimeout(this.hideTimeout)
+            clearTimeout(this.hideTimeout);
         }
 
         this.setState({
@@ -61,10 +61,10 @@ class ArtifactTooltipWindow extends React.PureComponent {
 
     hide() {
         if (this.hideTimeout) {
-            clearTimeout(this.hideTimeout)
+            clearTimeout(this.hideTimeout);
         }
 
-        this.hideTimeout = setTimeout(() => {this.handleClose()}, 20);
+        this.hideTimeout = setTimeout(() => {this.handleClose();}, 20);
     }
 
     handleClose() {
@@ -89,7 +89,7 @@ class ArtifactTooltipWindow extends React.PureComponent {
 
     dialogNode() {
         let art = this.state.artifact;
-        if (!art || !this.state.isVisible) {return ""}
+        if (!art || !this.state.isVisible) {return "";}
 
         let mainStat = art.getMainStat();
         let setData = DB.Artifacts.Sets.get(art.getSet());

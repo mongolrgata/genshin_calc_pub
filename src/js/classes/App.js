@@ -3,7 +3,7 @@ import { Rotation } from "./Rotation";
 import { Serializer } from "./Serializer";
 import { Storage } from "./Storage";
 
-const DEFAULT_CHAR_BUILD = 'bbbaabbbabbabaaabcbabrabadaaa'
+const DEFAULT_CHAR_BUILD = 'bbbaabbbabbabaaabcbabrabadaaa';
 
 export class App {
     constructor(version) {
@@ -14,14 +14,14 @@ export class App {
 
         this.loadDefault();
 
-        window.addEventListener('hashchange', () =>{ this.checkHash() });
+        window.addEventListener('hashchange', () =>{ this.checkHash(); });
     }
 
     loadDefault() {
         let char = DB.Chars.getFirst();
         this.current.setChar(char);
-        this.current.setWeapon(DB.Weapons.get(char.weapon).getFirst())
-        this.current.setEnemy(DB.Enemies.getFirst().getFirst())
+        this.current.setWeapon(DB.Weapons.get(char.weapon).getFirst());
+        this.current.setEnemy(DB.Enemies.getFirst().getFirst());
     }
 
     checkHash() {
@@ -76,7 +76,7 @@ export class App {
 
         if (loadedRotation) {
             this.setRotation(loadedRotation);
-            setTimeout(() => {UI.Layout.showTab('rotation')}, 500);
+            setTimeout(() => {UI.Layout.showTab('rotation');}, 500);
         }
     }
 
@@ -94,9 +94,9 @@ export class App {
             char = DB.Chars.getFirst();
         }
         this.setChar(char);
-        this.setWeapon(DB.Weapons.get(char.weapon).getFirst())
-        this.setEnemy(DB.Enemies.getFirst().getFirst())
-        document.location.hash = ''
+        this.setWeapon(DB.Weapons.get(char.weapon).getFirst());
+        this.setEnemy(DB.Enemies.getFirst().getFirst());
+        document.location.hash = '';
     }
 
     replaceSet(set) {
@@ -266,7 +266,7 @@ export class App {
     }
 
     showBetaContent() {
-        return this.storage.settings.showBetaContent()
+        return this.storage.settings.showBetaContent();
     }
 
     getSetting(name) {
@@ -344,9 +344,9 @@ export class App {
     saveLastBuild() {
         let build = Serializer.pack(this.currentSet());
         if (build != DEFAULT_CHAR_BUILD) {
-            this.setSetting('last_build', build)
+            this.setSetting('last_build', build);
         } else {
-            this.setSetting('last_build', '')
+            this.setSetting('last_build', '');
         }
     }
 

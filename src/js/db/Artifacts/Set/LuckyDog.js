@@ -25,4 +25,4 @@ export const LuckyDog = new ArtifactSet({
             ],
         },
     ],
-})
+});

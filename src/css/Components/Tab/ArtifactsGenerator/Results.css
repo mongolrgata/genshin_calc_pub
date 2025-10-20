@@ -52,7 +52,7 @@
 
 .artifact-generator-results .button {
     width: 35px;
-    margin: 0px 5px;
+    margin: 0 5px;
     flex-shrink: 0;
 }
 
@@ -82,13 +82,13 @@
 }
 
 .artifact-generator-results .slot.sands {
-    background-position: -40px 0px;
+    background-position: -40px 0;
 }
 
 .artifact-generator-results .slot.goblet {
-    background-position: -60px 0px;
+    background-position: -60px 0;
 }
 
 .artifact-generator-results .slot.circlet {
-    background-position: -80px 0px;
+    background-position: -80px 0;
 }

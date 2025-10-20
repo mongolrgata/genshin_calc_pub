@@ -33,7 +33,7 @@ self.onmessage = function(input) {
         for (let item of results) {
             let arts = [];
             for (let art of item.artifacts) {
-                arts.push(art ? art.serialize() : null)
+                arts.push(art ? art.serialize() : null);
             }
             item.artifacts = arts;
         }
@@ -42,4 +42,4 @@ self.onmessage = function(input) {
     }
 
     self.postMessage({result: []});
-}
+};

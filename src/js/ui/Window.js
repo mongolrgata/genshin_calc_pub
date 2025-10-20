@@ -27,7 +27,7 @@ export class Window {
         html += '<div class="gi-modal-content"></div>';
 
         this.root.append(html);
-        this.setCaption( UI.Lang.get(this.caption) )
+        this.setCaption( UI.Lang.get(this.caption) );
 
         this.root.appendTo(document.body);
         this.back.appendTo(document.body);

@@ -20,17 +20,17 @@ export function prepareUid(uid) {
     for (let num of digits) {
         let m = 2 + Math.floor(Math.random() * 8);
         num = parseInt(num) * m;
-        parts.push(String(num).padStart(4, '0') + (10 - m))
+        parts.push(String(num).padStart(4, '0') + (10 - m));
     }
 
     let sum = 0;
     for (let p of parts) {
-        sum += calcSum(p)
+        sum += calcSum(p);
     }
 
     let rParts = [pos];
     for (let i of POS_LIST[pos-1]) {
-        rParts.push(parts[i-1])
+        rParts.push(parts[i-1]);
     }
 
     return rParts.join('') + String(sum % 100).padStart(2, '0');

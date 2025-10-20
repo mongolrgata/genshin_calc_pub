@@ -15,7 +15,7 @@ export class FeatureDamagePlungeShockWave extends FeatureDamagePlunge {
      * @returns {Array.<string>}
      */
     getStatsDmgBonus(data) {
-        let result = super.getStatsDmgBonus(data)
+        let result = super.getStatsDmgBonus(data);
         result.push('dmg_plunge_shockwave');
         return result;
     }

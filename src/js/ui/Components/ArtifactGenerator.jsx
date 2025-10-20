@@ -18,7 +18,7 @@ export const DEFAULT_SETTINGS = {
     rollMode: 'avg',
     minRecharge: 100,
     kqms: true,
-}
+};
 
 export class ArtifactGeneratorSettings extends React.Component {
     constructor(props) {

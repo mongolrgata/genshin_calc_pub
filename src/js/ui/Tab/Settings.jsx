@@ -37,7 +37,7 @@ export class SettingsTab extends Tab {
     createContent() {
         return (
             <SettingsView
-                ref={element => { this.component = element }}
+                ref={element => { this.component = element; }}
                 app={this.app}
                 title={this.title}
             />
@@ -110,7 +110,7 @@ export class SettingsView extends React.Component {
             }
         };
 
-        reader.onerror = () => {this.backupError()};
+        reader.onerror = () => {this.backupError();};
     }
 
     backupError() {
@@ -145,7 +145,7 @@ export class SettingsView extends React.Component {
     }
 
     handleToggleBetaContent(value) {
-        this.props.app.setSetting('show_beta_content', value ? 1 : 0)
+        this.props.app.setSetting('show_beta_content', value ? 1 : 0);
         this.refresh();
     }
 

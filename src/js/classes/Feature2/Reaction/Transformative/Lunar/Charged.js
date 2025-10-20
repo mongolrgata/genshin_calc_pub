@@ -1,9 +1,9 @@
 import { FeatureReactionLunar } from "../Lunar";
 
 export class FeatureReactionLunarCharged extends FeatureReactionLunar {
-    getReactionRate() { return 1.8 }
-    getReactionPenalty() { return this.penalty }
-    getScalingStat(data) { return 'lunarcharged_multi' }
+    getReactionRate() { return 1.8; }
+    getReactionPenalty() { return this.penalty; }
+    getScalingStat(data) { return 'lunarcharged_multi'; }
 
     /**
      * @returns {Array.<string>}

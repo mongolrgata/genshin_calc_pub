@@ -21,7 +21,7 @@ export class WorkerFactorySuggestWeapons extends WorkerFactory {
             if (this.partialCallback) {
                 let deserialized = [];
                 for (let a of data.partial.artifacts) {
-                    deserialized.push(Artifact.deserialize(a))
+                    deserialized.push(Artifact.deserialize(a));
                 }
                 data.partial.artifacts = deserialized;
 
@@ -45,7 +45,7 @@ export class WorkerFactorySuggestWeapons extends WorkerFactory {
                 continue;
             }
             if (item.subProgress && item.subProgress.total) {
-                items.push(item.subProgress)
+                items.push(item.subProgress);
             }
         }
 
@@ -61,12 +61,12 @@ export class WorkerFactorySuggestWeapons extends WorkerFactory {
             }
         }
 
-        result = result.sort((a, b) => {return b.result.average - a.result.average});
+        result = result.sort((a, b) => {return b.result.average - a.result.average;});
 
         for (let item of result) {
             let deserialized = [];
             for (let data of item.artifacts) {
-                deserialized.push(Artifact.deserialize(data))
+                deserialized.push(Artifact.deserialize(data));
             }
             item.artifacts = deserialized;
         }
@@ -78,7 +78,7 @@ export class WorkerFactorySuggestWeapons extends WorkerFactory {
         data.build = data.build.serialize();
 
         if (data.storage && data.storage.artifacts) {
-            let serialized = []
+            let serialized = [];
             for (let art of data.storage.artifacts) {
                 serialized.push(art.serialize());
             }

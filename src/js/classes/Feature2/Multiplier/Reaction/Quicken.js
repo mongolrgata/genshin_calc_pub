@@ -12,7 +12,7 @@ export class FeatureMultiplierReactionQuicken extends FeatureMultiplierReaction 
      * @returns {boolean}
      */
     isMatchFeature(feature, data) {
-        if (feature && !feature.canReact()) return false
+        if (feature && !feature.canReact()) return false;
         return super.isMatchFeature(feature, data);
     }
 
@@ -63,7 +63,7 @@ export class FeatureMultiplierReactionQuicken extends FeatureMultiplierReaction 
      */
     getReactionBonuses(data) {
         return new CSum([
-            ...this.getStatsDmgBonus().map((stat) => { return makeStatItem(stat, data.stats) })
+            ...this.getStatsDmgBonus().map((stat) => { return makeStatItem(stat, data.stats); })
         ]);
     }
 

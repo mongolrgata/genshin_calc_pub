@@ -42,37 +42,43 @@
 	background-image: url("../../images/sprites/enemy_elemental_ef570e0cfedababf2c521b7f3e8fa75b.png");
 	background-size: 360px 360px;
 }
-.sprite.type-elemental.enemy-icon-effigy-electric {background-position: 0% 0%}
-.sprite.type-elemental.enemy-icon-effigy-fire {background-position: 20% 0%}
-.sprite.type-elemental.enemy-icon-effigy-ice {background-position: 40% 0%}
-.sprite.type-elemental.enemy-icon-effigy-rock {background-position: 60% 0%}
-.sprite.type-elemental.enemy-icon-effigy-water {background-position: 80% 0%}
-.sprite.type-elemental.enemy-icon-effigy-wind {background-position: 100% 0%}
-.sprite.type-elemental.enemy-icon-elemental-wind-01 {background-position: 0% 20%}
+.sprite.type-elemental.enemy-icon-effigy-electric {background-position: 0 0
+}
+.sprite.type-elemental.enemy-icon-effigy-fire {background-position: 20% 0
+}
+.sprite.type-elemental.enemy-icon-effigy-ice {background-position: 40% 0
+}
+.sprite.type-elemental.enemy-icon-effigy-rock {background-position: 60% 0
+}
+.sprite.type-elemental.enemy-icon-effigy-water {background-position: 80% 0
+}
+.sprite.type-elemental.enemy-icon-effigy-wind {background-position: 100% 0
+}
+.sprite.type-elemental.enemy-icon-elemental-wind-01 {background-position: 0 20%}
 .sprite.type-elemental.enemy-icon-oceanid {background-position: 20% 20%}
 .sprite.type-elemental.enemy-icon-oceanid-underling {background-position: 40% 20%}
 .sprite.type-elemental.enemy-icon-raijin {background-position: 60% 20%}
 .sprite.type-elemental.enemy-icon-slime-electric-02 {background-position: 80% 20%}
 .sprite.type-elemental.enemy-icon-slime-electric-03 {background-position: 100% 20%}
-.sprite.type-elemental.enemy-icon-slime-electric-03-positive {background-position: 0% 40%}
+.sprite.type-elemental.enemy-icon-slime-electric-03-positive {background-position: 0 40%}
 .sprite.type-elemental.enemy-icon-slime-fire-02 {background-position: 20% 40%}
 .sprite.type-elemental.enemy-icon-slime-fire-03 {background-position: 40% 40%}
 .sprite.type-elemental.enemy-icon-slime-grass-02 {background-position: 60% 40%}
 .sprite.type-elemental.enemy-icon-slime-grass-03 {background-position: 80% 40%}
 .sprite.type-elemental.enemy-icon-slime-ice-02 {background-position: 100% 40%}
-.sprite.type-elemental.enemy-icon-slime-ice-03 {background-position: 0% 60%}
+.sprite.type-elemental.enemy-icon-slime-ice-03 {background-position: 0 60%}
 .sprite.type-elemental.enemy-icon-slime-rock-02 {background-position: 20% 60%}
 .sprite.type-elemental.enemy-icon-slime-rock-03 {background-position: 40% 60%}
 .sprite.type-elemental.enemy-icon-slime-water-02 {background-position: 60% 60%}
 .sprite.type-elemental.enemy-icon-slime-water-03 {background-position: 80% 60%}
 .sprite.type-elemental.enemy-icon-slime-wind-02 {background-position: 100% 60%}
-.sprite.type-elemental.enemy-icon-slime-wind-03 {background-position: 0% 80%}
+.sprite.type-elemental.enemy-icon-slime-wind-03 {background-position: 0 80%}
 .sprite.type-elemental.enemy-icon-sylph-electric-01 {background-position: 20% 80%}
 .sprite.type-elemental.enemy-icon-sylph-fire-01 {background-position: 40% 80%}
 .sprite.type-elemental.enemy-icon-sylph-ice-01 {background-position: 60% 80%}
 .sprite.type-elemental.enemy-icon-sylph-rock-01 {background-position: 80% 80%}
 .sprite.type-elemental.enemy-icon-sylph-water-01 {background-position: 100% 80%}
-.sprite.type-elemental.enemy-icon-sylph-wind-01 {background-position: 0% 100%}
+.sprite.type-elemental.enemy-icon-sylph-wind-01 {background-position: 0 100%}
 .sprite.type-elemental.enemy-icon-dendro-specter {background-position: 20% 100%}
 .sprite.type-elemental.enemy-icon-effigy-grass {background-position: 40% 100%}
 .sprite.type-elemental.enemy-icon-necalevia-big {background-position: 60% 100%}

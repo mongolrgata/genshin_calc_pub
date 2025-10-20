@@ -5,13 +5,13 @@
 }
 
 .slider-wrapper:hover .slider-handler {
-    background-position: 100% 0px;
+    background-position: 100% 0;
 }
 
 .slider {
     height: 20px;
     line-height: 20px;
-    padding: 0px 5px;
+    padding: 0 5px;
     width: 20px;
     box-sizing: border-box;
     background-color: #FFF7E9;
@@ -30,15 +30,15 @@
 }
 
 .slider-minus {
-    background-position: 0px 0px;
+    background-position: 0 0;
 }
 
 .slider-plus {
-    background-position: -20px 0px;
+    background-position: -20px 0;
 }
 
 .slider-min {
-    background-position: 0px -20px;
+    background-position: 0 -20px;
 }
 
 .slider-max {
@@ -70,11 +70,11 @@
 }
 
 .slider-progress.left {
-    left: 0px;
+    left: 0;
 }
 
 .slider-progress.right {
-    right: 0px;
+    right: 0;
 }
 
 .slider-handler {
@@ -82,7 +82,7 @@
     height: 20px;
     position: absolute;
     cursor: ew-resize;
-    border: 0px none;
+    border: 0 none;
     background-color: transparent;
     background-image: url("../../../images/icons/slider.png");
     background-size: cover;

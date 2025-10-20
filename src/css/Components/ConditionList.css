@@ -100,7 +100,7 @@
 }
 
 .condition-list-item .control .static.active {
-    background-position-x: 0px;
+    background-position-x: 0;
 }
 
 .condition-list-item.party-weapon .control:nth-child(n+2) {

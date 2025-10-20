@@ -123,7 +123,7 @@ window.UI = {
     ArtifactSetSettingsModal: new ArtifactSetSettingsModal(),
     Sync: new Sync(),
 
-    debug: (text) => {if (isDevel()) { console.log(text) }}
+    debug: (text) => {if (isDevel()) { console.log(text); }}
 };
 
 function isDevel() {

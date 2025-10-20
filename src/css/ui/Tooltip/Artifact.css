@@ -35,8 +35,8 @@
     background-image: url("../../../images/artifact_title_background_left.png");
     background-size: 19px 40px;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
 }
 
 .gi-tooltip-artifact-caption-background-right {
@@ -45,8 +45,8 @@
     background-image: url("../../../images/artifact_title_background_right.png");
     background-size: 19px 40px;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
 }
 
 .gi-tooltip-artifact-caption-background-middle {
@@ -54,7 +54,7 @@
     background-image: url("../../../images/artifact_title_background_middle.png");
     background-size: 100% 40px;
     position: absolute;
-    top: 0px;
+    top: 0;
     right: 19px;
     left: 19px;
 }
@@ -101,7 +101,7 @@
 }
 
 .gi-tooltip-artifact ul {
-    margin: 0px;
+    margin: 0;
     padding-right: 15px;
 }
 
@@ -113,7 +113,7 @@
     padding-left: 35px;
     color: #5CB256;
     font-size: 18px;
-    margin: 10px 0px;
+    margin: 10px 0;
 }
 
 .gi-tooltip-artifact-feature {

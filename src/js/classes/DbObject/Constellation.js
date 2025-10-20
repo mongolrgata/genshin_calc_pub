@@ -12,7 +12,7 @@ export class DbObjectConstellation {
                 for (let cond of conditions) {
                     cond.params.info = {constellation: i+1};
                 }
-                result = result.concat(conditions)
+                result = result.concat(conditions);
             }
         }
 
@@ -29,7 +29,7 @@ export class DbObjectConstellation {
         for (let i = 0; i < level && i < this.data.length; i ++) {
             let features = this.data[i].features;
             if (features) {
-                result = result.concat(features)
+                result = result.concat(features);
             }
         }
 

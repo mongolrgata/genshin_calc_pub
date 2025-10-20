@@ -53,4 +53,4 @@ export const NighttimeWhispersInTheEchoingWoods = new ArtifactSet({
             ],
         },
     ],
-})
+});

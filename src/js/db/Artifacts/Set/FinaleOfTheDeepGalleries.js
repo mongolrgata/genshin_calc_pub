@@ -57,4 +57,4 @@ export const FinaleOfTheDeepGalleries = new ArtifactSet({
             ],
         },
     ],
-})
+});

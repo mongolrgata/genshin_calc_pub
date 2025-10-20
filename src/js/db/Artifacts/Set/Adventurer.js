@@ -25,4 +25,4 @@ export const Adventurer = new ArtifactSet({
             ],
         },
     ],
-})
+});

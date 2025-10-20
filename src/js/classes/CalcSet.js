@@ -44,11 +44,11 @@ export class CalcSet {
         }
 
         if (weapon != data.weapon) {
-            this.setWeapon(DB.Weapons.get(data.weapon).getFirst())
+            this.setWeapon(DB.Weapons.get(data.weapon).getFirst());
         }
 
         let chars = this.buffs.getPartyChars();
-        this.buffs.setPartyChars(chars.filter((id) => {return id != data.getId()}));
+        this.buffs.setPartyChars(chars.filter((id) => {return id != data.getId();}));
         this.setCharSettings(commonSettings);
     }
 
@@ -442,7 +442,7 @@ export class CalcSet {
 
     getFeaturesList(opts) {
         let result = [];
-        opts = Object.assign({}, opts)
+        opts = Object.assign({}, opts);
 
         for (let name of objectsNames) {
             if (!this[name]) {
@@ -533,12 +533,12 @@ export class CalcSet {
     }
 
     getFeatureByName(name, buildData) {
-        if (!name) { return null }
+        if (!name) { return null; }
 
         buildData ||= this.getBuildData();
 
         for (let feat of this.getFeaturesList()) {
-            if (!feat.isActive(buildData)) { continue }
+            if (!feat.isActive(buildData)) { continue; }
 
             if (name == feat.getName()) {
                 return feat;
@@ -549,7 +549,7 @@ export class CalcSet {
     }
 
     getAllFeaturesByName(name, opts) {
-        if (!name) { return [] }
+        if (!name) { return []; }
 
         let result = [];
         for (let feat of this.getFeaturesList(opts)) {

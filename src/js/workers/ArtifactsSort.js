@@ -11,7 +11,7 @@ const slotOrders = {
     sands: 3,
     goblet: 4,
     circlet: 5,
-}
+};
 
 self.onmessage = function(input) {
     let artifacts = input.data.artifacts;
@@ -75,5 +75,5 @@ self.onmessage = function(input) {
         return b.featureValue - a.featureValue || b.statValue - a.statValue || a.setValue - b.setValue || a.slotValue - b.slotValue;
     });
 
-    self.postMessage({result: results.map((i) => {return i.hash})});
-}
+    self.postMessage({result: results.map((i) => {return i.hash;})});
+};

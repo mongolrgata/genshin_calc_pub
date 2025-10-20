@@ -28,7 +28,7 @@
 }
 
 .gi-enemy-resistance-table .element-anemo {
-    background-position: -48px 0px;
+    background-position: -48px 0;
 }
 .gi-enemy-resistance-table .element-cryo {
     background-position: -32px -16px;
@@ -37,19 +37,19 @@
     background-position: -48px -16px;
 }
 .gi-enemy-resistance-table .element-electro {
-    background-position: -32px 0px;
+    background-position: -32px 0;
 }
 .gi-enemy-resistance-table .element-geo {
-    background-position: 0px -16px;
+    background-position: 0 -16px;
 }
 .gi-enemy-resistance-table .element-hydro {
     background-position: -16px -16px;
 }
 .gi-enemy-resistance-table .element-pyro {
-    background-position: -16px 0px;
+    background-position: -16px 0;
 }
 .gi-enemy-resistance-table .element-phys {
-    background-position: 0px 0px;
+    background-position: 0 0;
 }
 
 .gi-enemy-resistance-table .green {

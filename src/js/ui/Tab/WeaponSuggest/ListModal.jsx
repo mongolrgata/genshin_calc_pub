@@ -147,7 +147,7 @@ export class WeaponSuggestListModal extends React.Component {
             });
         }
 
-        weaponsSorted = weaponsSorted.sort((a, b) => {return b.rarity - a.rarity || a.title.localeCompare(b.title)});
+        weaponsSorted = weaponsSorted.sort((a, b) => {return b.rarity - a.rarity || a.title.localeCompare(b.title);});
 
         for (let item of weaponsSorted) {
             let key = item.name;
@@ -159,7 +159,7 @@ export class WeaponSuggestListModal extends React.Component {
                     onRefineChange={(id, refine, checked) => this.handleRefineChange(item.name, id, refine, checked)}
                     {...item}
                 />
-            )
+            );
         }
 
         return items;
@@ -188,7 +188,7 @@ function WeaponListItemSettings(props) {
     if (weaponSettings.length == 0) {
         settingIds = [''];
     } else {
-        settingIds = weaponSettings.map((i) => {return i.name});
+        settingIds = weaponSettings.map((i) => {return i.name;});
     }
 
     for (let id of settingIds) {

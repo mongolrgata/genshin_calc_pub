@@ -11,7 +11,7 @@ export class FeatureRotation extends Feature2 {
         this.items = params.items;
     }
 
-    getName() { return 'rotation.total' }
+    getName() { return 'rotation.total'; }
 
     /**
      * @param {BuildData} data
@@ -86,17 +86,17 @@ export class FeatureRotation extends Feature2 {
                     result.push({});
                 }
             } else if (item.type == 'condition') {
-                if (item.settings) { buildData.addSettings(item.settings) }
-                if (item.stats) { buildData.addStats(item.stats) }
+                if (item.settings) { buildData.addSettings(item.settings); }
+                if (item.stats) { buildData.addStats(item.stats); }
 
                 // TODO
-                if (item.postEffects && item.postEffects.length) { buildData.postEffects = item.postEffects }
-                if (item.multipliers && item.multipliers.length) { buildData.multipliers = item.multipliers }
+                if (item.postEffects && item.postEffects.length) { buildData.postEffects = item.postEffects; }
+                if (item.multipliers && item.multipliers.length) { buildData.multipliers = item.multipliers; }
 
             } else if (item.type == 'repeat') {
                 let blockBuildData = buildData.clone();
                 blockBuildData.addSettings({inside_rotation_block: 1});
-                let subItems = this.processBlock(item.items, blockBuildData)
+                let subItems = this.processBlock(item.items, blockBuildData);
                 result = result.concat(subItems);
             } else if (item.type == 'uptime') {
                 let blockBuildData = buildData.clone();
@@ -157,8 +157,8 @@ export class FeatureRotation extends Feature2 {
                         damageTypes[activeFeature.getDamageType()] = 1;
                     }
                 } else if (item.type == 'condition') {
-                    if (item.settings) { buildData.addSettings(item.settings) }
-                    if (item.stats) { buildData.addStats(item.stats) }
+                    if (item.settings) { buildData.addSettings(item.settings); }
+                    if (item.stats) { buildData.addStats(item.stats); }
                 } else if (item.type == 'repeat') {
                     processBlock(item.items, buildData, elements, damageTypes);
                 } else if (item.type == 'uptime') {

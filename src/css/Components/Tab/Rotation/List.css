@@ -20,7 +20,7 @@
 }
 
 .rotation-items-list .item:first-child {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .rotation-items-list .rotation-block {
@@ -66,7 +66,7 @@
 }
 
 .rotation-items-list .rotation-block .group-box {
-    margin-top: 0px;
+    margin-top: 0;
     padding: 3px;
 }
 
@@ -176,7 +176,7 @@
 }
 
 .rotation-items-list .condition-flag.enabled {
-    background-position-x: 0px;
+    background-position-x: 0;
 }
 
 .rotation-items-list .condition-value {
@@ -201,27 +201,27 @@
 }
 
 .rotation-items-list .control.item-edit {
-    background-position-x: 0px;
-    background-position-y: 0px;
+    background-position-x: 0;
+    background-position-y: 0;
 }
 
 .rotation-items-list .control.item-delete {
     background-position-x: -28px;
-    background-position-y: 0px;
+    background-position-y: 0;
 }
 
 .rotation-items-list .control.item-copy {
     background-position-x: -56px;
-    background-position-y: 0px;
+    background-position-y: 0;
 }
 
 .rotation-items-list .control.item-enable {
     background-position-x: -84px;
-    background-position-y: 0px;
+    background-position-y: 0;
 }
 
 .rotation-items-list .control.item-eye {
-    background-position-x: 0px;
+    background-position-x: 0;
     background-position-y: -28px;
 }
 

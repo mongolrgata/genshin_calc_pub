@@ -18,9 +18,9 @@ export function ControlsBar(props) {
                 );
             })}
         </div>
-    )
+    );
 }
 
 export function ControlsBarDivider(props) {
-    return <div className='spacer' />
+    return <div className='spacer' />;
 }

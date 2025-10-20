@@ -43,9 +43,9 @@ export class ResultTableSuggesterCompare extends ResultTableSuggester {
                 html += '<div class="gi-compare-name">';
 
                 html += '<div class="gi-radio-wrapper">';
-                html += '<input class="gi-radio" type="radio" id="compare_base_'+ item.index +'" name="compare_base" value="'+ item.index +'"'+ (item.index == opts.baseIndex ? ' checked' : '') +'>'
+                html += '<input class="gi-radio" type="radio" id="compare_base_'+ item.index +'" name="compare_base" value="'+ item.index +'"'+ (item.index == opts.baseIndex ? ' checked' : '') +'>';
                 html += '<label for="compare_base_'+ item.index +'"></label>';
-                html += '</div>'
+                html += '</div>';
 
                 html += '<div class="gi-compare-name-edit"></div>';
                 html += '<div class="gi-compare-name-title">'+ item.title +'</div></div>';

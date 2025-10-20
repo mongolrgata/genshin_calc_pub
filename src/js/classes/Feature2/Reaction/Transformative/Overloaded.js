@@ -1,7 +1,7 @@
 import { FeatureReactionTransformative } from "../Transformative";
 
 export class FeatureReactionOverloaded extends FeatureReactionTransformative {
-    getReactionRate() { return 2.75 }
+    getReactionRate() { return 2.75; }
 
     /**
      * @returns {Array.<string>}

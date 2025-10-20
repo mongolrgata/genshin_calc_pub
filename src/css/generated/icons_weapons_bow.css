@@ -52,47 +52,52 @@
 	background-image: url("../../images/sprites/weapon_bow_bdc8ac626aafcc36c607e4c80b8c51ff.png");
 	background-size: 300px 660px;
 }
-.sprite.weapon-icon-bow-unknown {background-position: 0% 0%}
-.sprite.weapon-icon-bow-raven-bow {background-position: 25% 0%}
-.sprite.weapon-icon-bow-sharpshooters-oath {background-position: 50% 0%}
-.sprite.weapon-icon-bow-recurve-bow {background-position: 75% 0%}
-.sprite.weapon-icon-bow-slingshot {background-position: 100% 0%}
-.sprite.weapon-icon-bow-messenger {background-position: 0% 10%}
+.sprite.weapon-icon-bow-unknown {background-position: 0 0
+}
+.sprite.weapon-icon-bow-raven-bow {background-position: 25% 0
+}
+.sprite.weapon-icon-bow-sharpshooters-oath {background-position: 50% 0
+}
+.sprite.weapon-icon-bow-recurve-bow {background-position: 75% 0
+}
+.sprite.weapon-icon-bow-slingshot {background-position: 100% 0
+}
+.sprite.weapon-icon-bow-messenger {background-position: 0 10%}
 .sprite.weapon-icon-bow-favonius-warbow {background-position: 25% 10%}
 .sprite.weapon-icon-bow-the-stringless {background-position: 50% 10%}
 .sprite.weapon-icon-bow-sacrificial-bow {background-position: 75% 10%}
 .sprite.weapon-icon-bow-royal-bow {background-position: 100% 10%}
-.sprite.weapon-icon-bow-rust {background-position: 0% 20%}
+.sprite.weapon-icon-bow-rust {background-position: 0 20%}
 .sprite.weapon-icon-bow-prototype-crescent {background-position: 25% 20%}
 .sprite.weapon-icon-bow-compound-bow {background-position: 50% 20%}
 .sprite.weapon-icon-bow-blackcliff-warbow {background-position: 75% 20%}
 .sprite.weapon-icon-bow-the-viridescent-hunt {background-position: 100% 20%}
-.sprite.weapon-icon-bow-alley-hunter {background-position: 0% 30%}
+.sprite.weapon-icon-bow-alley-hunter {background-position: 0 30%}
 .sprite.weapon-icon-bow-fading-twilight {background-position: 25% 30%}
 .sprite.weapon-icon-bow-mitternachts-waltz {background-position: 50% 30%}
 .sprite.weapon-icon-bow-windblume-ode {background-position: 75% 30%}
 .sprite.weapon-icon-bow-hamayumi {background-position: 100% 30%}
-.sprite.weapon-icon-bow-predator {background-position: 0% 40%}
+.sprite.weapon-icon-bow-predator {background-position: 0 40%}
 .sprite.weapon-icon-bow-mouuns-moon {background-position: 25% 40%}
 .sprite.weapon-icon-bow-kings-squire {background-position: 50% 40%}
 .sprite.weapon-icon-bow-end-of-the-line {background-position: 75% 40%}
 .sprite.weapon-icon-bow-ibis-piercer {background-position: 100% 40%}
-.sprite.weapon-icon-bow-scion-of-the-blazing-sun {background-position: 0% 50%}
+.sprite.weapon-icon-bow-scion-of-the-blazing-sun {background-position: 0 50%}
 .sprite.weapon-icon-bow-song-of-stillness {background-position: 25% 50%}
 .sprite.weapon-icon-bow-cloudforged {background-position: 50% 50%}
 .sprite.weapon-icon-bow-range-gauge {background-position: 75% 50%}
 .sprite.weapon-icon-bow-flower-wreathed-feathers {background-position: 100% 50%}
-.sprite.weapon-icon-bow-chain-breaker {background-position: 0% 60%}
+.sprite.weapon-icon-bow-chain-breaker {background-position: 0 60%}
 .sprite.weapon-icon-bow-sequence-of-solitude {background-position: 25% 60%}
 .sprite.weapon-icon-bow-skyward-harp {background-position: 50% 60%}
 .sprite.weapon-icon-bow-amos-bow {background-position: 75% 60%}
 .sprite.weapon-icon-bow-elegy-for-the-end {background-position: 100% 60%}
-.sprite.weapon-icon-bow-polar-star {background-position: 0% 70%}
+.sprite.weapon-icon-bow-polar-star {background-position: 0 70%}
 .sprite.weapon-icon-bow-aqua-simulacra {background-position: 25% 70%}
 .sprite.weapon-icon-bow-thundering-pulse {background-position: 50% 70%}
 .sprite.weapon-icon-bow-hunters-path {background-position: 75% 70%}
 .sprite.weapon-icon-bow-the-first-great-magic {background-position: 100% 70%}
-.sprite.weapon-icon-bow-silvershower-heartstrings {background-position: 0% 80%}
+.sprite.weapon-icon-bow-silvershower-heartstrings {background-position: 0 80%}
 .sprite.weapon-icon-bow-astral-vultures-crimson-plumage {background-position: 25% 80%}
 
 @media

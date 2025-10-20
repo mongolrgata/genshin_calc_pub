@@ -7,7 +7,7 @@ export class FeatureMultiplierReactionCrystallize extends FeatureMultiplierReact
     static getTreeItems(data) {
         return [
             this.masteryMultiplier(data),
-        ]
+        ];
     }
 
     static masteryMultiplier(data) {

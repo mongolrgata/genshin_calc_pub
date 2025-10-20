@@ -99,7 +99,7 @@ export class ScannerImageInventory {
                         break;
                     }
 
-                    topY = -1, start = -1, end = -1;
+                    topY = -1; start = -1; end = -1;
                     continue;
                 }
 

@@ -17,7 +17,7 @@ export class ConfirmModal extends NonAppModal {
             <ConfirmComponent
                 ref={(obj) => this.modal = obj}
             />
-        )
+        );
     }
 }
 

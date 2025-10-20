@@ -19,8 +19,6 @@ export class CalcObjectFood extends CalcObject {
         if (i.item) {
             return i.item;
         }
-
-        return;
     }
 
     getLevel(type) {

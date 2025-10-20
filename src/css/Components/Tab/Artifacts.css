@@ -115,20 +115,20 @@
 }
 
 .artifact-big-block .button.edit {
-    background-position: 0px 0px;
+    background-position: 0 0;
 }
 .artifact-big-block .button.delete {
-    background-position: -20px 0px;
+    background-position: -20px 0;
 }
 .artifact-big-block .button.storage {
-    background-position: -40px 0px;
+    background-position: -40px 0;
 }
 
 .artifact-big-block .invalid {
     width: 20px;
     height: 20px;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     left: 2px;
     background-image: url("../../../images/icons/warning.png");
     background-repeat: no-repeat;

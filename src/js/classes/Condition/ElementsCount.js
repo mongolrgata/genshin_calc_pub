@@ -22,7 +22,7 @@ export class ConditionElementsCount extends Condition {
             if (!element) continue;
 
             if (target == element) {
-                ++elementsCount
+                ++elementsCount;
             }
         }
 

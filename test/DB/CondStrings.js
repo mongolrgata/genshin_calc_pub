@@ -6,7 +6,7 @@ import { Lang } from "../../src/js/ui/Lang";
 global.window = {};
 global.localStorage = {};
 
-require('../../src/js/lang/eng.js')
+require('../../src/js/lang/eng.js');
 
 let lang = new Lang();
 

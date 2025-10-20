@@ -39,4 +39,4 @@ export const BraveHeart = new ArtifactSet({
             ],
         },
     ],
-})
+});

@@ -31,11 +31,11 @@ export class CharTab extends Tab {
     createContent() {
         return (
             <CharView
-                ref={element => { this.component = element }}
+                ref={element => { this.component = element; }}
                 app={this.app}
                 title={this.title}
             />
-        )
+        );
     }
 }
 
@@ -69,7 +69,7 @@ export class CharView extends React.Component {
     }
 
     handleCharChange() {
-        let currentChar = this.props.app.getChar().object
+        let currentChar = this.props.app.getChar().object;
 
         UI.CharSelectReact.show({
             selectedId: currentChar.getId(),

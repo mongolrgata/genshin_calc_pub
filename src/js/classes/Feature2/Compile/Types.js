@@ -6,12 +6,12 @@ export class CBlock {
         if (props) Object.assign(this, props);
     }
 
-    getType() {return 'block'}
-    hasItems() {return true}
+    getType() {return 'block';}
+    hasItems() {return true;}
 
     compileChildrens(opts) {
-        return this.items.filter((i) => {return !i.isBlank()})
-            .map((i) => {return i.compile(opts)});
+        return this.items.filter((i) => {return !i.isBlank();})
+            .map((i) => {return i.compile(opts);});
     }
 
     isBlank() {
@@ -21,9 +21,9 @@ export class CBlock {
         return true;
     }
 
-    isCollapsable() {return true}
-    isVariableSet() {return false}
-    isVariableGet() {return false}
+    isCollapsable() {return true;}
+    isVariableSet() {return false;}
+    isVariableGet() {return false;}
 
     process(opts) {
         return this;
@@ -41,7 +41,7 @@ export class CBlock {
     }
 
     getSignature() {
-        return '('+ (this.isCollapsable() ? '' : '!') + this.getType() +':'+ this.items.map((i) => {return i.getSignature()}).join(',') +')';
+        return '('+ (this.isCollapsable() ? '' : '!') + this.getType() +':'+ this.items.map((i) => {return i.getSignature();}).join(',') +')';
     }
 
     /**
@@ -111,7 +111,7 @@ export class CBlock {
 }
 
 export class CReturn extends CBlock {
-    getType() {return 'block_return'}
+    getType() {return 'block_return';}
 
     appendChildren() {
         let last = this.items.pop();
@@ -125,7 +125,7 @@ export class CReturn extends CBlock {
     }
 
     compile(opts) {
-        let parts = this.items.map((i) => {return i.compile(opts)});
+        let parts = this.items.map((i) => {return i.compile(opts);});
         parts[parts.length - 1] = 'return ' + parts[parts.length - 1];
         return parts.join(';\n');
     }
@@ -136,10 +136,10 @@ export class CItem {
         Object.assign(this, props);
     }
 
-    getType() {return 'item'}
-    hasItems() {return false}
-    isVariableSet() {return false}
-    isVariableGet() {return false}
+    getType() {return 'item';}
+    hasItems() {return false;}
+    isVariableSet() {return false;}
+    isVariableGet() {return false;}
 
     compile(opts) {
         return this.value || 0;

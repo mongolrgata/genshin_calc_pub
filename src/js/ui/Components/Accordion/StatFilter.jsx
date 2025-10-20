@@ -76,5 +76,5 @@ function SlotLine(props) {
                 {items}
             </div>
         </div>
-    )
+    );
 }

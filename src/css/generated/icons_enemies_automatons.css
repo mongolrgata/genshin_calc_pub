@@ -37,37 +37,43 @@
 	background-image: url("../../images/sprites/enemy_automatons_4cdc8b3d35950bf8fdceb2c00c1f3393.png");
 	background-size: 360px 360px;
 }
-.sprite.type-automatons.enemy-icon-apparatus-enigma-bionicdrone {background-position: 0% 0%}
-.sprite.type-automatons.enemy-icon-apparatus-enigma-bionicflora {background-position: 20% 0%}
-.sprite.type-automatons.enemy-icon-apparatus-enigma-bionicinsecta {background-position: 40% 0%}
-.sprite.type-automatons.enemy-icon-apparatus-enigma-bionicnettler {background-position: 60% 0%}
-.sprite.type-automatons.enemy-icon-apparatus-perpetual {background-position: 80% 0%}
-.sprite.type-automatons.enemy-icon-defender-noner-01 {background-position: 100% 0%}
-.sprite.type-automatons.enemy-icon-formathr-none {background-position: 0% 20%}
+.sprite.type-automatons.enemy-icon-apparatus-enigma-bionicdrone {background-position: 0 0
+}
+.sprite.type-automatons.enemy-icon-apparatus-enigma-bionicflora {background-position: 20% 0
+}
+.sprite.type-automatons.enemy-icon-apparatus-enigma-bionicinsecta {background-position: 40% 0
+}
+.sprite.type-automatons.enemy-icon-apparatus-enigma-bionicnettler {background-position: 60% 0
+}
+.sprite.type-automatons.enemy-icon-apparatus-perpetual {background-position: 80% 0
+}
+.sprite.type-automatons.enemy-icon-defender-noner-01 {background-position: 100% 0
+}
+.sprite.type-automatons.enemy-icon-formathr-none {background-position: 0 20%}
 .sprite.type-automatons.enemy-icon-konungmathr {background-position: 20% 20%}
 .sprite.type-automatons.enemy-icon-nithhoggr-none {background-position: 40% 20%}
 .sprite.type-automatons.enemy-icon-samurai-ningyo {background-position: 60% 20%}
 .sprite.type-automatons.enemy-icon-ruin-drake {background-position: 80% 20%}
 .sprite.type-automatons.enemy-icon-gargoyle-fafnir {background-position: 100% 20%}
-.sprite.type-automatons.enemy-icon-monolith-ordinator {background-position: 0% 40%}
+.sprite.type-automatons.enemy-icon-monolith-ordinator {background-position: 0 40%}
 .sprite.type-automatons.enemy-icon-monolith-starchild {background-position: 20% 40%}
 .sprite.type-automatons.enemy-icon-machinaiustitia-nutcracker {background-position: 40% 40%}
 .sprite.type-automatons.enemy-icon-machinaiustitia-excavator {background-position: 60% 40%}
 .sprite.type-automatons.enemy-icon-machinaiustitia-lengthshifter {background-position: 80% 40%}
 .sprite.type-automatons.enemy-icon-machinaiustitia-bradamante {background-position: 100% 40%}
-.sprite.type-automatons.enemy-icon-machinaiustitia-ruggiero-02 {background-position: 0% 60%}
+.sprite.type-automatons.enemy-icon-machinaiustitia-ruggiero-02 {background-position: 0 60%}
 .sprite.type-automatons.enemy-icon-machinaiustitia-ruggiero-01 {background-position: 20% 60%}
 .sprite.type-automatons.enemy-icon-machinaiustitia-assimilator {background-position: 40% 60%}
 .sprite.type-automatons.enemy-icon-machinaiustitia-nautilus {background-position: 60% 60%}
 .sprite.type-automatons.enemy-icon-machinaiustitia-recon {background-position: 80% 60%}
 .sprite.type-automatons.enemy-icon-machinaiustitia-sentry {background-position: 100% 60%}
-.sprite.type-automatons.enemy-icon-machinaiustitia-probe {background-position: 0% 80%}
+.sprite.type-automatons.enemy-icon-machinaiustitia-probe {background-position: 0 80%}
 .sprite.type-automatons.enemy-icon-machinaiustitia-pylon {background-position: 20% 80%}
 .sprite.type-automatons.enemy-icon-machinaiustitia-gravitas {background-position: 40% 80%}
 .sprite.type-automatons.enemy-icon-machinaiustitia-frigate {background-position: 60% 80%}
 .sprite.type-automatons.enemy-icon-toothtrap {background-position: 80% 80%}
 .sprite.type-automatons.enemy-icon-dragonclaw {background-position: 100% 80%}
-.sprite.type-automatons.enemy-icon-dragoncollar {background-position: 0% 100%}
+.sprite.type-automatons.enemy-icon-dragoncollar {background-position: 0 100%}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),

@@ -5,7 +5,7 @@ export function getUsedStats() {
         tree.walk((item) => {
             if (item.getUsedStats) {
                 for (let stat of item.getUsedStats()) {
-                    let stat_orig = baseStatName(stat)
+                    let stat_orig = baseStatName(stat);
                     if (stat_orig != stat) {
                         usedStats[stat_orig] = (usedStats[stat_orig] || 0) + 1;
                     }
