@@ -13,3 +13,8 @@ This project was not developed as open source and I am not a frontend developer.
 - Windows
 - Python 3.6.8
 - nodejs v16.15.0
+
+# Notes
+git clone https://gitlab.com/Dimbreath/AnimeGameData.git dimrepo  
+pip install tinify  
+pip install pillow
