@@ -1,4 +1,5 @@
 category;name;rus;eng
+char_name;aino;Айно;Aino
 char_name;albedo;Альбедо;Albedo
 char_name;alhaitham;Аль-Хайтам;Alhaitham
 char_name;aloy;Элой;Aloy
@@ -29,6 +30,7 @@ char_name;escoffier;Эскофье;Escoffier
 char_name;eula;Эола;Eula
 char_name;faruzan;Фарузан;Faruzan
 char_name;fischl;Фишль;Fischl
+char_name;flins;Флинс;Flins
 char_name;freminet;Фремине;Freminet
 char_name;furina;Фурина;Furina
 char_name;gaming;Ка Мин;Gaming
@@ -52,6 +54,7 @@ char_name;klee;Кли;Klee
 char_name;kujou_sara;Сара;Kujou Sara
 char_name;kuki_shinobu;Синобу;Kuki Shinobu
 char_name;lan_yan;Лань Янь;Lan Yan
+char_name;lauma;Лаума;Lauma
 char_name;layla;Лайла;Layla
 char_name;lisa;Лиза;Lisa
 char_name;lynette;Линетт;Lynette
@@ -62,6 +65,7 @@ char_name;mona;Мона;Mona
 char_name;mualani;Муалани;Mualani
 char_name;nahida;Нахида;Nahida
 char_name;navia;Навия;Navia
+char_name;nefer;Нефер;Nefer
 char_name;neuvillette;Нёвиллет;Neuvillette
 char_name;nilou;Нилу;Nilou
 char_name;ningguang;Нин Гуан;Ningguang
@@ -88,6 +92,10 @@ char_name;traveler;Путешественник;Traveler
 char_name;traveler;Путешественник;Traveler
 char_name;traveler;Путешественник;Traveler
 char_name;traveler;Путешественник;Traveler
+char_name;ugc_official_female;UGC (официальный женский);UGC (Official Female)
+char_name;ugc_official_male;UGC (официальный мужской);UGC (Official Male)
+char_name;ugc_test_character_prototype_female;UGC (тестовый прототип женского персонажа);UGC (Test Character Prototype Female)
+char_name;ugc_test_character_prototype_male;UGC (тестовый прототип мужского персонажа);UGC (Test Character Prototype Male)
 char_name;varesa;Вареса;Varesa
 char_name;venti;Венти;Venti
 char_name;wanderer;Странник;Wanderer

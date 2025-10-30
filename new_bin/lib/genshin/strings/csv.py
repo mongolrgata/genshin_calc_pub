@@ -8,7 +8,7 @@ class CsvDumper:
     def open_file(self, file):
         dirname = os.path.dirname(__file__)
         dirname = os.path.join(dirname, OUT_PATH)
-        return open(dirname + file, 'w')
+        return open(dirname + file, 'w', encoding='utf-8', newline='')
 
     def get_dumper(self, f, fieldnames):
         return csv.DictWriter(

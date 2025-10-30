@@ -17,7 +17,7 @@ class Parser:
         raise NotImplementedError
 
     def parse(self):
-        file = open(DATA_FILES_PATH + f'/{self.path}/{self.filename}', 'r')
+        file = open(DATA_FILES_PATH + f'/{self.path}/{self.filename}', 'r', encoding='utf-8')
         self.data = json.load(file)
 
     def assert_result(self):
