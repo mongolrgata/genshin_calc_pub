@@ -1,4 +1,5 @@
 import os
+import requests
 
 from lib.genshin.datafiles.char import CharData, SKIP_CHARACTERS
 from lib.genshin.datafiles.lang import LangData
@@ -28,17 +29,25 @@ for char in char_data.get_list():
     elif char['id'] == 10000007:
         char_name += '_girl'
     char_id = convert_id(char_name).replace('_', '-')
+    char_icon_name = char['iconName']
+    char_icon_path = f'{img_path}chars/{char_icon_name}.png'
 
     items.append(f'char-icon-{char_id}')
-    images.append(f"{img_path}chars/{char['iconName']}.png")
+    images.append(char_icon_path)
 
-items.extend([
-    'char-icon-ineffa',
-])
+    if not os.path.isfile(char_icon_path):
+        image_url = f'https://gi.yatta.moe/assets/UI/{char_icon_name}.png'
+        image_data = requests.get(image_url).content
+        with open(char_icon_path, 'wb') as char_icon_file:
+            char_icon_file.write(image_data)
 
-images.extend([
-    f'{img_path}chars/UI_AvatarIcon_Ineffa.png',
-])
+# items.extend([
+#     'char-icon-ineffa',
+# ])
+
+# images.extend([
+#     f'{img_path}chars/UI_AvatarIcon_Ineffa.png',
+# ])
 
 image_gen = ImageGenerator(
     items=items,

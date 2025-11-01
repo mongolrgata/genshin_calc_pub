@@ -1,7 +1,6 @@
 **/node_modules/*
 /dimrepo/
 /dist/*
-/data/images/*
 /v8-compile-cache*
 /npm-debug.log
 /src/js/lang/*.js

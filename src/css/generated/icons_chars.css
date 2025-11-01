@@ -103,128 +103,135 @@
 .char-icon-skirk {background-image: url("../../images/chars/skirknew.png")}
 .char-icon-dahlia {background-image: url("../../images/chars/dahlia.png")}
 .char-icon-ineffa {background-image: url("../../images/chars/ineffa.png")}
+.char-icon-manekin {background-image: url("../../images/chars/mannequinboy.png")}
+.char-icon-manekina {background-image: url("../../images/chars/mannequingirl.png")}
+.char-icon-lauma {background-image: url("../../images/chars/lauma.png")}
+.char-icon-flins {background-image: url("../../images/chars/flins.png")}
+.char-icon-aino {background-image: url("../../images/chars/aino.png")}
+.char-icon-nefer {background-image: url("../../images/chars/nefer.png")}
 .sprite-char.sprite-24 {
-	background-image: url("../../images/sprites/char_5cfb7071da1b611184c56f20251481be.png");
-	background-size: 120px 504px;
+	background-image: url("../../images/sprites/char_5de76ddfe36a1146a11c37f630efee62.png");
+	background-size: 264px 264px;
 }
 .sprite-char.sprite-40 {
-	background-image: url("../../images/sprites/char_d02d658f51a6478a62e67af55e7dc165.png");
-	background-size: 200px 840px;
+	background-image: url("../../images/sprites/char_101fe08b364154a8ce9a7336226abdef.png");
+	background-size: 440px 440px;
 }
 .sprite-char.sprite-60 {
-	background-image: url("../../images/sprites/char_17bebc270e51f202304e2be491b362b8.png");
-	background-size: 300px 1260px;
+	background-image: url("../../images/sprites/char_e199721a11866d16365f87056e46675f.png");
+	background-size: 660px 660px;
 }
-.sprite.char-icon-unknown {background-position: 0 0
-}
-.sprite.char-icon-empty {background-position: 25% 0
-}
-.sprite.char-icon-kamisato-ayaka {background-position: 50% 0
-}
-.sprite.char-icon-jean {background-position: 75% 0
-}
-.sprite.char-icon-traveler-boy {background-position: 100% 0
-}
-.sprite.char-icon-lisa {background-position: 0 5%}
-.sprite.char-icon-traveler-girl {background-position: 25% 5%}
-.sprite.char-icon-barbara {background-position: 50% 5%}
-.sprite.char-icon-kaeya {background-position: 75% 5%}
-.sprite.char-icon-diluc {background-position: 100% 5%}
-.sprite.char-icon-razor {background-position: 0 10%}
-.sprite.char-icon-amber {background-position: 25% 10%}
-.sprite.char-icon-venti {background-position: 50% 10%}
-.sprite.char-icon-xiangling {background-position: 75% 10%}
-.sprite.char-icon-beidou {background-position: 100% 10%}
-.sprite.char-icon-xingqiu {background-position: 0 15%}
-.sprite.char-icon-xiao {background-position: 25% 15%}
-.sprite.char-icon-ningguang {background-position: 50% 15%}
-.sprite.char-icon-klee {background-position: 75% 15%}
-.sprite.char-icon-zhongli {background-position: 100% 15%}
-.sprite.char-icon-fischl {background-position: 0 20%}
-.sprite.char-icon-bennett {background-position: 25% 20%}
-.sprite.char-icon-tartaglia {background-position: 50% 20%}
-.sprite.char-icon-noelle {background-position: 75% 20%}
-.sprite.char-icon-qiqi {background-position: 100% 20%}
-.sprite.char-icon-chongyun {background-position: 0 25%}
-.sprite.char-icon-ganyu {background-position: 25% 25%}
-.sprite.char-icon-albedo {background-position: 50% 25%}
-.sprite.char-icon-diona {background-position: 75% 25%}
-.sprite.char-icon-mona {background-position: 100% 25%}
-.sprite.char-icon-keqing {background-position: 0 30%}
-.sprite.char-icon-sucrose {background-position: 25% 30%}
-.sprite.char-icon-xinyan {background-position: 50% 30%}
-.sprite.char-icon-rosaria {background-position: 75% 30%}
-.sprite.char-icon-hu-tao {background-position: 100% 30%}
-.sprite.char-icon-kaedehara-kazuha {background-position: 0 35%}
-.sprite.char-icon-yanfei {background-position: 25% 35%}
-.sprite.char-icon-yoimiya {background-position: 50% 35%}
-.sprite.char-icon-thoma {background-position: 75% 35%}
-.sprite.char-icon-eula {background-position: 100% 35%}
-.sprite.char-icon-raiden-shogun {background-position: 0 40%}
-.sprite.char-icon-sayu {background-position: 25% 40%}
-.sprite.char-icon-sangonomiya-kokomi {background-position: 50% 40%}
-.sprite.char-icon-gorou {background-position: 75% 40%}
-.sprite.char-icon-kujou-sara {background-position: 100% 40%}
-.sprite.char-icon-arataki-itto {background-position: 0 45%}
-.sprite.char-icon-yae-miko {background-position: 25% 45%}
-.sprite.char-icon-shikanoin-heizou {background-position: 50% 45%}
-.sprite.char-icon-yelan {background-position: 75% 45%}
-.sprite.char-icon-kirara {background-position: 100% 45%}
-.sprite.char-icon-aloy {background-position: 0 50%}
-.sprite.char-icon-shenhe {background-position: 25% 50%}
-.sprite.char-icon-yun-jin {background-position: 50% 50%}
-.sprite.char-icon-kuki-shinobu {background-position: 75% 50%}
-.sprite.char-icon-kamisato-ayato {background-position: 100% 50%}
-.sprite.char-icon-collei {background-position: 0 55%}
-.sprite.char-icon-dori {background-position: 25% 55%}
-.sprite.char-icon-tighnari {background-position: 50% 55%}
-.sprite.char-icon-nilou {background-position: 75% 55%}
-.sprite.char-icon-cyno {background-position: 100% 55%}
-.sprite.char-icon-candace {background-position: 0 60%}
-.sprite.char-icon-nahida {background-position: 25% 60%}
-.sprite.char-icon-layla {background-position: 50% 60%}
-.sprite.char-icon-wanderer {background-position: 75% 60%}
-.sprite.char-icon-faruzan {background-position: 100% 60%}
-.sprite.char-icon-yaoyao {background-position: 0 65%}
-.sprite.char-icon-alhaitham {background-position: 25% 65%}
-.sprite.char-icon-dehya {background-position: 50% 65%}
-.sprite.char-icon-mika {background-position: 75% 65%}
-.sprite.char-icon-kaveh {background-position: 100% 65%}
-.sprite.char-icon-baizhu {background-position: 0 70%}
-.sprite.char-icon-lynette {background-position: 25% 70%}
-.sprite.char-icon-lyney {background-position: 50% 70%}
-.sprite.char-icon-freminet {background-position: 75% 70%}
-.sprite.char-icon-wriothesley {background-position: 100% 70%}
-.sprite.char-icon-neuvillette {background-position: 0 75%}
-.sprite.char-icon-charlotte {background-position: 25% 75%}
-.sprite.char-icon-furina {background-position: 50% 75%}
-.sprite.char-icon-chevreuse {background-position: 75% 75%}
-.sprite.char-icon-navia {background-position: 100% 75%}
-.sprite.char-icon-gaming {background-position: 0 80%}
-.sprite.char-icon-xianyun {background-position: 25% 80%}
-.sprite.char-icon-chiori {background-position: 50% 80%}
-.sprite.char-icon-sigewinne {background-position: 75% 80%}
-.sprite.char-icon-arlecchino {background-position: 100% 80%}
-.sprite.char-icon-sethos {background-position: 0 85%}
-.sprite.char-icon-clorinde {background-position: 25% 85%}
-.sprite.char-icon-emilie {background-position: 50% 85%}
-.sprite.char-icon-kachina {background-position: 75% 85%}
-.sprite.char-icon-kinich {background-position: 100% 85%}
-.sprite.char-icon-mualani {background-position: 0 90%}
-.sprite.char-icon-xilonen {background-position: 25% 90%}
-.sprite.char-icon-chasca {background-position: 50% 90%}
-.sprite.char-icon-ororon {background-position: 75% 90%}
-.sprite.char-icon-mavuika {background-position: 100% 90%}
-.sprite.char-icon-citlali {background-position: 0 95%}
-.sprite.char-icon-lan-yan {background-position: 25% 95%}
-.sprite.char-icon-yumemizuki-mizuki {background-position: 50% 95%}
-.sprite.char-icon-iansan {background-position: 75% 95%}
-.sprite.char-icon-varesa {background-position: 100% 95%}
-.sprite.char-icon-escoffier {background-position: 0 100%}
-.sprite.char-icon-ifa {background-position: 25% 100%}
-.sprite.char-icon-skirk {background-position: 50% 100%}
-.sprite.char-icon-dahlia {background-position: 75% 100%}
-.sprite.char-icon-ineffa {background-position: 100% 100%}
+.sprite.char-icon-unknown {background-position: 0 0}
+.sprite.char-icon-empty {background-position: 10% 0}
+.sprite.char-icon-kamisato-ayaka {background-position: 20% 0}
+.sprite.char-icon-jean {background-position: 30% 0}
+.sprite.char-icon-traveler-boy {background-position: 40% 0}
+.sprite.char-icon-lisa {background-position: 50% 0}
+.sprite.char-icon-traveler-girl {background-position: 60% 0}
+.sprite.char-icon-barbara {background-position: 70% 0}
+.sprite.char-icon-kaeya {background-position: 80% 0}
+.sprite.char-icon-diluc {background-position: 90% 0}
+.sprite.char-icon-razor {background-position: 100% 0}
+.sprite.char-icon-amber {background-position: 0 10%}
+.sprite.char-icon-venti {background-position: 10% 10%}
+.sprite.char-icon-xiangling {background-position: 20% 10%}
+.sprite.char-icon-beidou {background-position: 30% 10%}
+.sprite.char-icon-xingqiu {background-position: 40% 10%}
+.sprite.char-icon-xiao {background-position: 50% 10%}
+.sprite.char-icon-ningguang {background-position: 60% 10%}
+.sprite.char-icon-klee {background-position: 70% 10%}
+.sprite.char-icon-zhongli {background-position: 80% 10%}
+.sprite.char-icon-fischl {background-position: 90% 10%}
+.sprite.char-icon-bennett {background-position: 100% 10%}
+.sprite.char-icon-tartaglia {background-position: 0 20%}
+.sprite.char-icon-noelle {background-position: 10% 20%}
+.sprite.char-icon-qiqi {background-position: 20% 20%}
+.sprite.char-icon-chongyun {background-position: 30% 20%}
+.sprite.char-icon-ganyu {background-position: 40% 20%}
+.sprite.char-icon-albedo {background-position: 50% 20%}
+.sprite.char-icon-diona {background-position: 60% 20%}
+.sprite.char-icon-mona {background-position: 70% 20%}
+.sprite.char-icon-keqing {background-position: 80% 20%}
+.sprite.char-icon-sucrose {background-position: 90% 20%}
+.sprite.char-icon-xinyan {background-position: 100% 20%}
+.sprite.char-icon-rosaria {background-position: 0 30%}
+.sprite.char-icon-hu-tao {background-position: 10% 30%}
+.sprite.char-icon-kaedehara-kazuha {background-position: 20% 30%}
+.sprite.char-icon-yanfei {background-position: 30% 30%}
+.sprite.char-icon-yoimiya {background-position: 40% 30%}
+.sprite.char-icon-thoma {background-position: 50% 30%}
+.sprite.char-icon-eula {background-position: 60% 30%}
+.sprite.char-icon-raiden-shogun {background-position: 70% 30%}
+.sprite.char-icon-sayu {background-position: 80% 30%}
+.sprite.char-icon-sangonomiya-kokomi {background-position: 90% 30%}
+.sprite.char-icon-gorou {background-position: 100% 30%}
+.sprite.char-icon-kujou-sara {background-position: 0 40%}
+.sprite.char-icon-arataki-itto {background-position: 10% 40%}
+.sprite.char-icon-yae-miko {background-position: 20% 40%}
+.sprite.char-icon-shikanoin-heizou {background-position: 30% 40%}
+.sprite.char-icon-yelan {background-position: 40% 40%}
+.sprite.char-icon-kirara {background-position: 50% 40%}
+.sprite.char-icon-aloy {background-position: 60% 40%}
+.sprite.char-icon-shenhe {background-position: 70% 40%}
+.sprite.char-icon-yun-jin {background-position: 80% 40%}
+.sprite.char-icon-kuki-shinobu {background-position: 90% 40%}
+.sprite.char-icon-kamisato-ayato {background-position: 100% 40%}
+.sprite.char-icon-collei {background-position: 0 50%}
+.sprite.char-icon-dori {background-position: 10% 50%}
+.sprite.char-icon-tighnari {background-position: 20% 50%}
+.sprite.char-icon-nilou {background-position: 30% 50%}
+.sprite.char-icon-cyno {background-position: 40% 50%}
+.sprite.char-icon-candace {background-position: 50% 50%}
+.sprite.char-icon-nahida {background-position: 60% 50%}
+.sprite.char-icon-layla {background-position: 70% 50%}
+.sprite.char-icon-wanderer {background-position: 80% 50%}
+.sprite.char-icon-faruzan {background-position: 90% 50%}
+.sprite.char-icon-yaoyao {background-position: 100% 50%}
+.sprite.char-icon-alhaitham {background-position: 0 60%}
+.sprite.char-icon-dehya {background-position: 10% 60%}
+.sprite.char-icon-mika {background-position: 20% 60%}
+.sprite.char-icon-kaveh {background-position: 30% 60%}
+.sprite.char-icon-baizhu {background-position: 40% 60%}
+.sprite.char-icon-lynette {background-position: 50% 60%}
+.sprite.char-icon-lyney {background-position: 60% 60%}
+.sprite.char-icon-freminet {background-position: 70% 60%}
+.sprite.char-icon-wriothesley {background-position: 80% 60%}
+.sprite.char-icon-neuvillette {background-position: 90% 60%}
+.sprite.char-icon-charlotte {background-position: 100% 60%}
+.sprite.char-icon-furina {background-position: 0 70%}
+.sprite.char-icon-chevreuse {background-position: 10% 70%}
+.sprite.char-icon-navia {background-position: 20% 70%}
+.sprite.char-icon-gaming {background-position: 30% 70%}
+.sprite.char-icon-xianyun {background-position: 40% 70%}
+.sprite.char-icon-chiori {background-position: 50% 70%}
+.sprite.char-icon-sigewinne {background-position: 60% 70%}
+.sprite.char-icon-arlecchino {background-position: 70% 70%}
+.sprite.char-icon-sethos {background-position: 80% 70%}
+.sprite.char-icon-clorinde {background-position: 90% 70%}
+.sprite.char-icon-emilie {background-position: 100% 70%}
+.sprite.char-icon-kachina {background-position: 0 80%}
+.sprite.char-icon-kinich {background-position: 10% 80%}
+.sprite.char-icon-mualani {background-position: 20% 80%}
+.sprite.char-icon-xilonen {background-position: 30% 80%}
+.sprite.char-icon-chasca {background-position: 40% 80%}
+.sprite.char-icon-ororon {background-position: 50% 80%}
+.sprite.char-icon-mavuika {background-position: 60% 80%}
+.sprite.char-icon-citlali {background-position: 70% 80%}
+.sprite.char-icon-lan-yan {background-position: 80% 80%}
+.sprite.char-icon-yumemizuki-mizuki {background-position: 90% 80%}
+.sprite.char-icon-iansan {background-position: 100% 80%}
+.sprite.char-icon-varesa {background-position: 0 90%}
+.sprite.char-icon-escoffier {background-position: 10% 90%}
+.sprite.char-icon-ifa {background-position: 20% 90%}
+.sprite.char-icon-skirk {background-position: 30% 90%}
+.sprite.char-icon-dahlia {background-position: 40% 90%}
+.sprite.char-icon-ineffa {background-position: 50% 90%}
+.sprite.char-icon-manekin {background-position: 60% 90%}
+.sprite.char-icon-manekina {background-position: 70% 90%}
+.sprite.char-icon-lauma {background-position: 80% 90%}
+.sprite.char-icon-flins {background-position: 90% 90%}
+.sprite.char-icon-aino {background-position: 100% 90%}
+.sprite.char-icon-nefer {background-position: 0 100%}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -338,7 +345,13 @@ only screen and (                min-resolution: 2dppx) {
 	.char-icon-skirk {background-image: url("../../images/chars/skirknew_2x.png")}
 	.char-icon-dahlia {background-image: url("../../images/chars/dahlia_2x.png")}
 	.char-icon-ineffa {background-image: url("../../images/chars/ineffa_2x.png")}
-	.sprite-char.sprite-24 {background-image: url("../../images/sprites/char_6194d54890f00d92e1891bdcb6bcf24d.png")}
-	.sprite-char.sprite-40 {background-image: url("../../images/sprites/char_913477b2ece4402a801cb6934f8a7b5b.png")}
-	.sprite-char.sprite-60 {background-image: url("../../images/sprites/char_b74efada61f77742172b939db0a0ea2f.png")}
+	.char-icon-manekin {background-image: url("../../images/chars/mannequinboy_2x.png")}
+	.char-icon-manekina {background-image: url("../../images/chars/mannequingirl_2x.png")}
+	.char-icon-lauma {background-image: url("../../images/chars/lauma_2x.png")}
+	.char-icon-flins {background-image: url("../../images/chars/flins_2x.png")}
+	.char-icon-aino {background-image: url("../../images/chars/aino_2x.png")}
+	.char-icon-nefer {background-image: url("../../images/chars/nefer_2x.png")}
+	.sprite-char.sprite-24 {background-image: url("../../images/sprites/char_a77d9a4aafa05331b445f4288b9abb9a.png")}
+	.sprite-char.sprite-40 {background-image: url("../../images/sprites/char_ebbd84d6396d5e569c3206944893b7a4.png")}
+	.sprite-char.sprite-60 {background-image: url("../../images/sprites/char_4d3817578a3010f541403a407f3f3b59.png")}
 }

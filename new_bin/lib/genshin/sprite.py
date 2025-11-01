@@ -97,9 +97,9 @@ class ImageGenerator:
             base = basename(image_path)[:-4].lower()
             base = re.sub(r'^ui_[^_]+_', '', base)
 
-            self.individual[f'{base}.png'] = image.copy().resize(size)
+            self.individual[f'{base}.png'] = image.convert('RGBA').resize(size)
             if retina:
-                self.individual[f'{base}_2x.png'] = image.copy().resize(size2x)
+                self.individual[f'{base}_2x.png'] = image.convert('RGBA').resize(size2x)
 
             css += f'.{item_class} {{background-image: url("../../images/{self.pack_name}/{base}.png")}}\n'
             if retina:
@@ -179,8 +179,10 @@ class ImageGenerator:
             row = index // cols
             col = index - row * cols
             offset_col = int(col * col_size)
+            offset_col_unit = '%' if offset_col != 0 else ''
             offset_row = int(row * row_size)
-            result += f'.{self.sprite_css_prefix}.{item} {{background-position: {offset_col}% {offset_row}%}}\n'
+            offset_row_unit = '%' if offset_row != 0 else ''
+            result += f'.{self.sprite_css_prefix}.{item} {{background-position: {offset_col}{offset_col_unit} {offset_row}{offset_row_unit}}}\n'
 
         return result
 
@@ -191,7 +193,7 @@ class ImageGenerator:
         for index, image in enumerate(self.images):
             row = index // cols
             col = index - row * cols
-            resized = image.copy().resize(size)
+            resized = image.convert('RGBA').resize(size)
             sprite.paste(resized, (col * width, row * height))
 
         return sprite

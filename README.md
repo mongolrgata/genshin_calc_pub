@@ -18,3 +18,11 @@ This project was not developed as open source and I am not a frontend developer.
 git clone https://gitlab.com/Dimbreath/AnimeGameData.git dimrepo  
 pip install tinify  
 pip install pillow
+
+# Scripts
+- new_bin/import_char.py  
+генерация файлов char_names.csv, char_skills.csv и char_talents.csv в папке ./data/strings/generated
+- new_bin/make_char_images.py  
+генерация иконок персонажей в папке ./src/images/chars  
+генерация коллажей с иконками персонажей в папке ./src/images/sprites  
+генерация css-файла icons_chars.css в папке ./src/css/generated
