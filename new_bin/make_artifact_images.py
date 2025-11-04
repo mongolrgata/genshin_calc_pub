@@ -1,7 +1,7 @@
 import os
-from os.path import exists
+import requests
 
-from lib.genshin.datafiles.artifacts import ArtifactData, ArtifactPieceBonusesData, ArtifactSetData
+from lib.genshin.datafiles.artifacts import ArtifactData, ArtifactPieceBonusesData, ArtifactSetData, SKIP_ARTIFACTS
 from lib.genshin.datafiles.lang import LangData
 from lib.genshin.utils import convert_id
 from lib.genshin.sprite import ImageGenerator
@@ -45,6 +45,8 @@ images = {
 }
 
 for art_set in set_data.get_list():
+    if art_set['setId'] in SKIP_ARTIFACTS:
+        continue
     if 'equipAffixId' not in art_set:
         continue
 
@@ -56,26 +58,32 @@ for art_set in set_data.get_list():
         item = art_data.get_item_by_field('id', art_id)
         slot = SLOT_DATA.get(item['equipType'])
         icon = item['icon']
-        file_name = f"{img_path}artifacts/{item['icon']}.png"
+        art_icon_name = item['icon']
+        art_icon_path = f"{img_path}artifacts/{art_icon_name}.png"
+        
+        if not os.path.isfile(art_icon_path):
+            image_url = f'https://gi.yatta.moe/assets/UI/reliquary/{art_icon_name}.png'
+            image_data = requests.get(image_url).content
+            with open(art_icon_path, 'wb') as art_icon_file:
+                art_icon_file.write(image_data)
 
-        if exists(file_name):
-            if slot not in items:
-                items[slot] = []
-                images[slot] = []
-            items[slot].append(f'artifact-icon-{item_id}.{slot}')
-            images[slot].append(file_name)
+        if slot not in items:
+            items[slot] = []
+            images[slot] = []
+        items[slot].append(f'artifact-icon-{item_id}.{slot}')
+        images[slot].append(art_icon_path)
 
-for slot in SLOT_DATA.values():
-    items[slot].extend([
-        f'artifact-icon-long-nights-oath.{slot}',
-        f'artifact-icon-finale-of-the-deep-galleries.{slot}',
-    ])
+# for slot in SLOT_DATA.values():
+#     items[slot].extend([
+#         f'artifact-icon-long-nights-oath.{slot}',
+#         f'artifact-icon-finale-of-the-deep-galleries.{slot}',
+#     ])
 
-for slot, id in CUSTOM_NAMES_DATA.items():
-    images[slot].extend([
-        f"{img_path}artifacts/UI_RelicIcon_15039_{id}.png",
-        f"{img_path}artifacts/UI_RelicIcon_15040_{id}.png",
-    ])
+# for slot, id in CUSTOM_NAMES_DATA.items():
+#     images[slot].extend([
+#         f"{img_path}artifacts/UI_RelicIcon_15039_{id}.png",
+#         f"{img_path}artifacts/UI_RelicIcon_15040_{id}.png",
+#     ])
 
 for slot in items:
     image_gen = ImageGenerator(

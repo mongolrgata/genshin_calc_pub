@@ -1,5 +1,8 @@
 from .base import ListParser, Parser
 
+SKIP_ARTIFACTS = [
+    15000, 15004, 15012
+]
 
 class ArtifactSetData(ListParser):
     filename = 'ReliquarySetExcelConfigData.json'

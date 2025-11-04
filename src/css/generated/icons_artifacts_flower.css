@@ -1,25 +1,20 @@
 .sprite-artifact.flower.sprite-24 {
-	background-image: url("../../images/sprites/artifacts_abc6bfc3545cac3744a37dc6205ce73a.png");
+	background-image: url("../../images/sprites/artifacts_0920226c4c13bb862a50f333ac7aa1d7.png");
 	background-size: 120px 264px;
 }
 .sprite-artifact.flower.sprite-40 {
-	background-image: url("../../images/sprites/artifacts_1fd497920706586d026381462af39b63.png");
+	background-image: url("../../images/sprites/artifacts_e0bc1b3aedf6e5ca71e8cabcca53be49.png");
 	background-size: 200px 440px;
 }
 .sprite-artifact.flower.sprite-60 {
-	background-image: url("../../images/sprites/artifacts_a31723d8e83a21783c224e2f989bb52f.png");
+	background-image: url("../../images/sprites/artifacts_9abcd9795c5b0deff6327685e5d69f4e.png");
 	background-size: 300px 660px;
 }
-.sprite.artifact-icon-unknown {background-position: 0 0
-}
-.sprite.artifact-icon-resolution-of-sojourner.flower {background-position: 25% 0
-}
-.sprite.artifact-icon-brave-heart.flower {background-position: 50% 0
-}
-.sprite.artifact-icon-defenders-will.flower {background-position: 75% 0
-}
-.sprite.artifact-icon-tiny-miracle.flower {background-position: 100% 0
-}
+.sprite.artifact-icon-unknown {background-position: 0 0}
+.sprite.artifact-icon-resolution-of-sojourner.flower {background-position: 25% 0}
+.sprite.artifact-icon-brave-heart.flower {background-position: 50% 0}
+.sprite.artifact-icon-defenders-will.flower {background-position: 75% 0}
+.sprite.artifact-icon-tiny-miracle.flower {background-position: 100% 0}
 .sprite.artifact-icon-berserker.flower {background-position: 0 10%}
 .sprite.artifact-icon-martial-artist.flower {background-position: 25% 10%}
 .sprite.artifact-icon-instructor.flower {background-position: 50% 10%}
@@ -67,6 +62,8 @@
 .sprite.artifact-icon-obsidian-codex.flower {background-position: 100% 90%}
 .sprite.artifact-icon-long-nights-oath.flower {background-position: 0 100%}
 .sprite.artifact-icon-finale-of-the-deep-galleries.flower {background-position: 25% 100%}
+.sprite.artifact-icon-night-of-the-skys-unveiling.flower {background-position: 50% 100%}
+.sprite.artifact-icon-silken-moons-serenade.flower {background-position: 75% 100%}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -75,7 +72,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-	.sprite-artifact.flower.sprite-24 {background-image: url("../../images/sprites/artifacts_5251a3c803a52410d576a6a943707513.png")}
-	.sprite-artifact.flower.sprite-40 {background-image: url("../../images/sprites/artifacts_92a38d7728e1f846c03ddf5fe85d7a18.png")}
-	.sprite-artifact.flower.sprite-60 {background-image: url("../../images/sprites/artifacts_efa25e9955af43066cc044fd0904b581.png")}
+	.sprite-artifact.flower.sprite-24 {background-image: url("../../images/sprites/artifacts_66de1bf10dfbad49ba26c34d72ecc3d3.png")}
+	.sprite-artifact.flower.sprite-40 {background-image: url("../../images/sprites/artifacts_fbc49df3842e3aca55c7fa141b43051f.png")}
+	.sprite-artifact.flower.sprite-60 {background-image: url("../../images/sprites/artifacts_a8c56294351b854200dd56e0455a0b7f.png")}
 }

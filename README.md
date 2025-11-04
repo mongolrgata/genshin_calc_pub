@@ -20,9 +20,20 @@ pip install tinify
 pip install pillow
 
 # Scripts
+- bin/img.sh  
+shell-скрипт предназначенный для последовательной загрузки и обработке изображений по переданным URL-адресам
 - new_bin/import_char.py  
 генерация файлов char_names.csv, char_skills.csv и char_talents.csv в папке ./data/strings/generated
 - new_bin/make_char_images.py  
+выгрузка иконок персонажей в папку ./data/images/chars 
 генерация иконок персонажей в папке ./src/images/chars  
 генерация коллажей с иконками персонажей в папке ./src/images/sprites  
 генерация css-файла icons_chars.css в папке ./src/css/generated
+- new_bin/make_artifact_images.py  
+выгрузка иконок артефактов в папку ./data/images/artifacts  
+генерация коллажей с иконками артефактов в папке ./src/images/sprites  
+генерация css-файлов icons_artifacts_***.css в папке ./src/css/generated
+
+# TODO
+- проверить необходимость в скрипте bin/img.sh
+- проверить необходимость в папке ./src/images/artifacts

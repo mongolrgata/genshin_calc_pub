@@ -1,27 +1,21 @@
 .sprite-artifact.circlet.sprite-24 {
-	background-image: url("../../images/sprites/artifacts_9be251c9385a21f3db6d93916777aff1.png");
+	background-image: url("../../images/sprites/artifacts_a3f0f1cce0a0ded9671a0310b34e23e0.png");
 	background-size: 144px 264px;
 }
 .sprite-artifact.circlet.sprite-40 {
-	background-image: url("../../images/sprites/artifacts_1bbbfd1ece3fb17895271d712cd964d5.png");
+	background-image: url("../../images/sprites/artifacts_6fb96339fb2de11e1c1f6deaf232d5dd.png");
 	background-size: 240px 440px;
 }
 .sprite-artifact.circlet.sprite-60 {
-	background-image: url("../../images/sprites/artifacts_33b3fb72a5e779a4408342f1a87d2c55.png");
+	background-image: url("../../images/sprites/artifacts_8f8e68da1fdc8f90ca6d380e188ed546.png");
 	background-size: 360px 660px;
 }
-.sprite.artifact-icon-unknown {background-position: 0 0
-}
-.sprite.artifact-icon-resolution-of-sojourner.circlet {background-position: 20% 0
-}
-.sprite.artifact-icon-brave-heart.circlet {background-position: 40% 0
-}
-.sprite.artifact-icon-defenders-will.circlet {background-position: 60% 0
-}
-.sprite.artifact-icon-tiny-miracle.circlet {background-position: 80% 0
-}
-.sprite.artifact-icon-berserker.circlet {background-position: 100% 0
-}
+.sprite.artifact-icon-unknown {background-position: 0 0}
+.sprite.artifact-icon-resolution-of-sojourner.circlet {background-position: 20% 0}
+.sprite.artifact-icon-brave-heart.circlet {background-position: 40% 0}
+.sprite.artifact-icon-defenders-will.circlet {background-position: 60% 0}
+.sprite.artifact-icon-tiny-miracle.circlet {background-position: 80% 0}
+.sprite.artifact-icon-berserker.circlet {background-position: 100% 0}
 .sprite.artifact-icon-martial-artist.circlet {background-position: 0 10%}
 .sprite.artifact-icon-instructor.circlet {background-position: 20% 10%}
 .sprite.artifact-icon-gambler.circlet {background-position: 40% 10%}
@@ -72,6 +66,8 @@
 .sprite.artifact-icon-obsidian-codex.circlet {background-position: 100% 80%}
 .sprite.artifact-icon-long-nights-oath.circlet {background-position: 0 90%}
 .sprite.artifact-icon-finale-of-the-deep-galleries.circlet {background-position: 20% 90%}
+.sprite.artifact-icon-night-of-the-skys-unveiling.circlet {background-position: 40% 90%}
+.sprite.artifact-icon-silken-moons-serenade.circlet {background-position: 60% 90%}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -80,7 +76,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-	.sprite-artifact.circlet.sprite-24 {background-image: url("../../images/sprites/artifacts_9e5eed50808a24d2a08c1413bbcca1a6.png")}
-	.sprite-artifact.circlet.sprite-40 {background-image: url("../../images/sprites/artifacts_addeaab62a9d9ef9a5b6d84c5cc752b1.png")}
-	.sprite-artifact.circlet.sprite-60 {background-image: url("../../images/sprites/artifacts_54140fe71f74ce2b3ce01c54c3ad73fd.png")}
+	.sprite-artifact.circlet.sprite-24 {background-image: url("../../images/sprites/artifacts_99704320ef32fa31615671b8b3d72da3.png")}
+	.sprite-artifact.circlet.sprite-40 {background-image: url("../../images/sprites/artifacts_d3ef9163215527dd0cd4916f30a34692.png")}
+	.sprite-artifact.circlet.sprite-60 {background-image: url("../../images/sprites/artifacts_13361e7541651d728436f882035553b2.png")}
 }
