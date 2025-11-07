@@ -29,10 +29,16 @@ shell-скрипт предназначенный для последовате�
 генерация иконок персонажей в папке ./src/images/chars  
 генерация коллажей с иконками персонажей в папке ./src/images/sprites  
 генерация css-файла icons_chars.css в папке ./src/css/generated
+- new_bin/import_artifacts.py  
+генерация файлов artifact_set_names.csv (названия наборов артефактов) и artifact_set_bonuses.csv (названия и описания бонусов наборов артефактов)  
+при работе скрипта учитываются настройки шаблонов заданные в модулях artifacts_eng.py, artifacts_rus.py и names.py
 - new_bin/make_artifact_images.py  
 выгрузка иконок артефактов в папку ./data/images/artifacts  
 генерация коллажей с иконками артефактов в папке ./src/images/sprites  
 генерация css-файлов icons_artifacts_***.css в папке ./src/css/generated
+- new_bin/extract_set_items.py  
+получение списка itemIds для заданного набора артефактов  
+требуется при создании экземпляра класса ArtifactSet
 
 # TODO
 - проверить необходимость в скрипте bin/img.sh
