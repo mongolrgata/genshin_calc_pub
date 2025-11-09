@@ -190,15 +190,6 @@ export class Layout {
             if (lastVersion) {
                 UI.WindowHelp.show(UI.Lang.get('modal_window.changelog'), 'changelog');
             }
-        } else {
-            let cur = new Date();
-            let dateStr = cur.toDateString();
-            let lastDate = localStorage.last_date || '';
-
-            if (lastDate != dateStr) {
-                UI.WindowMessage.show('layout.announce', 'layout.not_supported');
-                localStorage.setItem('last_date', dateStr);
-            }
         }
     }
 

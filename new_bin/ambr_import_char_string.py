@@ -21,7 +21,7 @@ lang_data = {
     },
 }
 
-DATA_URL = 'https://api.ambr.top/v2/en/avatar/10000093?vh=43F5'
+DATA_URL = 'https://gi.yatta.moe/api/v2/en/avatar/10000119'  # Lauma
 
 
 def import_char():

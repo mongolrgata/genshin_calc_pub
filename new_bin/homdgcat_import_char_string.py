@@ -23,9 +23,9 @@ lang_data = {
     },
 }
 
-CHAR_NAME = 'Ineffa'
-CHAR_ID = 'Ineffa'
-LINK_ID = '1115'
+CHAR_NAME = 'Lauma'
+CHAR_ID = 'Lauma'
+LINK_ID = '1119'
 DATA_URL = f'https://homdgcat.wiki/gi/EN/Avatar/{CHAR_ID}_1.js'
 
 
