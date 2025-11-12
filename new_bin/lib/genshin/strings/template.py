@@ -101,7 +101,7 @@ class TemplateString:
 
 
 class Template:
-    def __init__(self, replace={}, names=[], sentences=[], patterns=[], keywords=[], skills={}, results=None):
+    def __init__(self, replace={}, names=[], sentences=[], patterns=[], keywords=[], skills={}, results=None, debug=False):
         self.replace = replace
         self.names = names
         self.sentences = sentences
@@ -109,6 +109,7 @@ class Template:
         self.keywords = keywords
         self.skills = skills
         self.results = results
+        self.debug = debug
 
     def process(self, string: str):
         result = string
@@ -121,9 +122,13 @@ class Template:
             ret = []
             for sent in sen_result:
                 ret.append(self.apply_names(sent))
-            return ret
+            ret_result = ret
         else:
-            return self.apply_names(sen_result)
+            ret_result = self.apply_names(sen_result)
+        if self.debug:
+            logger.error(string)
+            logger.error('\n'.join(ret_result))
+        return ret_result
 
     def apply_replace(self, string):
         result = string

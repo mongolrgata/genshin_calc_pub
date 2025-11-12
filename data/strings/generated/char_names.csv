@@ -92,10 +92,6 @@ char_name;traveler;Путешественник;Traveler
 char_name;traveler;Путешественник;Traveler
 char_name;traveler;Путешественник;Traveler
 char_name;traveler;Путешественник;Traveler
-char_name;ugc_official_female;UGC (официальный женский);UGC (Official Female)
-char_name;ugc_official_male;UGC (официальный мужской);UGC (Official Male)
-char_name;ugc_test_character_prototype_female;UGC (тестовый прототип женского персонажа);UGC (Test Character Prototype Female)
-char_name;ugc_test_character_prototype_male;UGC (тестовый прототип мужского персонажа);UGC (Test Character Prototype Male)
 char_name;varesa;Вареса;Varesa
 char_name;venti;Венти;Venti
 char_name;wanderer;Странник;Wanderer

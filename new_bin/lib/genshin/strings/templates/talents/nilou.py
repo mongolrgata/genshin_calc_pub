@@ -74,7 +74,6 @@ char_nilou = TemplateList(
     ),
     the_starry_skies_their_flowers_rain_rus=Template(
         patterns=[
-            (r'dendro{Дендро сопротивление}', '\\ndendro{Дендро сопротивление}'),
             (r'Требуется разблокировать', '\\nТребуется разблокировать'),
         ],
         sentences=[

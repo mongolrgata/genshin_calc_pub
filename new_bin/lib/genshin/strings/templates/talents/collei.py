@@ -50,8 +50,7 @@ char_collei = TemplateList(
     ),
     through_hill_and_copse_rus=Template(
         sentences=[
-            ['text_percent'],
-            ['ignore', 'ignore'],
+            ['text_percent', 'ignore', 'ignore'],
             [],
             [],
         ],

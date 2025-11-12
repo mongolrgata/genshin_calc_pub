@@ -45,12 +45,12 @@ char_baizhu = TemplateList(
     all_things_are_of_the_earth_rus=Template(
         sentences=[
             ['ignore'],
-            ['ignore', 'ignore', 'ignore', None, None],
+            ['ignore', 'ignore', 'ignore', None, None, None],
         ],
     ),
     all_things_are_of_the_earth_eng=Template(
         sentences=[
-            ['ignore', 'ignore', None, None],
+            ['ignore', 'ignore', None, None, None],
             ['ignore'],
         ],
     ),

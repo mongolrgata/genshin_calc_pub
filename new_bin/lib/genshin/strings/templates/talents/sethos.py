@@ -55,6 +55,10 @@ char_sethos = TemplateList(
     papyrus_scripture_of_silent_secrets_eng=Template(
         sentences=[
             ['15:dmg_electro', '10:ignore'],
+            [],
+        ],
+        results=[
+            [0, 1],
         ],
     ),
     beneficent_plumage_rus=Template(
