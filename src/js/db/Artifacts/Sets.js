@@ -54,6 +54,8 @@ import { ObsidianCodex } from "./Set/ObsidianCodex.js"
 import { ScrollOfTheEmberedCitysHero } from "./Set/ScrollOfTheEmberedCitysHero.js"
 import { LongNightsOath } from "./Set/LongNightsOath.js"
 import { FinaleOfTheDeepGalleries } from "./Set/FinaleOfTheDeepGalleries.js"
+import { NightOfTheSkysUnveiling } from "./Set/NightOfTheSkysUnveiling.js"
+import { SilkenMoonsSerenade } from "./Set/SilkenMoonsSerenade.js"
 
 export const Sets = new DbObjectListArtifactSets({
     Adventurer: Adventurer, // 1
@@ -111,4 +113,6 @@ export const Sets = new DbObjectListArtifactSets({
     ObsidianCodex: ObsidianCodex, // 53
     LongNightsOath: LongNightsOath, // 54
     FinaleOfTheDeepGalleries: FinaleOfTheDeepGalleries, // 55
+    NightOfTheSkysUnveiling: NightOfTheSkysUnveiling, // 56
+    SilkenMoonsSerenade: SilkenMoonsSerenade, // 57
 });
