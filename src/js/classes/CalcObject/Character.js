@@ -152,7 +152,7 @@ export class CalcObjectCharacter extends CalcObject {
         if (!char) return null;
 
         let level = input.shift();
-        if (level < 1 || level > 90) return null;
+        if (level < 1 || level > 100) return null;
 
         let ascension = input.shift();
         if (ascension < 0 || ascension > 6) return null;

@@ -9,7 +9,7 @@ import { Slider } from './Inputs/Slider';
 import { BetaWarning } from './TextBlocks';
 import { getSkillLevelByName } from '../../classes/Build/Settings';
 
-const levelItems = [
+const LEVEL_ITEMS = [
     {level: 1,  ascension: 0, maxLevel: 20},
     {level: 20, ascension: 0, maxLevel: 20},
     {level: 20, ascension: 1, maxLevel: 40},
@@ -24,6 +24,8 @@ const levelItems = [
     {level: 80, ascension: 5, maxLevel: 80},
     {level: 80, ascension: 6, maxLevel: 90},
     {level: 90, ascension: 6, maxLevel: 90},
+    {level: 95, ascension: 6, maxLevel: 95},
+    {level: 100, ascension: 6, maxLevel: 100},
 ];
 
 export class CharObjectBlock extends React.Component {
@@ -51,6 +53,7 @@ export class CharObjectBlock extends React.Component {
                     <ObjectAscended
                         title={this.lang.get(this.props.char.getName())}
                         level={this.props.settings.char_level}
+                        maxLevel={100}
                         ascension={this.props.settings.char_ascension}
                         onLevelChange={this.props.onLevelChange}
                     />
@@ -132,6 +135,7 @@ export class WeaponObjectBlock extends React.Component {
                     <ObjectAscended
                         title={this.lang.get(this.props.weapon.getName())}
                         level={level}
+                        maxLevel={90}
                         ascension={ascension}
                         onLevelChange={this.props.onLevelChange}
                     />
@@ -221,25 +225,23 @@ class ObjectAscended extends React.Component {
     }
 
     handleLevelChange(level) {
-        if (!level) {
-            this.props.onLevelChange({
-                level: 1,
-                ascension: 0,
-            });
-            return;
+        let levelData = {
+            level: 1,
+            ascension: 0
+        };
+
+        if (level) {
+            levelData.level = level > 95 ? 100 : level > 90 ? 95 : level;
+
+            let index = getLevelIndex(levelData.level, this.props.ascension);
+            levelData.ascension = LEVEL_ITEMS[index].ascension;
         }
 
-        let index = getLevelIndex(level, this.props.ascension);
-        let data = levelItems[index];
-
-        this.props.onLevelChange({
-            level: level,
-            ascension: data.ascension,
-        });
+        this.props.onLevelChange(levelData);
     }
 
     handleSliderChange(index) {
-        let item = levelItems[index];
+        let item = LEVEL_ITEMS[index];
         this.props.onLevelChange({
             level: item.level,
             ascension: item.ascension,
@@ -253,7 +255,7 @@ class ObjectAscended extends React.Component {
         }
 
         let levelIndex = getLevelIndex(this.props.level, this.props.ascension);
-        let levelData = levelItems[levelIndex];
+        let levelData = LEVEL_ITEMS[levelIndex];
 
         return (
             <div className="info">
@@ -264,7 +266,7 @@ class ObjectAscended extends React.Component {
                     <div className="level-manual">
                         <NumberInput
                             minValue={1}
-                            maxValue={90}
+                            maxValue={this.props.maxLevel}
                             nonEmpty={true}
                             value={this.props.level}
                             onChange={(value) => this.handleLevelChange(value)}
@@ -275,7 +277,7 @@ class ObjectAscended extends React.Component {
                     <div className="level-slider">
                         <Slider
                             min={0}
-                            max={levelItems.length - 1}
+                            max={getLevelIndex(this.props.maxLevel)}
                             value={levelIndex}
                             onChange={(index) => this.handleSliderChange(index)}
                         />
@@ -388,7 +390,7 @@ export function EnemyLevelLine(props) {
 }
 
 function getLevelIndex(level, ascension) {
-    let items = levelItems;
+    let items = LEVEL_ITEMS;
     let index = -1;
 
     for (const i in items) {
@@ -410,5 +412,5 @@ export function getLevelData(level, ascension) {
         return;
     }
 
-    return levelItems[levelIndex];
+    return LEVEL_ITEMS[levelIndex];
 }
