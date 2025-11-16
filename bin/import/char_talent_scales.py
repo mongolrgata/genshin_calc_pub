@@ -114,7 +114,7 @@ def parse_char_skills(charName, scales, skills, depotId, groupmap):
 
 
 def parse_chars():
-    file = open(data_dir + 'AvatarExcelConfigData.json', 'r')
+    file = open(data_dir + 'AvatarExcelConfigData.json', 'r', encoding='utf-8')
 
     (skills, groupmap) = parse_skills()
     scales = parse_scales()

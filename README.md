@@ -22,6 +22,9 @@ shell-скрипт предназначенный для последовате�
 - bin/**gen_string_table.py**  
 генерация словарей eng.js и rus.js в папке ./src/js/lang  
 при работе скрипта учитывается содержимое csv-файлов в папке ./data/strings
+- bin/**char_talent_scales.py**  
+генерация файла CharTalentTables.js в папке ./src/js/db/generated  
+требуется при создании экземпляра класса DbObjectTalents
 - new_bin/**import_char.py**  
 генерация файлов char_names.csv, char_skills.csv и char_talents.csv в папке ./data/strings/generated
 генерация файла char_texts.txt в папке ./data/raw  

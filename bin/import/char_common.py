@@ -6,12 +6,12 @@ data_dir = os.path.join(dirname, '../../dimrepo/ExcelBinOutput/')
 
 
 def parse_lang():
-    file = open(data_dir + '../TextMap/TextMapEN.json', 'r')
+    file = open(data_dir + '../TextMap/TextMapEN.json', 'r', encoding='utf-8')
     return json.load(file)
 
 
 def parse_scales():
-    file = open(data_dir + 'ProudSkillExcelConfigData.json', 'r')
+    file = open(data_dir + 'ProudSkillExcelConfigData.json', 'r', encoding='utf-8')
     lang = parse_lang()
     result = {}
 
@@ -38,8 +38,8 @@ def parse_scales():
 
 
 def parse_skills():
-    file = open(data_dir + 'AvatarSkillDepotExcelConfigData.json', 'r')
-    file2 = open(data_dir + 'AvatarSkillExcelConfigData.json', 'r')
+    file = open(data_dir + 'AvatarSkillDepotExcelConfigData.json', 'r', encoding='utf-8')
+    file2 = open(data_dir + 'AvatarSkillExcelConfigData.json', 'r', encoding='utf-8')
 
     result = {}
     skills = {}
