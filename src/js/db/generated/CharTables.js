@@ -4358,4 +4358,131 @@ export const charTables = {
 			base: 100,
 		}),
 	],
+	Lauma: [
+		new StatTableAscensionScale({
+			stat: 'atk_base',
+			base: 19.8489,
+			ascension: new StatTable('', [17.0174, 29.1087, 45.2305, 57.3218, 69.4131, 81.5044]),
+			scale: charScales.s5atk,
+		}),
+		new StatTableAscensionScale({
+			stat: 'burst_energy_cost',
+			base: 60,
+		}),
+		new StatTableAscensionScale({
+			stat: 'crit_dmg_base',
+			base: 50,
+		}),
+		new StatTableAscensionScale({
+			stat: 'crit_rate_base',
+			base: 5,
+		}),
+		new StatTableAscensionScale({
+			stat: 'def_base',
+			base: 52.0521,
+			ascension: new StatTable('', [44.631, 76.3425, 118.6245, 150.336, 182.0475, 213.759]),
+			scale: charScales.s5hp,
+		}),
+		new StatTableAscensionScale({
+			stat: 'hp_base',
+			base: 829.3884,
+			ascension: new StatTable('', [711.1255, 1216.3989, 1890.0969, 2395.3704, 2900.6438, 3405.9172]),
+			scale: charScales.s5hp,
+		}),
+		new StatTableAscensionScale({
+			stat: 'mastery_base',
+			base: 0,
+			ascension: new StatTable('', [0, 28.8, 57.6, 57.6, 86.4, 115.2]),
+		}),
+		new StatTableAscensionScale({
+			stat: 'recharge_base',
+			base: 100,
+		}),
+	],
+	Flins: [
+		new StatTableAscensionScale({
+			stat: 'atk_base',
+			base: 27.3714,
+			ascension: new StatTable('', [23.4668, 40.1406, 62.3722, 79.046, 95.7198, 112.3936]),
+			scale: charScales.s5atk,
+		}),
+		new StatTableAscensionScale({
+			stat: 'burst_energy_cost',
+			base: 80,
+		}),
+		new StatTableAscensionScale({
+			stat: 'charged_stamina_cost',
+			base: 25,
+		}),
+		new StatTableAscensionScale({
+			stat: 'crit_dmg_base',
+			base: 50,
+			ascension: new StatTable('', [0, 9.6, 19.2, 19.2, 28.8, 38.4]),
+		}),
+		new StatTableAscensionScale({
+			stat: 'crit_rate_base',
+			base: 5,
+		}),
+		new StatTableAscensionScale({
+			stat: 'def_base',
+			base: 62.9412,
+			ascension: new StatTable('', [53.9676, 92.313, 143.4402, 181.7856, 220.131, 258.4764]),
+			scale: charScales.s5hp,
+		}),
+		new StatTableAscensionScale({
+			stat: 'hp_base',
+			base: 972.3864,
+			ascension: new StatTable('', [833.7334, 1426.1229, 2215.9756, 2808.3652, 3400.7546, 3993.1443]),
+			scale: charScales.s5hp,
+		}),
+		new StatTableAscensionScale({
+			stat: 'recharge_base',
+			base: 100,
+		}),
+	],
+	Aino: [
+		new StatTableAscensionScale({
+			stat: 'atk_base',
+			base: 20.3011,
+			ascension: new StatTable('', [15.1663, 25.9424, 40.3105, 51.0866, 61.8627, 72.6388]),
+			scale: charScales.s4atk,
+		}),
+		new StatTableAscensionScale({
+			stat: 'burst_energy_cost',
+			base: 50,
+		}),
+		new StatTableAscensionScale({
+			stat: 'charged_stamina_cost',
+			base: 40,
+		}),
+		new StatTableAscensionScale({
+			stat: 'crit_dmg_base',
+			base: 50,
+		}),
+		new StatTableAscensionScale({
+			stat: 'crit_rate_base',
+			base: 5,
+		}),
+		new StatTableAscensionScale({
+			stat: 'def_base',
+			base: 50.9303,
+			ascension: new StatTable('', [38.0475, 65.0812, 101.1262, 128.16, 155.1938, 182.2275]),
+			scale: charScales.s4hp,
+		}),
+		new StatTableAscensionScale({
+			stat: 'hp_base',
+			base: 939.1447,
+			ascension: new StatTable('', [701.5892, 1200.0868, 1864.7502, 2363.2478, 2861.7454, 3360.243]),
+			scale: charScales.s4hp,
+		}),
+		new StatTableAscensionScale({
+			stat: 'mastery_base',
+			base: 0,
+			ascension: new StatTable('', [0, 24, 48, 48, 72, 96]),
+		}),
+		new StatTableAscensionScale({
+			stat: 'recharge_base',
+			base: 100,
+		}),
+	],
 };
