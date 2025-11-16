@@ -30,6 +30,8 @@ shell-скрипт предназначенный для последовате�
 генерация файла CharTalentTables.js в папке ./src/js/db/generated  
 требуется при создании экземпляра класса DbObjectTalents  
 при работе скрипта учитывется список char_ids из файла static.py
+- bin/**elemental_data.py**  
+генерация файла ElementScale.js в папке ./src/js/db/generated
 - new_bin/**import_char.py**  
 генерация файлов char_names.csv, char_skills.csv и char_talents.csv в папке ./data/strings/generated
 генерация файла char_texts.txt в папке ./data/raw  
