@@ -235,11 +235,11 @@ weapon_names = {
 }
 
 def parse_lang():
-    file   = open(data_dir + '../TextMap/TextMapEN.json', 'r')
+    file   = open(data_dir + '../TextMap/TextMapEN.json', 'r', encoding='utf-8')
     return json.load(file)
 
 def parse_curves():
-    file   = open(data_dir + 'WeaponCurveExcelConfigData.json', 'r')
+    file   = open(data_dir + 'WeaponCurveExcelConfigData.json', 'r', encoding='utf-8')
     out    = open(out_dir + 'WeaponScale.js', 'w', encoding='utf-8')
     curves = {}
 
@@ -271,7 +271,7 @@ def parse_curves():
     return curves
 
 def parse_ascension():
-    file = open(data_dir + 'WeaponPromoteExcelConfigData.json', 'r')
+    file = open(data_dir + 'WeaponPromoteExcelConfigData.json', 'r', encoding='utf-8')
     table = {}
     result = {}
 
@@ -307,7 +307,7 @@ def parse_ascension():
     return result
 
 def parse_weapons():
-    file = open(data_dir + 'WeaponExcelConfigData.json', 'r')
+    file = open(data_dir + 'WeaponExcelConfigData.json', 'r', encoding='utf-8')
     out  = open(out_dir + 'WeaponStatTables.js', 'w', encoding='utf-8')
 
     result = []

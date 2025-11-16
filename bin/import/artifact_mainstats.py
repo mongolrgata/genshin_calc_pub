@@ -10,7 +10,7 @@ data_dir = os.path.join(dirname, '../../dimrepo/ExcelBinOutput/')
 # stats = ['atk', 'atk_percent', 'def', 'def_percent', 'hp', 'hp_percent', 'mastery', 'recharge', 'crit_rate', 'crit_dmg']
 
 def parse_rolls():
-    file   = open(data_dir + 'ReliquaryLevelExcelConfigData.json', 'r')
+    file   = open(data_dir + 'ReliquaryLevelExcelConfigData.json', 'r', encoding='utf-8')
     result = {}
 
     for item in json.load(file):
